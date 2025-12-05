@@ -9,7 +9,7 @@ switch ($page) {
         $controller->home();
         break;
     default:
-    echo "lỗi 404 - trang ko tồn tại";
+    echo "lỗi 404 - không tìm thấy trang này!";
     break;
     
 }
