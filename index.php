@@ -8,7 +8,9 @@ switch ($page) {
     case 'home':
         $controller->home();
         break;
-    echo "Lỗi trang không tồn tại";
+    default:
+    echo "lỗi 404 - trang ko tồn tại";
+    break;
     
 }
 ?>
