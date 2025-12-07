@@ -3,7 +3,7 @@ class database {
     public $conn;
     public function __construct(){
         $host = "localhost";
-        $dbname = "dbname";
+        $dbname = "igniteFoot";
         $user = "root";
         $pass = "";
 
@@ -11,7 +11,7 @@ class database {
             $this->conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $pass);
         }catch(PDOException $e){
             error_log($e->getMessage());
-            die("chết");
+            die("Lỗi không khởi chạy được cơ sở dữ liệu vui lòng liên hệ với admin");
         }
     }
 }
