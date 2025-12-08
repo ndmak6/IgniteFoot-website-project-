@@ -1,11 +1,11 @@
 <!-- hearder section strats here -->
 <header class="header-area header1">
         <div class="header-logo">
-            <a href="index.html"><img alt="image" class="img-fluid" src="assets/image/ethics-logo.svg"></a>
+            <a href="index.html"><h2>IgniteFoot</h2></a>
         </div>
         <div class="main-menu">
             <div class="mobile-menu-logo">
-                <a href="index.html"><div>IgniteFoot</div></a>
+                <a href="index.html"><h2>IgniteFoot</h2></a>
             </div>
             <ul class="menu-list">
                 <li class="menu-item-has-children">
