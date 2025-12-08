@@ -846,7 +846,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="banner-bg">
-                                <img src="assets/image/home5/home5-banner-img6.jpg" alt="">
+                                <img src="assets/image/home5/banner1.jpg" alt="">
                             </div>
                         </div>
                     </div>
