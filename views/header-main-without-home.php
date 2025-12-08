@@ -5,7 +5,7 @@
         </div>
         <div class="main-menu">
             <div class="mobile-menu-logo">
-                <a href="index.html"><img alt="image" class="img-fluid" src="assets/image/ethics-logo-dark.svg"></a>
+                <a href="index.html"><div>IgniteFoot</div></a>
             </div>
             <ul class="menu-list">
                 <li class="menu-item-has-children">
