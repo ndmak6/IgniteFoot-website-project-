@@ -431,42 +431,42 @@
                                         <label class="containerss">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
-                                            <span>Men (08)</span>
+                                            <span>Giày Nam</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label class="containerss">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
-                                            <span>Women (10)</span>
+                                            <span>Giày Đá Bóng</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label class="containerss">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
-                                            <span>Kids (06)</span>
+                                            <span>Giày Chạy Bộ</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label class="containerss">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
-                                            <span>Accessories (03)</span>
+                                            <span>Giày Unisex</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label class="containerss">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
-                                            <span>body perfume (02)</span>
+                                            <span>Giày đạp xe</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label class="containerss">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
-                                            <span>sun care (10)</span>
+                                            <span>Giày đánh PickleBall</span>
                                         </label>
                                     </li>
                                 </ul>
@@ -506,13 +506,15 @@
                             </div>
                             <div class="size-list">
                                 <ul>
-                                    <li class="select-wrap selected">XXS</li>
-                                    <li class="select-wrap">XS</li>
-                                    <li class="select-wrap">S</li>
-                                    <li class="select-wrap">M</li>
-                                    <li class="select-wrap">L</li>
-                                    <li class="select-wrap">XL</li>
-                                    <li class="select-wrap">XXL</li>
+                                    <li class="select-wrap selected">39</li>
+                                    <li class="select-wrap">40</li>
+                                    <li class="select-wrap">41</li>
+                                    <li class="select-wrap">42</li>
+                                    <li class="select-wrap">43</li>
+                                    <li class="select-wrap">44</li>
+                                    <li class="select-wrap">45</li>
+                                    <li class="select-wrap">46</li>
+                                    <li class="select-wrap">47</li>
                                 </ul>
                             </div>
                         </div>
@@ -536,29 +538,6 @@
                                     <li class="lavender select-wrap"></li>
                                     <li class="hot-pink select-wrap"></li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div class="single-widgets ">
-                            <div class="widget-title">
-                                <h5>Feature product</h5>
-                            </div>
-                            <div class="feature-product-area mb-20">
-                                <div class="feature-product-image">
-                                   <a href="product-details.html"> <img src="assets/image/inner-page/sidebar-product-image.png" alt=""></a>
-                                </div>
-                                <div class="feature-product-content">
-                                    <h6><a href="product-details.html">Ultimate Comfort & Trendy Design</a></h6>
-                                    <p>$150.00 <del>$200.00</del></p>
-                                </div>
-                            </div>
-                            <div class="feature-product-area">
-                                <div class="feature-product-image">
-                                    <a href="product-details.html"><img src="assets/image/inner-page/sidebar-product-image2.png" alt=""></a>
-                                </div>
-                                <div class="feature-product-content">
-                                    <h6><a href="product-details.html">Classic Navy Slim Fit Blazer</a></h6>
-                                    <p>$120.00 <del>$180.00</del></p>
-                                </div>
                             </div>
                         </div>
                     </div>
