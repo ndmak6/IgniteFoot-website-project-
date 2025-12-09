@@ -113,27 +113,26 @@
                                     </div>
                                     <div class="quantity-color-area">
                                         <div class="quantity-color">
-                                            <h6 class="widget-title">Size</h6>
+                                            <h6 class="widget-title">Kích cỡ</h6>
                                             <div class="size-list">
                                                 <ul>
-                                                    <li class="select-wrap selected">XS</li>
-                                                    <li class="select-wrap">S</li>
-                                                    <li class="select-wrap">M</li>
-                                                    <li class="select-wrap">L</li>
-                                                    <li class="select-wrap">XL</li>
-                                                    <li class="select-wrap">XXL</li>
+                                                    <li class="select-wrap selected">39</li>
+                                                    <li class="select-wrap">40</li>
+                                                    <li class="select-wrap">41</li>
+                                                    <li class="select-wrap">42</li>
+                                                    <li class="select-wrap">43</li>
+                                                    <li class="select-wrap">44</li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="quantity-color">
-                                            <h6 class="widget-title">Color</h6>
+                                            <h6 class="widget-title">Màu sắc</h6>
                                             <ul class="color-list">
                                                 <li class="select-wrap selected"><span></span></li>
                                                 <li class="select-wrap"><span></span></li>
                                                 <li class="select-wrap"><span></span></li>
                                                 <li class="select-wrap"><span></span></li>
-                                                <li class="select-wrap"><span></span></li>
-                                                <li class="select-wrap"><span></span></li>
+                                               
                                             </ul>
                                         </div>
                                         <div class="quantity-color">
@@ -144,12 +143,12 @@
                                                     <a class="quantity__plus"><span><i class="bi bi-plus"></i></span></a>
                                                 </div>
                                             </div>
-                                            <h6 class="widget-title">Availability: <span>In stock</span></h6>
+                                            <h6 class="widget-title">Trạng thái: <span>Còn hàng</span></h6>
                                         </div>
                                     </div>
                                     <div class="shop-details-btn">
-                                        <a class="primary-btn" href="cart-page.html">ADD TO CART</a>
-                                        <a class="primary-btn2" href="checkout-page.html">BUY NOW</a>
+                                        <a class="primary-btn" href="cart-page.html">THÊM VÀO GIỎ HÀNG</a>
+                                        <a class="primary-btn2" href="checkout-page.html">MUA NGAY</a>
                                     </div>
                                     <ul class="product-shipping-delivers">
                                         <li class="product-shipping">
@@ -785,7 +784,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="banner-bg">
-                                <img src="assets/image/home5/home5-banner-img1.jpg" alt="">
+                                <img src="assets/image/home5/home5-banner-img7.jpg" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -810,7 +809,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="banner-bg">
-                                <img src="assets/image/home5/home5-banner-img6.jpg" alt="">
+                                <img src="assets/image/home5/home5-banner-img7.jpg" alt="">
                             </div>
                         </div>
                     </div>
