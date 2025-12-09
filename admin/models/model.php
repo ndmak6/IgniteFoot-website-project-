@@ -20,5 +20,19 @@ class databaseAdmin {
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function addProducts($nameP, $describe, $price, $imagePath){
+        $stmt = $this->conn->prepare("insert into san_pham (ten_san_pham, mo_ta, gia, anh) values (?,?,?,?)");
+        return $stmt->execute([$nameP, $describe, $price, $imagePath]);
+    }
+
+    public function deleteProducts($idAdmin){
+        $stmt = $this->conn->prepare("delete from san_pham where id_san_pham = :id");
+        return $stmt->execute([":id" => $idAdmin]);
+    }
+
+    public function editProduct($idAdmin){
+        // lú quá tạm tạm đây đã 
+    }
 }
 ?>

@@ -19,19 +19,33 @@ class controllerAdmin {
 
     public function addProductPage(){
         include "admin/views/addProducts.php";
-
-        if(isset($_POST['ten'])) {
-
-        $ten = $_POST['ten'];
-        $mo_ta = $_POST['mo_ta'];
-        $gia = $_POST['gia'];
-
-        $file = $_FILES['anh']['name'];
-        $tmp  = $_FILES['anh']['tmp_name'];
-
-        move_uploaded_file($tmp, "upload/" . $file);
     }
 
+    public function addProductHandle(){
+        $nameP = $_POST['ten'];
+        $describe = $_POST['mo_ta'];
+        $price = $_POST['gia'];
+
+        $imagePath = null;
+        
+        if(isset($_FILES['anh']) && $_FILES['anh']['error'] == 0){
+            $imagePath = 'assets/uploads/' .$_FILES['anh']['name'];
+            move_uploaded_file($_FILES['anh']['tmp_name'], $imagePath);
+        }
+
+        $this->modelAdmin->addProducts($nameP, $describe, $price, $imagePath);
+        header('location: admin.php');
+    }
+
+    public function deleteFunction($idAdmin){
+        if($idAdmin){
+            $this->modelAdmin->deleteProducts($idAdmin);
+            header("location: admin.php");
+        }
+    }
+
+    public function editFunction($idAdmin){
+        
     }
 }
 ?>

@@ -49,10 +49,13 @@
                   <td><?php echo $p['ten_san_pham'] ?></td>
                   <td><?php echo $p['mo_ta'] ?></td>
                   <td><?php echo $p['gia'] ?></td>
-                  <td><?php echo $p['anh'] ?></td>
+                  <td><img src="assets/uploads/<?php echo $p['anh'] ?>" alt="ảnh sản phẩm"></td>
                   <td>
-                    <button class="btn btn-sm btn-warning">Sửa</button>
-                    <button class="btn btn-sm btn-danger">Xóa</button>
+                    <a href="admin.php?pageAdmin=deleteFunction&idAdmin=<?php echo $p['id_san_pham'] ?>">
+                      <button class="btn btn-sm btn-warning">Sửa</button>
+                    </a>
+                    
+                    <a href="admin.php?pageAdmin=deleteFunction&idAdmin=<?php echo $p['id_san_pham'] ?>"><button class="btn btn-sm btn-danger">Xóa</button></a>
                   </td>
                 </tr>
                 <?php } ?>
