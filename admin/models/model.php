@@ -36,8 +36,11 @@ class databaseAdmin {
         return $stmt->execute([":id" => $idAdmin]);
     }
 
-    public function editProduct($idAdmin){
-        // lú quá tạm tạm đây đã 
+    public function update_func($ten_sp,$mota_sp,$gia_sp,$anh_sp,$ma_sp){
+    $pdo = $this->conn->prepare("UPDATE san_pham 
+                                 SET ten_san_pham= ?, mo_ta = ?, gia = ?, anh= ? 
+                                 WHERE id_san_pham=?");
+    $pdo->execute([$ten_sp, $mota_sp, $gia_sp, $anh_sp, $ma_sp]);
     }
 }
 ?>

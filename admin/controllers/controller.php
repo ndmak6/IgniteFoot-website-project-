@@ -48,6 +48,25 @@ class controllerAdmin {
         $sanpham = $this->modelAdmin->get_sp_by_id($idAdmin);
         require_once "admin/views/edit_form.php";
     }
+    public function editFunction($idAdmin){
+    $ten_sp = $_POST["ten"];
+    $mota_sp = $_POST["mo_ta"];
+    $gia_sp = $_POST["gia"];
+
+    // Xử lý ảnh upload
+    if (!empty($_FILES['anh']['name'])) {
+    $target = "assets/uploads/" . basename($_FILES['anh']['name']);
+    move_uploaded_file($_FILES['anh']['tmp_name'], $target);
+    $anh_sp = $target;
+    } else {
+        $anh_sp = $_POST['anh_cu'];
+    }
+
+    $ma_sp = $_POST["ma_sp"]; // cần hidden input trong form
+
+    $this->modelAdmin->update_func($ten_sp,$mota_sp,$gia_sp,$anh_sp,$ma_sp);
+    header("Location: admin.php");
+}
 }
     
 
