@@ -43,9 +43,12 @@ class controllerAdmin {
             header("location: admin.php");
         }
     }
-
-    public function editFunction($idAdmin){
-        
+    public function edit_form(){
+       $idAdmin = $_GET['idAdmin'];
+        $sanpham = $this->modelAdmin->get_sp_by_id($idAdmin);
+        require_once "admin/views/edit_form.php";
     }
 }
+    
+
 ?>

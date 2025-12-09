@@ -24,10 +24,12 @@ switch ($pageAdmin) {
     case 'deleteFunction':
         $controllerAdmin->deleteFunction($idAdmin);
         break;
-
-    case 'editFunction':
-        $controllerAdmin->editFunction($idAdmin);
+    case 'edit_form':
+        $controllerAdmin->edit_form();
         break;
+    // case 'editFunction':
+    //     $controllerAdmin->editFunction($idAdmin);
+    //     break;
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;

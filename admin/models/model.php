@@ -20,6 +20,11 @@ class databaseAdmin {
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+    public function get_sp_by_id($idAdmin) {
+        $stmt = $this->conn->prepare("SELECT * FROM san_pham where id_san_pham=?");
+        $stmt->execute([$idAdmin]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
 
     public function addProducts($nameP, $describe, $price, $imagePath){
         $stmt = $this->conn->prepare("insert into san_pham (ten_san_pham, mo_ta, gia, anh) values (?,?,?,?)");
