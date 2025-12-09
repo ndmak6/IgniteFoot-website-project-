@@ -733,6 +733,7 @@
                                                 </ul>
                                             </div>
                                         </div>
+                                        <? foreach ($products as $value): ?>
                                         <div class="product-card-content">
                                             <div class="rating">
                                                 <ul>
@@ -743,7 +744,7 @@
                                                     <li><i class="bi bi-star-fill"></i></li>
                                                 </ul>
                                             </div>
-                                            <h6><a class="hover-underline" href="product-details.html">ultimate cozy chic oversize jacket</a>
+                                            <h6><a class="hover-underline" href="product-details.html"><?= $value['ten_san_pham'] ?></a>
                                             </h6>
                                             <p class="price">$400.00 </p>
                                             <ul class="color-tag">
@@ -761,6 +762,7 @@
                                                 </li>
                                             </ul>
                                         </div>
+                                        <? endforeach; ?>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="600ms" data-wow-duration="1500ms">

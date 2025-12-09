@@ -18,7 +18,10 @@ class controller {
         include "./views/main-content-shop.php";
         include "./views/footer.php";
     }
-
+    public function getAllProducts(){
+        $products = $this->model->getAll();
+        include "./views/main-content-shop.php";
+    }
     public function shoppingcart(){
         include "./views/shoppingcart.php";
     }

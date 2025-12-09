@@ -3,7 +3,7 @@ class database {
     public $conn;
     public function __construct(){
         $host = "localhost";
-        $dbname = "igniteFoot";
+        $dbname = "ignitefoot";
         $user = "root";
         $pass = "";
 
@@ -15,7 +15,7 @@ class database {
         }
     }
     public function getAll() {
-        $stmt = $this->conn->prepare("SELECT * FROM product");
+        $stmt = $this->conn->prepare("SELECT * FROM san_pham");
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }

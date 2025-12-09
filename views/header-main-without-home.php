@@ -1,11 +1,11 @@
 <!-- hearder section strats here -->
 <header class="header-area header1">
         <div class="header-logo">
-            <a href="index.html"><h2>IgniteFoot</h2></a>
+            <a href="index.php?page=home"><h2>IgniteFoot</h2></a>
         </div>
         <div class="main-menu">
             <div class="mobile-menu-logo">
-                <a href="index.html"><h2>IgniteFoot</h2></a>
+                <a href="index.php?page=home"><h2>IgniteFoot</h2></a>
             </div>
             <ul class="menu-list">
                 <li class="menu-item-has-children">
