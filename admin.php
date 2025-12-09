@@ -16,6 +16,10 @@ switch ($pageAdmin) {
     case 'addProduct':
         $controllerAdmin->addProductPage();
         break;
+
+    case 'addNewProduct':
+        $controllerAdmin->addProductHandle();
+        break;
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;

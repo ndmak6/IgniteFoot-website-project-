@@ -20,5 +20,10 @@ class databaseAdmin {
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function addProducts($nameP, $describe, $price, $imagePath){
+        $stmt = $this->conn->prepare("insert into san_pham (ten_san_pham, mo_ta, gia, anh) values (?,?,?,?)");
+        $stmt->execute([$nameP, $describe, $price, $imagePath]);
+    }
 }
 ?>
