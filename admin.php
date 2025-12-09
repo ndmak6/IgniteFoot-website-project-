@@ -30,6 +30,9 @@ switch ($pageAdmin) {
     case 'editFunction':
         $controllerAdmin->editFunction($idAdmin);
         break;
+    case 'show_product_control':
+        $controllerAdmin->show_p();
+        break;
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;

@@ -11,12 +11,6 @@ class controllerAdmin {
         include "admin/views/login.php";
     }
 
-    public function dashboard(){
-        $products = $this->modelAdmin->getAllProduct();
-        include "admin/views/header.php";
-        include "admin/views/dashboard.php";
-    }
-
     public function addProductPage(){
         include "admin/views/addProducts.php";
     }
@@ -62,11 +56,34 @@ class controllerAdmin {
         $anh_sp = $_POST['anh_cu'];
     }
 
-    $ma_sp = $_POST["ma_sp"]; // cần hidden input trong form
+    $ma_sp = $_POST["ma_sp"];
 
     $this->modelAdmin->update_func($ten_sp,$mota_sp,$gia_sp,$anh_sp,$ma_sp);
     header("Location: admin.php");
+    }
+    public function show_p(){
+    $products = $this->modelAdmin->getAllProduct();
+    ob_start();
+    require "admin/views/productControl.php";
+    $content = ob_get_clean();
+    include "admin/views/layout.php";
 }
+
+public function dashboard(){
+    ob_start();
+    require "admin/views/dashboard.php";
+    $content = ob_get_clean();
+    include "admin/views/layout.php";
+}
+
+
+// public function customerControl(){
+//     $customers = $this->modelAdmin->getAllCustomers();
+//     ob_start();
+//     require "admin/views/customerControl.php";
+//     $content = ob_get_clean();
+//     include "admin/views/layout.php";
+// }
 }
     
 
