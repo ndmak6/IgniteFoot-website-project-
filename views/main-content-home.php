@@ -818,8 +818,8 @@
             </div>
         </div>
         <div class="banner-content-wrap">
-            <h1>Spring Is Here</h1>
-            <p>From chic dresses to sophisticated accessories, find your signature style effortlessly. Explore quality craftsmanship </p>
+            <h1>Giày Thể Thao Nam – Phong Cách & Năng Động</h1>
+            <p>Khám phá bộ sưu tập giày thể thao nam mới nhất, mang đến sự thoải mái, bền bỉ và phong cách cho mọi hoạt động của bạn </p>
             <a href="3columns-left.html" class="primary-btn">SHOP NOW</a>
         </div>
         <div class="banner-slider-btn-groups">
