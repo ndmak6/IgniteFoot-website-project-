@@ -20,6 +20,14 @@ switch ($pageAdmin) {
     case 'addNewProduct':
         $controllerAdmin->addProductHandle();
         break;
+
+    case 'deleteFunction':
+        $controllerAdmin->deleteFunction($idAdmin);
+        break;
+
+    case 'editFunction':
+        $controllerAdmin->editFunction($idAdmin);
+        break;
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;

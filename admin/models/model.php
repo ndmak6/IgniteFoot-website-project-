@@ -23,7 +23,16 @@ class databaseAdmin {
 
     public function addProducts($nameP, $describe, $price, $imagePath){
         $stmt = $this->conn->prepare("insert into san_pham (ten_san_pham, mo_ta, gia, anh) values (?,?,?,?)");
-        $stmt->execute([$nameP, $describe, $price, $imagePath]);
+        return $stmt->execute([$nameP, $describe, $price, $imagePath]);
+    }
+
+    public function deleteProducts($idAdmin){
+        $stmt = $this->conn->prepare("delete from san_pham where id_san_pham = :id");
+        return $stmt->execute([":id" => $idAdmin]);
+    }
+
+    public function editProduct($idAdmin){
+        // lú quá tạm tạm đây đã 
     }
 }
 ?>
