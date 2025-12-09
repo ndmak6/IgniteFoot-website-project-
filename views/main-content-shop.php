@@ -106,7 +106,7 @@
                                                 <i class="bi bi-star-fill"></i>
                                                 <i class="bi bi-star-fill"></i>
                                             </div>
-                                            <p><a href="#reviews">(2 REVIEWS)</a></p>
+                                            <p><a href="#reviews">5 đánh giá</a></p>
                                         </div>
                                     </div>
                                     <div class="price-area">
@@ -114,15 +114,15 @@
                                     </div>
                                     <div class="quantity-color-area">
                                         <div class="quantity-color">
-                                            <h6 class="widget-title">Size</h6>
+                                            <h6 class="widget-title">Kích cỡ</h6>
                                             <div class="size-list">
                                                 <ul>
-                                                    <li class="select-wrap selected">XS</li>
-                                                    <li class="select-wrap">S</li>
-                                                    <li class="select-wrap">M</li>
-                                                    <li class="select-wrap">L</li>
-                                                    <li class="select-wrap">XL</li>
-                                                    <li class="select-wrap">XXL</li>
+                                                    <li class="select-wrap selected">40</li>
+                                                    <li class="select-wrap">41</li>
+                                                    <li class="select-wrap">42</li>
+                                                    <li class="select-wrap">43</li>
+                                                    <li class="select-wrap">44</li>
+                                                    <li class="select-wrap">45</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -237,12 +237,12 @@
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
                                 type="button" role="tab" aria-controls="home" aria-selected="true">
-                                Log In
+                                Đăng Nhập
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                                type="button" role="tab" aria-controls="profile" aria-selected="false">Registration</button>
+                                type="button" role="tab" aria-controls="profile" aria-selected="false">Đăng ký</button>
                         </li>
                     </ul>
                 </div>
@@ -251,52 +251,52 @@
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <div class="login-registration-form">
                                 <div class="form-title">
-                                    <h3>Log In</h3>
+                                    <h3>Đăng Nhập</h3>
                                 </div>
                                 <form>
                                     <div class="form-inner mb-35">
-                                        <input type="text" placeholder="User name or Email *">
+                                        <input type="text" placeholder="Tài khoản và Email *">
                                     </div>
                                     <div class="form-inner">
-                                        <input id="password" type="password" placeholder="Password *">
+                                        <input id="password" type="password" placeholder="Mật khẩu *">
                                         <i class="bi bi-eye-slash" id="togglePassword"></i>
                                     </div>
                                     <div class="form-remember-forget">
                                         <div class="remember">
                                             <input type="checkbox" class="custom-check-box" id="check1">
-                                            <label for="check1">Remember me</label>
+                                            <label for="check1">Nhớ mật khẩu</label>
                                         </div>
-                                        <a href="#" class="forget-pass hover-underline">Forget Password</a>
+                                        <a href="#" class="forget-pass hover-underline">Quên mật khẩu</a>
                                     </div>
                                     <button class="primary-btn" type="submit">
-                                        Log In
+                                        Đăng nhập
                                     </button>
-                                    <a href="#" class="member">Not a member yet?</a>
+                                    <a href="#" class="member">Bạn chưa có tài khoản ?</a>
                                 </form>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <div class="login-registration-form">
                                 <div class="form-title">
-                                    <h3>Registration</h3>
+                                    <h3>Đăng ký</h3>
                                 </div>
                                 <form>
                                     <div class="form-inner mb-25">
-                                        <input type="text" placeholder="User Name *">
+                                        <input type="text" placeholder="Tên tài khoản *">
                                     </div>
                                     <div class="form-inner mb-25">
-                                        <input type="email" placeholder="Email Here *">
+                                        <input type="email" placeholder="Email  *">
                                     </div>
                                     <div class="form-inner mb-25">
-                                        <input id="password2" type="password" placeholder="Password *">
+                                        <input id="password2" type="password" placeholder="Mật khẩu *">
                                         <i class="bi bi-eye-slash" id="togglePassword2"></i>
                                     </div>
                                     <div class="form-inner mb-35">
-                                        <input id="password3" type="password" placeholder="Confirm Password *">
+                                        <input id="password3" type="password" placeholder="Nhập lại mật khẩu *">
                                         <i class="bi bi-eye-slash" id="togglePassword3"></i>
                                     </div>
                                     <button class="primary-btn" type="submit">
-                                        Registration
+                                        Đăng ký 
                                     </button>
                                 </form>
                             </div>
@@ -1106,7 +1106,6 @@
                                                 <li class="medium-brown"><span>Brown</span></li>
                                                 <li class="dark-lavender"><span> Lavender</span></li>
                                                 <li class="amber-yellow"><span> Yellow</span></li>
-                                                
                                             </ul>
                                         </div>
                                     </div>

@@ -16,6 +16,5 @@ switch ($page) {
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;
-    
 }
 ?>
