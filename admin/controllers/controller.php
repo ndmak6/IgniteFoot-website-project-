@@ -36,5 +36,16 @@ class controllerAdmin {
         $this->modelAdmin->addProducts($nameP, $describe, $price, $imagePath);
         header('location: admin.php');
     }
+
+    public function deleteFunction($idAdmin){
+        if($idAdmin){
+            $this->modelAdmin->deleteProducts($idAdmin);
+            header("location: admin.php");
+        }
+    }
+
+    public function editFunction($idAdmin){
+        
+    }
 }
 ?>
