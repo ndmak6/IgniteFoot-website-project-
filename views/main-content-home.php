@@ -398,7 +398,7 @@
                                                 <div class="megamenu-items">
                                                     <h6>Woo Pages</h6>
                                                     <ul class="menu-list">
-                                                        <li><a href="cart-page.html">cart page</a></li>
+                                                        <li><a href="index.php?page=shoppingcart">cart page</a></li>
                                                         <li><a href="checkout-page.html">checkout page</a></li>
                                                         <li><a href="whislist.html">whistlist</a></li>
                                                         <li><a href="my-account.html">My Account</a></li>
