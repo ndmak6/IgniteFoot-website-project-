@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="assets/css/boxicons.min.css">
     <!-- My css link -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Ethics - Fashion Shop HTML Template</title>
+    <title>IgniteFoot - Bán giày thể thao nam</title>
     <link rel="icon" href="assets/image/thumbnail.svg" type="image/gif" sizes="20x20">
 </head>
 
@@ -236,12 +236,12 @@
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
                                 type="button" role="tab" aria-controls="home" aria-selected="true">
-                                Log In
+                                Đăng Nhập
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                                type="button" role="tab" aria-controls="profile" aria-selected="false">Registration</button>
+                                type="button" role="tab" aria-controls="profile" aria-selected="false">Đăng ký</button>
                         </li>
                     </ul>
                 </div>
@@ -250,52 +250,52 @@
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <div class="login-registration-form">
                                 <div class="form-title">
-                                    <h3>Log In</h3>
+                                    <h3>Đăng nhập</h3>
                                 </div>
                                 <form>
                                     <div class="form-inner mb-35">
-                                        <input type="text" placeholder="User name or Email *">
+                                        <input type="text" placeholder="Tài khoản hoặc Email *">
                                     </div>
                                     <div class="form-inner">
-                                        <input id="password" type="password" placeholder="Password *">
+                                        <input id="password" type="password" placeholder="Mật khẩu">
                                         <i class="bi bi-eye-slash" id="togglePassword"></i>
                                     </div>
                                     <div class="form-remember-forget">
                                         <div class="remember">
                                             <input type="checkbox" class="custom-check-box" id="check1">
-                                            <label for="check1">Remember me</label>
+                                            <label for="check1">Nhớ mật khẩu</label>
                                         </div>
-                                        <a href="#" class="forget-pass hover-underline">Forget Password</a>
+                                        <a href="#" class="forget-pass hover-underline">Quên mật khẩu</a>
                                     </div>
                                     <button class="primary-btn" type="submit">
-                                        Log In
+                                        Đăng nhập
                                     </button>
-                                    <a href="#" class="member">Not a member yet?</a>
+                                    <a href="#" class="member">bạn chưa có tài khoản !</a>
                                 </form>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <div class="login-registration-form">
                                 <div class="form-title">
-                                    <h3>Registration</h3>
+                                    <h3>Đăng ký</h3>
                                 </div>
                                 <form>
                                     <div class="form-inner mb-25">
-                                        <input type="text" placeholder="User Name *">
+                                        <input type="text" placeholder="Tên tài khoản *">
                                     </div>
                                     <div class="form-inner mb-25">
-                                        <input type="email" placeholder="Email Here *">
+                                        <input type="email" placeholder="Email *">
                                     </div>
                                     <div class="form-inner mb-25">
-                                        <input id="password2" type="password" placeholder="Password *">
+                                        <input id="password2" type="password" placeholder="Mật khẩu *">
                                         <i class="bi bi-eye-slash" id="togglePassword2"></i>
                                     </div>
                                     <div class="form-inner mb-35">
-                                        <input id="password3" type="password" placeholder="Confirm Password *">
+                                        <input id="password3" type="password" placeholder="Nhập lại mật khẩu *">
                                         <i class="bi bi-eye-slash" id="togglePassword3"></i>
                                     </div>
                                     <button class="primary-btn" type="submit">
-                                        Registration
+                                        Đăng ký
                                     </button>
                                 </form>
                             </div>
@@ -311,12 +311,12 @@
             <div class="row">
                 <div class="col-lg-12 d-flex justify-content-between align-items-center">
                     <div class="header-logo">
-                        <a href="index.html"><img alt="image" class="img-fluid"
+                        <a href="index.php?page=home"><img alt="image" class="img-fluid"
                                 src="assets/image/ethics-logo-dark.svg"></a>
                     </div>
                     <div class="main-menu">
                         <div class="mobile-menu-logo">
-                            <a href="index.html"><img alt="image" class="img-fluid"
+                            <a href="index.php?page=home"><img alt="image" class="img-fluid"
                                     src="assets/image/ethics-logo-dark.svg"></a>
                         </div>
                         <ul class="menu-list">
@@ -1863,7 +1863,7 @@
     </div>
     <!-- limmited offer section end here -->
     <!-- Galleary section strats here -->
-    <div class="gallery-section">
+    <!-- <div class="gallery-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -1974,4 +1974,4 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
