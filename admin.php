@@ -27,9 +27,9 @@ switch ($pageAdmin) {
     case 'edit_form':
         $controllerAdmin->edit_form();
         break;
-    // case 'editFunction':
-    //     $controllerAdmin->editFunction($idAdmin);
-    //     break;
+    case 'editFunction':
+        $controllerAdmin->editFunction($idAdmin);
+        break;
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;

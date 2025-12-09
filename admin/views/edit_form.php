@@ -15,6 +15,7 @@
 
       <form method="post" enctype="multipart/form-data" action="admin.php?pageAdmin=editFunction">
         <div class="mb-3">
+        <input type="hidden" name="ma_sp" value="<?= htmlspecialchars($sanpham['id_san_pham']) ?>">
           <label class="form-label">Tên sản phẩm</label>
           <input type="text" class="form-control" placeholder="Nhập tên sản phẩm" required name="ten"
           value="<?= htmlspecialchars($sanpham['ten_san_pham']) ?>" >
@@ -33,6 +34,7 @@
         </div>
 
         <div class="mb-3">
+            <input type="hidden" name="anh_cu" value="<?= htmlspecialchars($sanpham['anh']) ?>">
             <label class="form-label">Ảnh sản phẩm hiện tại</label><br>
             <img src="<?= htmlspecialchars($sanpham['anh']) ?>" 
                 alt="Ảnh sản phẩm" 
