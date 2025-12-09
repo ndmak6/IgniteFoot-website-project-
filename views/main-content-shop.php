@@ -393,7 +393,7 @@
                         <h1>Shop</h1>
                         <ul class="breadcrumb-list">
                             <li><a href="index.html">Home</a></li>
-                            <li><span>/</span> 3 Columns Left Sidebar</li>
+                            <li><span>/</span> Shop</li>
                         </ul>
                     </div>
                 </div>
@@ -410,7 +410,7 @@
                         <div class="single-widgets widget_search mb-70">
                             <form>
                                 <div class="wp-block-search__inside-wrapper">
-                                    <input type="search" value="" placeholder="Search Product">
+                                    <input type="search" value="" placeholder="Tìm kiếm sản phẩm">
                                     <button type="submit">
                                         <svg width="16" height="16" viewBox="0 0 16 16"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -423,7 +423,7 @@
                         </div>
                         <div class="single-widgets mb-70">
                             <div class="widget-title">
-                                <h5>Shop Catalog</h5>
+                                <h5>Danh mục sản phẩm</h5>
                             </div>
                             <div class="checkbox-container">
                                 <ul>
@@ -431,51 +431,48 @@
                                         <label class="containerss">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
-                                            <span>Men (08)</span>
+                                            <span>Giày Nam</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label class="containerss">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
-                                            <span>Women (10)</span>
+                                            <span>Giày Đá Bóng</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label class="containerss">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
-                                            <span>Kids (06)</span>
+                                            <span>Giày Chạy Bộ</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label class="containerss">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
-                                            <span>Accessories (03)</span>
+                                            <span>Giày Unisex</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label class="containerss">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
-                                            <span>body perfume (02)</span>
+                                            <span>Giày đạp xe</span>
                                         </label>
                                     </li>
                                     <li>
                                         <label class="containerss">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
-                                            <span>sun care (10)</span>
+                                            <span>Giày đánh PickleBall</span>
                                         </label>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="single-widgets mb-70">
-                            <div class="widget-title">
-                                <h5>Price Filter</h5>
-                            </div>
                             <div class="range-wrap">
                                 <div class="row">
                                     <div class="col-sm-12">
@@ -502,126 +499,43 @@
                         </div>
                         <div class="single-widgets mb-70">
                             <div class="widget-title">
-                                <h5>Size</h5>
+                                <h5>Kích cỡ</h5>
                             </div>
                             <div class="size-list">
                                 <ul>
-                                    <li class="select-wrap selected">XXS</li>
-                                    <li class="select-wrap">XS</li>
-                                    <li class="select-wrap">S</li>
-                                    <li class="select-wrap">M</li>
-                                    <li class="select-wrap">L</li>
-                                    <li class="select-wrap">XL</li>
-                                    <li class="select-wrap">XXL</li>
+                                    <li class="select-wrap selected">39</li>
+                                    <li class="select-wrap">40</li>
+                                    <li class="select-wrap">41</li>
+                                    <li class="select-wrap">42</li>
+                                    <li class="select-wrap">43</li>
+                                    <li class="select-wrap">44</li>
+                                    <li class="select-wrap">45</li>
+                                    <li class="select-wrap">46</li>
+                                    <li class="select-wrap">47</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="single-widgets mb-70">
                             <div class="widget-title">
-                                <h5>Color</h5>
+                                <h5>Màu sắc</h5>
                             </div>
                             <div class="color-area">
                                 <ul class="color-list">
-                                    <li class="select-wrap selected"></li>
-                                    <li class="golden-lime select-wrap"></li>
-                                    <li class="dusky-rose select-wrap"></li>
-                                    <li class="dusty-rose select-wrap"></li>
-                                    <li class="olive-green select-wrap"></li>
-                                    <li class="bright-red select-wrap"></li>
-                                    <li class="azure-blue select-wrap"></li>
-                                    <li class="black select-wrap"></li>
-                                    <li class="peach select-wrap"></li>
-                                    <li class="cranberry select-wrap"></li>
-                                    <li class="flame-red select-wrap"></li>
-                                    <li class="lavender select-wrap"></li>
-                                    <li class="hot-pink select-wrap"></li>
+                                    <li class="select-wrap selected" style="background-color: #897f7fff;"></li>
+                                    <li class="select-wrap" style="background-color: #000000ff;"></li>
+                                    <li class="select-wrap" style="background-color: #ff6e6eff;"></li>
+                                    <li class="select-wrap" style="background-color: #70ff70ff;"></li>
+                                    <li class="select-wrap" style="background-color: #56567eff;"></li>
+                                    <li class="select-wrap" style="background-color: #e9e946ff;"></li>
+                                    <li class="select-wrap" style="background-color: #ae3aaeff;"></li>
+                                    <li class="select-wrap" style="background-color: #3edcdcff;"></li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div class="single-widgets ">
-                            <div class="widget-title">
-                                <h5>Feature product</h5>
-                            </div>
-                            <div class="feature-product-area mb-20">
-                                <div class="feature-product-image">
-                                   <a href="product-details.html"> <img src="assets/image/inner-page/sidebar-product-image.png" alt=""></a>
-                                </div>
-                                <div class="feature-product-content">
-                                    <h6><a href="product-details.html">Ultimate Comfort & Trendy Design</a></h6>
-                                    <p>$150.00 <del>$200.00</del></p>
-                                </div>
-                            </div>
-                            <div class="feature-product-area">
-                                <div class="feature-product-image">
-                                    <a href="product-details.html"><img src="assets/image/inner-page/sidebar-product-image2.png" alt=""></a>
-                                </div>
-                                <div class="feature-product-content">
-                                    <h6><a href="product-details.html">Classic Navy Slim Fit Blazer</a></h6>
-                                    <p>$120.00 <del>$180.00</del></p>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-9 order-lg-2 order-1">
                     <div class="right-content">
-                        <div class="row">
-                            <div class="col-lg-12 mb-50">
-                                <div class="auction-card-top-area">
-                                    <div class="left-content">
-                                        <h6>Showing <span>09</span> of <span>12</span> results</h6>
-                                    </div>
-                                    <div class="right-content">
-                                        <div class="category-area">
-                                            <select>
-                                                <option value="1">Default sorting</option>
-                                                <option value="2">latest </option>
-                                                <option value="2">Best selling </option>
-                                                <option value="2">Price Low to high </option>
-                                                <option value="2">Price high to low </option>
-                                            </select>
-                                        </div>
-                                        <ul class="size-icon grid-view d-lg-flex d-none">
-                                            <li class="column-2">
-                                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0.75 13.1875L0.749999 0.8125M5.8125 13.1875L5.8125 0.8125"
-                                                        stroke="#A0A0A0" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </li>
-                                            <li class="column-3 active">
-                                                <svg width="10" height="14" viewBox="0 0 10 14" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M1.0625 13.1875L1.0625 0.8125M5 13.1875L5 0.8125M8.9375 13.1875L8.9375 0.8125"
-                                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </li>
-                                            <li class="column-4">
-                                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M0.9375 13.1875L0.937499 0.8125M4.3125 13.1875L4.3125 0.8125M7.6875 13.1875L7.6875 0.8125M11.0625 13.1875L11.0625 0.8125"
-                                                        stroke="#A0A0A0" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </li>
-                                            <li class="column-1">
-                                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M0.8125 1.0625H13.1875M0.8125 5H13.1875M0.8125 8.9375H13.1875"
-                                                        stroke="#A0A0A0" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="list-grid-product-wrap">
                             <div class="row gy-4">
                                 <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
@@ -751,14 +665,6 @@
                                                 <li class="persian-red"><span>Persian Red</span></li>
                                                 <li class="amber-yellow"><span> Yellow</span></li>
                                                 <li class="amber-yellow2"><span> Amber</span></li>
-                                                <li class="plus-icon">
-                                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M3.5 4.5V8H4.5V4.5H8V3.5H4.5V0H3.5V3.5H0V4.5H3.5Z"
-                                                            fill="black"></path>
-                                                    </svg>
-                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1005,14 +911,7 @@
                                                 <li class="medium-brown"><span>Brown</span></li>
                                                 <li class="dark-lavender"><span> Lavender</span></li>
                                                 <li class="amber-yellow"><span> Yellow</span></li>
-                                                <li class="plus-icon">
-                                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M3.5 4.5V8H4.5V4.5H8V3.5H4.5V0H3.5V3.5H0V4.5H3.5Z"
-                                                            fill="black" />
-                                                    </svg>
-                                                </li>
+        
                                             </ul>
                                         </div>
                                     </div>
@@ -1141,14 +1040,7 @@
                                                 <li class="medium-brown"><span>Brown</span></li>
                                                 <li class="dark-lavender"><span> Lavender</span></li>
                                                 <li class="amber-yellow"><span> Yellow</span></li>
-                                                <li class="plus-icon">
-                                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M3.5 4.5V8H4.5V4.5H8V3.5H4.5V0H3.5V3.5H0V4.5H3.5Z"
-                                                            fill="black" />
-                                                    </svg>
-                                                </li>
+                                                
                                             </ul>
                                         </div>
                                     </div>
@@ -1214,14 +1106,7 @@
                                                 <li class="medium-brown"><span>Brown</span></li>
                                                 <li class="dark-lavender"><span> Lavender</span></li>
                                                 <li class="amber-yellow"><span> Yellow</span></li>
-                                                <li class="plus-icon">
-                                                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                                            d="M3.5 4.5V8H4.5V4.5H8V3.5H4.5V0H3.5V3.5H0V4.5H3.5Z"
-                                                            fill="black" />
-                                                    </svg>
-                                                </li>
+                                                
                                             </ul>
                                         </div>
                                     </div>
