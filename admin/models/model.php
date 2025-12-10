@@ -42,5 +42,14 @@ class databaseAdmin {
                                  WHERE id_san_pham=?");
     $pdo->execute([$ten_sp, $mota_sp, $gia_sp, $anh_sp, $ma_sp]);
     }
+    public function getAllCategories(){
+        $stmt = $this->conn->prepare("select * from danh_muc");
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+    public function addCategory($ten_dm, $anh_dai_dien){
+        $stmt = $this->conn->prepare("insert into danh_muc (ten_danh_muc, anh_dai_dien) values (?,?)");
+        return $stmt->execute([$ten_dm, $anh_dai_dien]);
+    }
 }
 ?>

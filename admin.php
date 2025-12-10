@@ -33,6 +33,15 @@ switch ($pageAdmin) {
     case 'show_product_control':
         $controllerAdmin->show_p();
         break;
+    case 'cateProducts':
+        $controllerAdmin->cateProducts();
+        break;
+    case 'addcateProductsF':
+        $controllerAdmin->addcateProductsF();
+        break;
+    case 'addcateProducts':
+        $controllerAdmin->addcateProductsHandle();
+        break;
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;
