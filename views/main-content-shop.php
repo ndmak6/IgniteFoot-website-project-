@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="assets/css/boxicons.min.css">
     <!-- My css link -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Ethics - Fashion Shop HTML Template</title>
+    <title>IgniteFoot - Bán giày thể thao nam</title>
     <link rel="icon" href="assets/image/thumbnail.svg" type="image/gif" sizes="20x20">
 </head>
 
@@ -306,8 +306,6 @@
             </div>
         </div>
     </div>
-    
-    
     <div class="mobile-bottom-wrapper">
         <ul>
             <li class="search-bar">
@@ -1111,6 +1109,68 @@
                                         </div>
                                     </div>
                                 </div>
+                                <?php foreach ($products as $sp): ?>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
+                                        <div class="product-card">
+                                            <div class="product-card-img">
+                                                <a href="product-details.php?id=<?= $sp['id_san_pham'] ?>">
+                                                    <img src="uploads/<?= $sp['anh'] ?>" alt="<?= $sp['ten_san_pham'] ?>">
+                                                    <div class="batch">
+                                                        <span class="new">New</span>
+                                                        <span>Hot deal</span>
+                                                    </div>
+                                                </a>
+
+                                                <div class="overlay">
+                                                    <div class="cart-area">
+                                                        <a class="add-cart-btn" href="cart.php?id=<?= $sp['id_san_pham'] ?>">
+                                                            <i class="bi bi-bag-check"></i> Add To Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="view-and-favorite-area">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="wishlist.php?id=<?= $sp['id_san_pham'] ?>">❤️</a>
+                                                        </li>
+                                                        <li>
+                                                            <a data-bs-toggle="modal" data-bs-target="#product-view">👁</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="product-card-content">
+                                                <div class="rating">
+                                                    <ul>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                </div>
+
+                                                <h6>
+                                                    <a class="hover-underline" href="product-details.php?id=<?= $sp['id_san_pham'] ?>">
+                                                        <?= $sp['ten_san_pham'] ?>
+                                                    </a>
+                                                </h6>
+
+                                                <p class="price"><?= number_format($sp['gia']) ?> VNĐ</p>
+
+                                                <ul class="color-tag">
+                                                    <li class="rhino"><span>Rhino</span></li>
+                                                    <li class="dark-lavender"><span>Lavender</span></li>
+                                                    <li class="black"><span>Black</span></li>
+                                                    <li class="claret"><span>Claret</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php endforeach; ?>
+
                             </div>
                         </div>
                         <div class="row wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
