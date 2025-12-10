@@ -1553,17 +1553,3 @@
 
 }(jQuery));
 
-document.addEventListener("DOMContentLoaded", function () {
-    if (typeof CURRENT_PAGE === "undefined") return;
-
-    const links = document.querySelectorAll(".menu-list a");
-
-    links.forEach(link => {
-        if (link.dataset.page === CURRENT_PAGE) {
-            document.querySelectorAll(".menu-list li")
-                .forEach(li => li.classList.remove("active"));
-
-            link.parentElement.classList.add("active");
-        }
-    });
-});

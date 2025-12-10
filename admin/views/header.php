@@ -12,7 +12,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
     <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="#">🌐 Admin Panel</a>
+      <a class="navbar-brand fw-bold" href="admin.php?pageAdmin=dashboard">🌐 Admin Panel</a>
       <button class="btn btn-light btn-sm">Đăng xuất</button>
     </div>
   </nav>

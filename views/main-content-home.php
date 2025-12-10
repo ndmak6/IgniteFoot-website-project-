@@ -18,47 +18,11 @@
     <link rel="stylesheet" href="assets/css/boxicons.min.css">
     <!-- My css link -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Ethics - Fashion Shop HTML Template</title>
+    <title>IgniteFoot - Bán giày thể thao nam</title>
     <link rel="icon" href="assets/image/thumbnail.svg" type="image/gif" sizes="20x20">
 </head>
 
 <body>
-
-    <!-- on page load modal -->
-    <div class="page-load-modal">
-        <div class="modal show" id="myModal" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="popup-wrapper">
-                            <div class="modal-clode-btn" data-bs-dismiss="modal"></div>
-                            <div class="popup-img">
-                                <img src="assets/image/home1/on-load-popup-img.jpg" alt="">
-                            </div>
-                            <div class="popup-content">
-                                <h2>Sale Up To 50%</h2>
-                                <p>Subscribe up to receive all the latest news updates & store discount</p>
-                                <form>
-                                    <div class="from-inner">
-                                        <input type="email" placeholder="Email Address">
-                                        <button type="submit" class="from-arrow">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" viewBox="0 0 18 11">
-                                                <path
-                                                    d="M16.4587 5.76798H1.12214C0.796856 5.76798 0.533569 5.50447 0.533569 5.17891C0.533569 4.85335 0.796856 4.58984 1.12214 4.58984H16.4587C16.784 4.58984 17.0473 4.85335 17.0473 5.17891C17.0473 5.50447 16.784 5.76798 16.4587 5.76798Z" />
-                                                <path
-                                                    d="M12.1134 10.3617C11.9395 10.3617 11.7677 10.2852 11.6515 10.1383C11.4499 9.88302 11.493 9.51269 11.7481 9.31084L13.5789 7.86173L16.5198 5.23489L11.6621 1.03484C11.4161 0.82199 11.389 0.450092 11.6013 0.203862C11.814 -0.0423681 12.1864 -0.069072 12.4316 0.142992L17.7958 4.78131C17.9241 4.89205 17.9983 5.05267 17.9999 5.22271C18.001 5.39236 17.9296 5.55416 17.8033 5.66687L14.3354 8.76301L12.4783 10.2349C12.37 10.3205 12.2409 10.3617 12.1134 10.3617Z" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- product view modal  -->
     <div class="modal product-view-modal" id="product-view">
         <div class="modal-dialog modal-xl modal-dialog-centered">
@@ -272,12 +236,12 @@
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
                                 type="button" role="tab" aria-controls="home" aria-selected="true">
-                                Log In
+                                Đăng Nhập
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                                type="button" role="tab" aria-controls="profile" aria-selected="false">Registration</button>
+                                type="button" role="tab" aria-controls="profile" aria-selected="false">Đăng ký</button>
                         </li>
                     </ul>
                 </div>
@@ -286,52 +250,52 @@
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <div class="login-registration-form">
                                 <div class="form-title">
-                                    <h3>Log In</h3>
+                                    <h3>Đăng nhập</h3>
                                 </div>
                                 <form>
                                     <div class="form-inner mb-35">
-                                        <input type="text" placeholder="User name or Email *">
+                                        <input type="text" placeholder="Tài khoản hoặc Email *">
                                     </div>
                                     <div class="form-inner">
-                                        <input id="password" type="password" placeholder="Password *">
+                                        <input id="password" type="password" placeholder="Mật khẩu">
                                         <i class="bi bi-eye-slash" id="togglePassword"></i>
                                     </div>
                                     <div class="form-remember-forget">
                                         <div class="remember">
                                             <input type="checkbox" class="custom-check-box" id="check1">
-                                            <label for="check1">Remember me</label>
+                                            <label for="check1">Nhớ mật khẩu</label>
                                         </div>
-                                        <a href="#" class="forget-pass hover-underline">Forget Password</a>
+                                        <a href="#" class="forget-pass hover-underline">Quên mật khẩu</a>
                                     </div>
                                     <button class="primary-btn" type="submit">
-                                        Log In
+                                        Đăng nhập
                                     </button>
-                                    <a href="#" class="member">Not a member yet?</a>
+                                    <a href="#" class="member">bạn chưa có tài khoản !</a>
                                 </form>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <div class="login-registration-form">
                                 <div class="form-title">
-                                    <h3>Registration</h3>
+                                    <h3>Đăng ký</h3>
                                 </div>
                                 <form>
                                     <div class="form-inner mb-25">
-                                        <input type="text" placeholder="User Name *">
+                                        <input type="text" placeholder="Tên tài khoản *">
                                     </div>
                                     <div class="form-inner mb-25">
-                                        <input type="email" placeholder="Email Here *">
+                                        <input type="email" placeholder="Email *">
                                     </div>
                                     <div class="form-inner mb-25">
-                                        <input id="password2" type="password" placeholder="Password *">
+                                        <input id="password2" type="password" placeholder="Mật khẩu *">
                                         <i class="bi bi-eye-slash" id="togglePassword2"></i>
                                     </div>
                                     <div class="form-inner mb-35">
-                                        <input id="password3" type="password" placeholder="Confirm Password *">
+                                        <input id="password3" type="password" placeholder="Nhập lại mật khẩu *">
                                         <i class="bi bi-eye-slash" id="togglePassword3"></i>
                                     </div>
                                     <button class="primary-btn" type="submit">
-                                        Registration
+                                        Đăng ký
                                     </button>
                                 </form>
                             </div>
@@ -347,12 +311,12 @@
             <div class="row">
                 <div class="col-lg-12 d-flex justify-content-between align-items-center">
                     <div class="header-logo">
-                        <a href="index.html"><img alt="image" class="img-fluid"
+                        <a href="index.php?page=home"><img alt="image" class="img-fluid"
                                 src="assets/image/ethics-logo-dark.svg"></a>
                     </div>
                     <div class="main-menu">
                         <div class="mobile-menu-logo">
-                            <a href="index.html"><img alt="image" class="img-fluid"
+                            <a href="index.php?page=home"><img alt="image" class="img-fluid"
                                     src="assets/image/ethics-logo-dark.svg"></a>
                         </div>
                         <ul class="menu-list">
@@ -854,8 +818,8 @@
             </div>
         </div>
         <div class="banner-content-wrap">
-            <h1>Spring Is Here</h1>
-            <p>From chic dresses to sophisticated accessories, find your signature style effortlessly. Explore quality craftsmanship </p>
+            <h1>Giày Thể Thao Nam – Phong Cách & Năng Động</h1>
+            <p>Khám phá bộ sưu tập giày thể thao nam mới nhất, mang đến sự thoải mái, bền bỉ và phong cách cho mọi hoạt động của bạn </p>
             <a href="3columns-left.html" class="primary-btn">SHOP NOW</a>
         </div>
         <div class="banner-slider-btn-groups">
@@ -1899,7 +1863,7 @@
     </div>
     <!-- limmited offer section end here -->
     <!-- Galleary section strats here -->
-    <div class="gallery-section">
+    <!-- <div class="gallery-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -2010,4 +1974,4 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->

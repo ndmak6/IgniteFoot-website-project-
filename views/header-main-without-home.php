@@ -383,8 +383,4 @@
                 <span></span>
             </div>
         </div>
-
-        <script>
-            const CURRENT_PAGE = "<?= $page ?>";
-        </script>
     </header>
