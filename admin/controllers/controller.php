@@ -84,7 +84,31 @@ public function dashboard(){
 //     $content = ob_get_clean();
 //     include "admin/views/layout.php";
 // }
-}
-    
+public function cateProducts(){
+    // 1. GỌI HÀM LẤY DỮ LIỆU TỪ MODEL
+    $categories = $this->modelAdmin->getAllCategories(); 
 
+    ob_start();
+    // 2. NHÚNG VIEW ĐÃ CÓ BIẾN $categories
+    require "admin/views/cateProducts.php";
+    $content = ob_get_clean();
+    include "admin/views/layout.php";
+}
+public function addcateProductsF(){
+    include "admin/views/addcateProducts.php";
+}
+public function addcateProductsHandle(){
+    $ten_dm = $_POST['ten_danh_muc'];
+
+    $anh_dai_dien = null;
+    
+    if(isset($_FILES['anh_dai_dien']) && $_FILES['anh_dai_dien']['error'] == 0){
+        $anh_dai_dien = 'assets/uploads/' .$_FILES['anh_dai_dien']['name'];
+        move_uploaded_file($_FILES['anh_dai_dien']['tmp_name'], $anh_dai_dien);
+    }
+
+    $this->modelAdmin->addCategory($ten_dm, $anh_dai_dien);
+    header('location: admin.php?pageAdmin=cateProducts');
+}   
+}
 ?>
