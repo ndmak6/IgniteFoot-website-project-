@@ -11,12 +11,6 @@ class controllerAdmin {
         include "admin/views/login.php";
     }
 
-    public function dashboard(){
-        $products = $this->modelAdmin->getAllProduct();
-        include "admin/views/header.php";
-        include "admin/views/dashboard.php";
-    }
-
     public function addProductPage(){
         include "admin/views/addProducts.php";
     }
@@ -34,13 +28,13 @@ class controllerAdmin {
         }
 
         $this->modelAdmin->addProducts($nameP, $describe, $price, $imagePath);
-        header('location: admin.php');
+        header('location: admin.php?pageAdmin=show_product_control');
     }
 
     public function deleteFunction($idAdmin){
         if($idAdmin){
             $this->modelAdmin->deleteProducts($idAdmin);
-            header("location: admin.php");
+            header("location: admin.php?pageAdmin=show_product_control");
         }
     }
     public function edit_form(){
@@ -62,12 +56,59 @@ class controllerAdmin {
         $anh_sp = $_POST['anh_cu'];
     }
 
-    $ma_sp = $_POST["ma_sp"]; // cần hidden input trong form
+    $ma_sp = $_POST["ma_sp"];
 
     $this->modelAdmin->update_func($ten_sp,$mota_sp,$gia_sp,$anh_sp,$ma_sp);
-    header("Location: admin.php");
+    header("Location: admin.php?pageAdmin=show_product_control");
+    }
+    public function show_p(){
+    $products = $this->modelAdmin->getAllProduct();
+    ob_start();
+    require "admin/views/productControl.php";
+    $content = ob_get_clean();
+    include "admin/views/layout.php";
 }
-}
-    
 
+public function dashboard(){
+    ob_start();
+    require "admin/views/dashboard.php";
+    $content = ob_get_clean();
+    include "admin/views/layout.php";
+}
+
+
+// public function customerControl(){
+//     $customers = $this->modelAdmin->getAllCustomers();
+//     ob_start();
+//     require "admin/views/customerControl.php";
+//     $content = ob_get_clean();
+//     include "admin/views/layout.php";
+// }
+public function cateProducts(){
+    // 1. GỌI HÀM LẤY DỮ LIỆU TỪ MODEL
+    $categories = $this->modelAdmin->getAllCategories(); 
+
+    ob_start();
+    // 2. NHÚNG VIEW ĐÃ CÓ BIẾN $categories
+    require "admin/views/cateProducts.php";
+    $content = ob_get_clean();
+    include "admin/views/layout.php";
+}
+public function addcateProductsF(){
+    include "admin/views/addcateProducts.php";
+}
+public function addcateProductsHandle(){
+    $ten_dm = $_POST['ten_danh_muc'];
+
+    $anh_dai_dien = null;
+    
+    if(isset($_FILES['anh_dai_dien']) && $_FILES['anh_dai_dien']['error'] == 0){
+        $anh_dai_dien = 'assets/uploads/' .$_FILES['anh_dai_dien']['name'];
+        move_uploaded_file($_FILES['anh_dai_dien']['tmp_name'], $anh_dai_dien);
+    }
+
+    $this->modelAdmin->addCategory($ten_dm, $anh_dai_dien);
+    header('location: admin.php?pageAdmin=cateProducts');
+}   
+}
 ?>
