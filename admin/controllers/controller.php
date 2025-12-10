@@ -28,13 +28,13 @@ class controllerAdmin {
         }
 
         $this->modelAdmin->addProducts($nameP, $describe, $price, $imagePath);
-        header('location: admin.php');
+        header('location: admin.php?pageAdmin=show_product_control');
     }
 
     public function deleteFunction($idAdmin){
         if($idAdmin){
             $this->modelAdmin->deleteProducts($idAdmin);
-            header("location: admin.php");
+            header("location: admin.php?pageAdmin=show_product_control");
         }
     }
     public function edit_form(){
@@ -59,7 +59,7 @@ class controllerAdmin {
     $ma_sp = $_POST["ma_sp"];
 
     $this->modelAdmin->update_func($ten_sp,$mota_sp,$gia_sp,$anh_sp,$ma_sp);
-    header("Location: admin.php");
+    header("Location: admin.php?pageAdmin=show_product_control");
     }
     public function show_p(){
     $products = $this->modelAdmin->getAllProduct();
