@@ -10,9 +10,11 @@
 
   <div class="container">
     <div class="card shadow-lg p-4 rounded-4" style="max-width: 600px; margin: auto;">
+              <a href="admin.php">Quay lại🔙</a>
+
       <h3 class="text-center mb-4 fw-bold text-primary">Thêm sản phẩm</h3>
 
-      <form method="post" enctype="multipart/form-data">
+      <form method="post" enctype="multipart/form-data" action="admin.php?pageAdmin=addNewProduct">
         <div class="mb-3">
           <label class="form-label">Tên sản phẩm</label>
           <input type="text" class="form-control" placeholder="Nhập tên sản phẩm" required name="ten">

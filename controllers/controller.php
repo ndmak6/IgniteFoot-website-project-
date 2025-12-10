@@ -20,6 +20,10 @@ class controller {
         include "./views/main-content-shop.php";
         include "./views/footer.php";
     }
+    public function show_product(){
+        $prod = $this -> model -> getAll();
+        
+    }
 }
 
 ?>
