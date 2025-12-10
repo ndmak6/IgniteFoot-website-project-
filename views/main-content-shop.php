@@ -552,7 +552,7 @@
                                                 <a href="#">
                                                     <img src="<?php echo $item['anh']; ?>" alt="">
                                                     <div class="batch">
-                                                        <span class="new"><?php// echo $item['khuyen_mai']; ?>% off</span>
+                                                        <span class="new">30% off</span>
                                                         <span>Hot deal</span>
                                                     </div>
                                                 </a>
