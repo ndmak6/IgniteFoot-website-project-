@@ -629,16 +629,13 @@
                                     <div class="product-card">
                                         <div class="product-card-img">
                                             <a href="product-details.html">
-                                                <img src="/IgniteFoot-website-project/assets/image/home5/<?php echo $value['anh']; ?>" alt="">
+                                                <img src="assets/image/<?php echo $value['anh']; ?>" width="200" alt="">
                                                 <div class="batch">
-                                                    <span class="new">23% off</span>
-                                                    <span>Hot deal</span>
                                                 </div>
                                             </a>
                                             <div class="overlay">
                                                 <div class="cart-area">
-                                                    <a class="add-cart-btn" href="cart-page.html"><i class="bi bi-bag-check"></i>
-                                                        Add To Cart</a>
+                                                    <a class="add-cart-btn" href="index.php?page=shoppingcart"><i class="bi bi-bag-check"></i>Add To Cart</a>
                                                 </div>
                                             </div>
                                             <div class="view-and-favorite-area">

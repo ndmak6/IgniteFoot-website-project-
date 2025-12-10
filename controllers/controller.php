@@ -23,7 +23,9 @@ class controller {
     //     include "./views/main-content-shop.php";
     // }
     public function shoppingcart(){
+        include "./views/header-main-without-home.php";
         include "./views/shoppingcart.php";
+        include "./views/footer.php";
     }
 }
 
