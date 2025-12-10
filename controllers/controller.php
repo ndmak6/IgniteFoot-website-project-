@@ -14,8 +14,6 @@ class controller {
 
     public function shop(){
         $page = "shop";
-
-        $products = $this->model->getProducts();
         include "./views/header-main-without-home.php";
         include "./views/main-content-shop.php";
         include "./views/footer.php";
