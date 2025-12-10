@@ -14,5 +14,10 @@ class database {
             die("Lỗi không khởi chạy được cơ sở dữ liệu vui lòng liên hệ với admin");
         }
     }
+    public function getAll() {
+        $stmt = $this->conn->prepare("SELECT * FROM san_pham");
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
 ?>
