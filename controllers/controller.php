@@ -18,9 +18,25 @@ class controller {
         include "./views/main-content-shop.php";
         include "./views/footer.php";
     }
+<<<<<<< Updated upstream
     public function show_product(){
         $prod = $this -> model -> getAll();
         
+=======
+    public function checkout(){
+        include "./views/header-main-without-home.php";
+        include "./views/checkout.php";
+        include "./views/footer.php";
+    }
+    public function shoppingcart(){
+        $id = $_GET['id'] ?? null;
+        $product = null;
+
+        if ($id) {
+            $product = getProductById($id);
+        }
+        include "./views/shoppingcart.php";
+>>>>>>> Stashed changes
     }
 }
 
