@@ -549,7 +549,7 @@
                                             </a>
                                             <div class="overlay">
                                                 <div class="cart-area">
-                                                    <a class="add-cart-btn" href="index.php?page=shoppingcart"><i class="bi bi-bag-check"></i>Add To Cart</a>
+                                                    <a class="add-cart-btn" href="index.php?page=shoppingcart&id=<?php echo $value['id_san_pham']?>"><i class="bi bi-bag-check"></i>Add To Cart</a>
                                                 </div>
                                             </div>
                                             <div class="view-and-favorite-area">

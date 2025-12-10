@@ -19,13 +19,19 @@ class controller {
         include "./views/main-content-shop.php";
         include "./views/footer.php";
     }
-    // public function getAllProducts(){
-    //     include "./views/main-content-shop.php";
-    // }
-    public function shoppingcart(){
+    public function checkout(){
         include "./views/header-main-without-home.php";
-        include "./views/shoppingcart.php";
+        include "./views/checkout.php";
         include "./views/footer.php";
+    }
+    public function shoppingcart(){
+         $id = $_GET['id'] ?? null;
+        $product = null;
+
+        if ($id) {
+            $product = getProductById($id);
+        }
+        include "./views/shoppingcart.php";
     }
 }
 

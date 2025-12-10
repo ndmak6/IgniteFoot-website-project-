@@ -16,6 +16,9 @@ switch ($page) {
     case 'shoppingcart':
         $controller->shoppingcart();
         break;
+    case 'checkout':
+        $controller->checkout();
+        break;
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;

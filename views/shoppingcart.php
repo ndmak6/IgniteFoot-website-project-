@@ -1,3 +1,15 @@
+<?php
+$id = $_GET['id'] ?? null;
+
+if ($id) {
+    $stmt = $conn->prepare("SELECT * FROM san_pham WHERE id_san_pham = ?");
+    $stmt->execute([$id]);
+    $product = $stmt->fetch(); 
+} else {
+    echo "Không tìm thấy sản phẩm!";
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -292,9 +304,9 @@
                         <table class="cart-table">
                             <thead>
                                 <tr>
-                                    <th>Product Info</th>
-                                    <th>Price</th>
-                                    <th>Total</th>
+                                    <th>Ảnh sản phẩm</th>
+                                    <th>Giá sản phẩm</th>
+                                    <th>Tổng cộng</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -392,9 +404,7 @@
                                     $214.00
                                 </li>
                             </ul>
-                            <a href="checkout-page.html" class="primary-btn mt-40">
-                                PROCESSED CHECKOUT
-                            </a>
+                            <a href="index.php?page=checkout" class="primary-btn mt-40">Thanh toán ngay</a>
                         </div>
                     </div>
                 </div>
