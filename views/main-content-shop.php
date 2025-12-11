@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="assets/css/boxicons.min.css">
     <!-- My css link -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Ethics - Fashion Shop HTML Template</title>
+    <title>IgniteFoot - Bán giày thể thao nam</title>
     <link rel="icon" href="assets/image/thumbnail.svg" type="image/gif" sizes="20x20">
 </head>
 
@@ -306,8 +306,6 @@
             </div>
         </div>
     </div>
-    
-    
     <div class="mobile-bottom-wrapper">
         <ul>
             <li class="search-bar">

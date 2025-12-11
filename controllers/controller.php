@@ -22,6 +22,9 @@ class controller {
         $prod = $this -> model -> getAll();
         
     }
+    public function checkout(){
+        include "./views/checkout-page.php";
+    }
 }
 
 ?>
