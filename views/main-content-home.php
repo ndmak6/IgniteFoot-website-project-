@@ -784,17 +784,17 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="banner-bg">
-                                <img src="assets/image/home5/home5-banner-img1.jpg" alt="">
+                                <img src="assets/image/home5/home-banner-img1.jpg" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="banner-bg">
-                                <img src="assets/image/home5/home5-banner-img2.jpg" alt="">
+                                <img src="assets/image/home5/home-banner-img2.jpg" width="700px" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="banner-bg">
-                                <img src="assets/image/home5/home5-banner-img3.jpg" alt="">
+                                <img src="assets/image/home5/home-banner-img3.jpg" width="700px" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -819,7 +819,7 @@
         <div class="banner-content-wrap">
             <h1>Giày Thể Thao Nam – Phong Cách & Năng Động</h1>
             <p>Khám phá bộ sưu tập giày thể thao nam mới nhất, mang đến sự thoải mái, bền bỉ và phong cách cho mọi hoạt động của bạn </p>
-            <a href="3columns-left.html" class="primary-btn">SHOP NOW</a>
+            <a href="index.php?page=shop" class="primary-btn">SHOP NOW</a>
         </div>
         <div class="banner-slider-btn-groups">
             <div class="slider-btn home5-banner-slider-prev">
