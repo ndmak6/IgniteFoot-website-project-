@@ -1,39 +1,5 @@
 <footer class="fooeter-section">
         <div class="container">
-            <div class="footer-button-area">
-                <div class="row g-4 mb-100">
-                    <div class="col-lg-4 col-md-6">
-                        <a class="primary-btn footer-btn" href="3columns-left.html">
-                            Shop Online
-                            <svg class="arrow" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 9L9 1M9 1C7.22222 1.33333 3.33333 2 1 1M9 1C8.66667 2.66667 8 6.33333 9 9"
-                                    stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round"></path>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                       <a class="primary-btn footer-btn" href="faq.html">
-                            Ask any questions
-                            <svg class="arrow" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 9L9 1M9 1C7.22222 1.33333 3.33333 2 1 1M9 1C8.66667 2.66667 8 6.33333 9 9"
-                                    stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round"></path>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <a class="primary-btn footer-btn" href="mailto:infoexample@gmail.com">
-                            Email - infoexample@gmail.com
-                            <svg class="arrow" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 9L9 1M9 1C7.22222 1.33333 3.33333 2 1 1M9 1C8.66667 2.66667 8 6.33333 9 9"
-                                    stroke="#1E1E1E" stroke-width="1.5" stroke-linecap="round"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
             <div class="row g-lg-3 gy-5 mb-70">
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-logo-section">
@@ -43,7 +9,7 @@
                                     <img src="assets/image/home1/icon/ethics-footer-logo.svg" alt="">
                                 </a>
                             </div>
-                            <a class="office-location" href="https://www.google.com/maps">medical road <br> House-03,road-8,block-d <br>Rangpur, Bangladesh.</a>
+                            <a class="office-location" href="https://www.google.com/maps">Tổ 1 <br>phường Phan Đình Phùng <br>thành phố Thái Nguyên</a>
                             <ul>
                                 <li>
                                     <a href="https://www.facebook.com/">
@@ -87,7 +53,7 @@
                                 </li>
                             </ul>
                             <div class="payment-gateway">
-                                <h6>Secured Payment Gateways</h6>
+                                <h6>Cổng thanh toán</h6>
                                 <div class="icons">
                                     <img src="assets/image/home1/visa.png" alt="">
                                     <img src="assets/image/home1/mastercard.png" alt="">
@@ -101,12 +67,12 @@
                 <div class="col-lg-2 col-md-4 col-sm-6 d-flex">
                     <div class="footer-widget">
                         <div class="widget-title">
-                            <h5>Category</h5>
+                            <h5>Danh mục</h5>
                         </div>
                         <ul class="widget-list">
                             <li>
                                 <a href="categories.html">
-                                    Men
+                                    Giày thể thao
                                     <svg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3" cy="3" r="3" />
                                     </svg>
@@ -114,7 +80,7 @@
                             </li>
                             <li>
                                 <a href="categories.html">
-                                    Women
+                                    Giày nam
                                     <svg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3" cy="3" r="3" />
                                     </svg>
@@ -122,7 +88,7 @@
                             </li>
                             <li>
                                 <a href="categories.html">
-                                    Kids
+                                    Giày nữ
                                     <svg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3" cy="3" r="3" />
                                     </svg>
@@ -130,15 +96,7 @@
                             </li>
                             <li>
                                 <a href="categories.html">
-                                    Bag
-                                    <svg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="3" cy="3" r="3" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="categories.html">
-                                    Fragrance
+                                    Giày đá bóng
                                     <svg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3" cy="3" r="3" />
                                     </svg>
@@ -150,12 +108,12 @@
                 <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-lg-end ">
                     <div class="footer-widget">
                         <div class="widget-title">
-                            <h5>Support</h5>
+                            <h5>Hỗ trợ</h5>
                         </div>
                         <ul class="widget-list">
                             <li>
                                 <a href="#">
-                                    My Account
+                                    Tài khoản
                                     <svg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3" cy="3" r="3" />
                                     </svg>
@@ -163,7 +121,7 @@
                             </li>
                             <li>
                                 <a href="contact.html">
-                                    Our Offline Store
+                                    Cửa hàng
                                     <svg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3" cy="3" r="3" />
                                     </svg>
@@ -171,7 +129,7 @@
                             </li>
                            <li>
                                 <a href="faq.html">
-                                    FAQ’s
+                                    FAQ
                                     <svg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3" cy="3" r="3" />
                                     </svg>
@@ -179,7 +137,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    Return & Refunds
+                                    Đổi trả
                                     <svg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3" cy="3" r="3" />
                                     </svg>
@@ -187,7 +145,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    Privacy Policy
+                                    Bảo mật
                                     <svg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3" cy="3" r="3" />
                                     </svg>
@@ -195,7 +153,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    Help & Support
+                                    Liên hệ
                                     <svg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3" cy="3" r="3" />
                                     </svg>
@@ -207,13 +165,12 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-lg-end justify-content-md-end">
                     <div class="footer-widget">
                         <div class="widget-title style-2">
-                            <h5>Our Newsletter</h5>
+                            <h5>Bản tin của chúng tôi</h5>
                         </div>
                         <div class="email-area style-2">
-                            <p class="email-text">With subscribe by your email to get notify every single
-                                moment.</p>
+                            <p class="email-text">Đăng ký email để nhận thông báo mới nhất mỗi ngày.</p>
                             <div class="input-area">
-                                <input type="email" placeholder="Enter Email">
+                                <input type="email" placeholder="Email">
                                 <button type="submit">
                                     <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -238,14 +195,12 @@
                                     </svg>
                                 </div>
                                 <div class="call-now-content">
-                                    <span>Call Now</span>
+                                    <span>Gọi ngay</span>
                                     <h4>
                                         <a href="tel:18779876401">1-877-987-6401</a>
                                     </h4>
                                 </div>
                             </div>
-                            <p>N:B - Sunday Closed,<span> otherswsie you
-                                    can call anytime within opening hours.</span></p>
                         </div>
                     </div>
                 </div>
@@ -257,7 +212,7 @@
                     <div class="col-lg-12">
                         <div class="footer-btm-content">
                             <div class="copyright-area">
-                                <p> © Copyright 2025 <a href="index.html">Ethics </a> | Design By<a href="https://www.egenslab.com/"> Egens Lab </a> </p>
+                                <p>© 2025 <a href="index.html">IgniteFoot</a> | Designed with passion by <a href="https://www.egenslab.com/">Egens Lab</a></p>
                             </div>
                             <div class="right-area">
                                 <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
