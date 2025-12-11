@@ -38,6 +38,9 @@ class controller {
         include "./views/shoppingcart.php";
 >>>>>>> Stashed changes
     }
+    public function checkout(){
+        include "./views/checkout-page.php";
+    }
 }
 
 ?>
