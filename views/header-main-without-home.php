@@ -50,7 +50,11 @@
                                         <h6>Woo Pages</h6>
                                         <ul class="menu-list">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                                             <li><a href="index.php?page=shoppingcart">cart page</a></li>
+=======
+                                            <li><a href="index.php?page=ch">cart page</a></li>
+>>>>>>> Stashed changes
 =======
                                             <li><a href="index.php?page=ch">cart page</a></li>
 >>>>>>> Stashed changes
