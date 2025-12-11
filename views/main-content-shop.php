@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="assets/css/boxicons.min.css">
     <!-- My css link -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Ethics - Fashion Shop HTML Template</title>
+    <title>IgniteFoot - Bán giày thể thao nam</title>
     <link rel="icon" href="assets/image/thumbnail.svg" type="image/gif" sizes="20x20">
 </head>
 
@@ -549,7 +549,7 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
                                         <div class="product-card">
                                             <div class="product-card-img">
-                                                <a href="#">
+                                                <a href="index.php?page=productdetail?id=<?= $item['id_san_pham'] ?>">
                                                     <img src="<?php echo $item['anh']; ?>" alt="">
                                                     <div class="batch">
                                                         <span class="new">30% off</span>
@@ -575,7 +575,7 @@
                                                     </ul>
                                                 </div>
                                                 <h6>
-                                                    <a class="hover-underline" href="">
+                                                    <a class="hover-underline" href="index.php?page=pdetail&id=<?=$item['id_san_pham']  ?>">
                                                         <?php echo $item['ten_san_pham']; ?>
                                                     </a>
                                                 </h6>

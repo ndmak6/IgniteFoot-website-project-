@@ -20,8 +20,12 @@ class controller {
     }
     public function show_product(){
         $prod = $this -> model -> getAll();
-        
     }
+    public function product_detail($id = null){
+    $productdetail = $this->model->getProductByID($id);
+    include "views/productdetail.php";
+    include "views/footer.php";
+}
 }
 
 ?>

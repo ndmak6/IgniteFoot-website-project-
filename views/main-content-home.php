@@ -388,7 +388,7 @@
                                                     <h6>Best selling products</h6>
                                                     <div class="swiper menu-product-slider">
                                                         <div class="swiper-wrapper">
-                                                            <div class="swiper-slide">
+                                                            <div class="swiper-slide">  
                                                                 <div class="product-card">
                                                                     <div class="product-card-img">
                                                                         <a href="product-details.html">
