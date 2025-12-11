@@ -23,7 +23,6 @@
                 <strong>Danh sách danh mục</strong>
             </div>
 
-
           <div class="card-body">
             <table class="table table-hover align-middle">
               <thead class="table-light">
@@ -36,17 +35,21 @@
               </thead>
 
               <tbody>
-                <tr>
-                    <?php foreach ($categories as $category): ?>
-                        <td><?php echo htmlspecialchars($category['id_danh_muc']); ?></td>
-                        <td><?php echo htmlspecialchars($category['ten_danh_muc']); ?></td>
-                        <td><img src="<?php echo htmlspecialchars($category['anh_dai_dien']); ?>" alt="ảnh danh mục" width="80px"></td>
-                        <td>
-                            <button class="btn btn-sm btn-warning">Sửa</button>
-                            <button class="btn btn-sm btn-danger">Xóa</button>
-                        </td>
+                  <?php foreach ($categories as $category): ?>
+                  <tr>
+                    <td><?php echo htmlspecialchars($category['id_danh_muc']); ?></td>
+                    <td><?php echo htmlspecialchars($category['ten_danh_muc']); ?></td>
+                    <td><img src="<?php echo htmlspecialchars($category['anh_dai_dien']); ?>" alt="ảnh danh mục" width="80px"></td>
+                    <td>
+                      <a href="admin.php?pageAdmin=editCateProducts&id_dm=<?php echo $category['id_danh_muc']; ?>">
+                        <button class="btn btn-sm btn-warning">Sửa</button>
+                      </a>
+                      <a href="admin.php?pageAdmin=deleteCategory&id_dm=<?php echo $category['id_danh_muc']; ?>">
+                        <button class="btn btn-sm btn-danger">Xóa</button>
+                      </a>
+                    </td>
                     <?php endforeach; ?>
-                </tr>
+                  </tr>
               </tbody>
 
             </table>

@@ -42,6 +42,15 @@ switch ($pageAdmin) {
     case 'addcateProducts':
         $controllerAdmin->addcateProductsHandle();
         break;
+    case 'deleteCategory':
+        $controllerAdmin->deleteCategory($id_dm);
+        break;
+    case 'editCateProducts':
+        $controllerAdmin->editCateProductsF();
+        break;
+    case 'edit_cateProducts':
+        $controllerAdmin->editCateProductsHandle();
+        break;
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;
