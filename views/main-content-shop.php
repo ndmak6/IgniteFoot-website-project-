@@ -306,8 +306,6 @@
             </div>
         </div>
     </div>
-    
-    
     <div class="mobile-bottom-wrapper">
         <ul>
             <li class="search-bar">
