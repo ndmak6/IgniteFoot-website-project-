@@ -72,14 +72,6 @@
                         <ul class="widget-list">
                             <li>
                                 <a href="categories.html">
-                                    Giày thể thao
-                                    <svg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="3" cy="3" r="3" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="categories.html">
                                     Giày nam
                                     <svg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3" cy="3" r="3" />
@@ -88,7 +80,7 @@
                             </li>
                             <li>
                                 <a href="categories.html">
-                                    Giày nữ
+                                    Giày đá bóng
                                     <svg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3" cy="3" r="3" />
                                     </svg>
@@ -96,7 +88,31 @@
                             </li>
                             <li>
                                 <a href="categories.html">
-                                    Giày đá bóng
+                                    Giày chạy bộ
+                                    <svg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="categories.html">
+                                    Giày unisex
+                                    <svg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="categories.html">
+                                    Giày đạp xe
+                                    <svg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="categories.html">
+                                    Giày đánh pickleball
                                     <svg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="3" cy="3" r="3" />
                                     </svg>
