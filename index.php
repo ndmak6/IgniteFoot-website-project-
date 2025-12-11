@@ -16,9 +16,11 @@ switch ($page) {
     case 'checkout' :
         $controller->checkout();
         break;
+    case 'order_success':
+        $controller->order_success();
+        break;
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;
-    
 }
 ?>

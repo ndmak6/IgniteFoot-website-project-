@@ -783,7 +783,7 @@
             <div class="row">
                 <div class="col-lg-12 d-flex justify-content-center">
                     <div class="banner-content style-2 text-center">
-                        <h1>Checkout</h1>
+                        <h1>Thanh toán</h1>
                         <ul class="breadcrumb-list">
                             <li><a href="index.html">Home</a></li>
                             <li><span>/</span> Thanh toán</li>
@@ -847,8 +847,7 @@
                                             <input class="form-check-input" type="checkbox" value=""
                                                 id="contactCheck">
                                             <label class="form-check-label" for="contactCheck">
-                                                Please save <span> My Name, Email Address</span> for the next
-                                                time I comment.
+                                                Làm ơn lưu lại <span> tên và địa chỉ</span>
                                             </label>
                                         </div>
                                     </div>
@@ -863,7 +862,7 @@
                             <h4>Chi tiết đơn hàng</h4>
                         </div>
                         <div class="order-sum-area">
-                            <form>
+                            <form action="index.php?page=order_success&id=?" method="POST">
                                 <div class="cart-menu">
                                     <div class="cart-body">
                                         <ul>
@@ -951,20 +950,13 @@
                                             <ul class="payment-list">
                                                 <li class="cash-delivery active">
                                                     <div class="payment-check">
-                                                        <h6>Cash On Delivery</h6>
+                                                        <h6>Trả tiền trực tiếp</h6>
                                                     </div>
                                                     <div class="checked">
                                                     </div>
                                                 </li>
                                                 <li class="stripe">
-                                                    <h6>Direct bank transfer</h6>
-                                                    <div class="checked">
-                                                    </div>
-                                                </li>
-                                                <li class="other-transfer">
-                                                    <div class="payment-check paypal">
-                                                        <h6>others transfer</h6>
-                                                    </div>
+                                                    <h6>Chuyển khoản ngân hàng</h6>
                                                     <div class="checked">
                                                     </div>
                                                 </li>
@@ -998,7 +990,7 @@
                                                 <div class="row g-4">
                                                     <div class="col-md-12">
                                                         <div class="form-inner">
-                                                            <label>Card Number</label>
+                                                            <label>Số thẻ</label>
                                                             <input type="text" placeholder="1234 1234 1234 1234">
                                                         </div>
                                                     </div>
