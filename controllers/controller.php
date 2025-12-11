@@ -25,6 +25,10 @@ class controller {
     public function checkout(){
         include "./views/checkout-page.php";
     }
+    public function order_success(){
+        $id = $_GET["id"];
+        include "./views/checkout-success.php";
+    }
 }
 
 ?>

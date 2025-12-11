@@ -799,17 +799,17 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="banner-bg">
-                                <img src="assets/image/home5/home5-banner-img4.jpg" alt="">
+                                <img src="assets/image/home5/home-banner-img4.jpg" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="banner-bg">
-                                <img src="assets/image/home5/home5-banner-img5.jpg" alt="">
+                                <img src="assets/image/home5/home-banner-img5.jpg" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="banner-bg">
-                                <img src="assets/image/home5/home5-banner-img7.jpg" alt="">
+                                <img src="assets/image/home5/home-banner-img6.jpg" alt="">
                             </div>
                         </div>
                     </div>
