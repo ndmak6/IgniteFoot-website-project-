@@ -20,6 +20,7 @@ class controller {
     }
     public function show_product(){
         $prod = $this -> model -> getAll();
+<<<<<<< Updated upstream
     }
     public function product_detail($id = null){
         if($id === null){
@@ -44,6 +45,9 @@ class controller {
     public function order_success(){
         $id = $_GET["id"];
         include "./views/checkout-success.php";
+=======
+        
+>>>>>>> Stashed changes
     }
 }
 
