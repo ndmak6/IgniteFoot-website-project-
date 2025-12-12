@@ -20,7 +20,9 @@ class controller {
     }
     public function show_product(){
         $prod = $this -> model -> getAll();
-        
+    }
+    public function show_category(){
+        $cate = $this -> model -> getAllCategories();
     }
 }
 

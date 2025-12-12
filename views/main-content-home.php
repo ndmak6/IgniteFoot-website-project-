@@ -880,140 +880,20 @@
                     </div>
                     <div class="swiper home5-categori-swipe">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            <?php 
+                                $cate = $this->model->getAllCategories();
+                                foreach($cate as $category): ?>
+                            <div class="swiper-slide">   
                                 <div class="categorie-card style-2">
                                     <div class="categorice-image">
-                                        <a href="3columns-left.html">
-                                            <img src="assets/image/home5/categories-image.png" alt="">
-                                        </a>
+                                        <a href="categories2.html"><img src="<?php echo $category['anh_dai_dien']; ?>" alt=""></a>
                                     </div>
                                     <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Bottoms</a></h6>
+                                        <h6><a href="categories2.html"><?php echo $category['ten_danh_muc']; ?></a></h6>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image2.png"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Shoes</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image3.png"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Tops</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image4.png"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Bags</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image5.png"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Jewelries</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image6.png"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Sunglasses</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html">
-                                            <img src="assets/image/home5/categories-image7.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Watch</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image8.png"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">T-Shirt</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image9.png"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Jeans</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image10.png"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Gown</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image11.png"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Sweater</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image12.png"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Casual Shirt</a></h6>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 </div>

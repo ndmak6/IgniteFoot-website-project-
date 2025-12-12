@@ -134,10 +134,4 @@ public function editCateProductsHandle(){
     $this->modelAdmin->updateCate($ten_dm, $anh_dai_dien, $id_dm);
     header("Location: admin.php?pageAdmin=cateProducts");
 }
-public function customerControl(){
-    ob_start();
-    require "admin/views/customerControl.php";
-    $content = ob_get_clean();
-    include "admin/views/layout.php";
-}
 }

@@ -22,7 +22,7 @@
                 <div class="card-body">
                     <form action="admin.php?pageAdmin=edit_cateProducts" method="POST" enctype="multipart/form-data">
 
-                        <!-- ID danh mục (ẩn) -->
+                        <!-- ID danh mục -->
                         <input type="hidden" name="id_danh_muc" value="<?php echo htmlspecialchars($category['id_danh_muc']); ?>">
 
                         <!-- Tên danh mục -->

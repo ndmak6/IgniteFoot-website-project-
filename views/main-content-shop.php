@@ -426,50 +426,19 @@
                                 <h5>Danh mục sản phẩm</h5>
                             </div>
                             <div class="checkbox-container">
+                                <?php
+                                $cate = $this->model->getAllCategories();
+                                foreach ($cate as $category): ?>
                                 <ul>
                                     <li>
                                         <label class="containerss">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
-                                            <span>Giày Nam</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label class="containerss">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                            <span>Giày Đá Bóng</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label class="containerss">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                            <span>Giày Chạy Bộ</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label class="containerss">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                            <span>Giày Unisex</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label class="containerss">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                            <span>Giày đạp xe</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label class="containerss">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                            <span>Giày đánh PickleBall</span>
+                                            <span><?php echo htmlspecialchars($category['ten_danh_muc']); ?></span>
                                         </label>
                                     </li>
                                 </ul>
+                                <?php endforeach; ?>
                             </div>
                         </div>
                         <div class="single-widgets mb-70">
