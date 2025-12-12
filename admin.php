@@ -51,6 +51,9 @@ switch ($pageAdmin) {
     case 'edit_cateProducts':
         $controllerAdmin->editCateProductsHandle();
         break;
+    case 'customerControl':
+        $controllerAdmin->customerControl();
+        break;
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;

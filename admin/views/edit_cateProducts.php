@@ -15,7 +15,7 @@
         <div class="col-md-6">
 
             <div class="card shadow-sm border-0">
-                <div class="card-header bg-warning text-white">
+                <div class="card-header bg-primary text-white">
                     <h5 class="mb-0">Sửa danh mục</h5>
                 </div>
 
