@@ -7,7 +7,6 @@
                 <h3 class="fw-bold">Quản lý danh mục</h3>
             </div>
 
-<<<<<<< Updated upstream
             <div class="card shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
                     <h5 class="mb-0">📂 Danh sách danh mục</h5>
@@ -16,7 +15,6 @@
                         ➕ Thêm danh mục
                     </a>
                 </div>
-=======
           <div class="card-body">
             <table class="table table-hover align-middle">
               <thead class="table-light">
@@ -44,7 +42,6 @@
                     <?php endforeach; ?>
                   </tr>
               </tbody>
->>>>>>> Stashed changes
 
                 <div class="card-body">
                     <table class="table table-bordered align-middle">
