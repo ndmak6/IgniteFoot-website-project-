@@ -24,6 +24,7 @@ class controller {
 
     public function show_category(){
         $cate = $this -> model -> getAllCategories();
+    }
     public function product_detail($id = null){
         if($id === null){
             echo "không có id sản phẩm! ";
