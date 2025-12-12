@@ -11,7 +11,9 @@ class controller {
         include "./views/main-content-home.php";
         include "./views/footer.php";
     }
+
     public function shop(){
+        $page = "shop";
         $products = $this->model->getAll();
         include "./views/header-main-without-home.php";
         include "./views/main-content-shop.php";
@@ -19,12 +21,12 @@ class controller {
     }
     public function show_product(){
         $prod = $this -> model -> getAll();
-    }
-    public function checkoutpage(){
-        include "./views/checkout-page.php";
+        
     }
     public function shoppingcart(){
-        $id = $_GET['id'];
+        $id = $_GET['id'] ?? null;
+        $product = null;
+
         if ($id) {
             $product = $this->model->getProductById($id);
         }
