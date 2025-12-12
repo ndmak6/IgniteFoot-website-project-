@@ -1,6 +1,9 @@
 <div class="container-fluid">
     <div class="row">
         <main class="col-12 p-4">
+            <div class="mb-4">
+                <h3 class="fw-bold">Quản lý sản phẩm</h3>
+            </div>
 
             <div class="card shadow-sm border-0">
                 <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
