@@ -22,10 +22,25 @@ class controller {
         $prod = $this -> model -> getAll();
     }
     public function product_detail($id = null){
-    $productdetail = $this->model->getProductByID($id);
+        if($id === null){
+            echo "không có id sản phẩm! ";
+            exit;
+        }
+
+        $productdetail = $this->model->getProductByID($id);
+        
+        // Thêm dòng này để debug
+        if(!$productdetail){
+            echo "Không tìm thấy sản phẩm với ID: " . $id;
+            var_dump($productdetail);
+            exit;
+        }
+    
+    // Truyền biến vào view
+    include "views/header-main-without-home.php";
     include "views/productdetail.php";
     include "views/footer.php";
-}
+    }
 }
 
 ?>

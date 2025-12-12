@@ -98,7 +98,7 @@
                             <div class="col-lg-6">
                                 <div class="shop-details-content">  
                                     <!-- chi tiết sản phẩm -->
-                                    <h3 style="color:red"><?php echo $productdetail['ten_san_pham']; ?></h3>
+                                     <h3 class="productdetail_tile"> <?=htmlspecialchars($productdetail['ten_san_pham'] );  ?>  </h3>
 
 
                                     <div class="rating-review">
@@ -311,7 +311,7 @@
         </div>
     </div>
     <!-- hearder section strats here -->
-    <header class="header-area header1">
+    <!-- <header class="header-area header1">
         <div class="header-logo">
             <a href="index.html"><img alt="image" class="img-fluid" src="assets/image/ethics-logo.svg"></a>
         </div>
@@ -702,7 +702,7 @@
                 <span></span>
             </div>
         </div>
-    </header>
+    </header> -->
     <div class="mobile-bottom-wrapper">
         <ul>
             <li class="search-bar">

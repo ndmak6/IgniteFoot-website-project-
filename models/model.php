@@ -20,9 +20,16 @@ class database {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
     public function getProductByID($id){
-         $stmt = $this->conn->prepare("SELECT * FROM san_pham where id_san_pham=?");
-        $stmt->execute([$id]);
-        return $stmt->fetch(PDO::FETCH_ASSOC);
+    $stmt = $this->conn->prepare("SELECT * FROM san_pham WHERE id_san_pham = ?");
+    $stmt->execute([$id]);
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    
+    // Debug để xem có dữ liệu không
+    if(!$result){
+        error_log("Không tìm thấy sản phẩm với ID: " . $id);
     }
+    
+    return $result;
+}
 }
 ?>
