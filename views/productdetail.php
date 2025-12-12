@@ -869,7 +869,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="shop-details-content">
-                        <h3>Trendy & Comfortable Outerwear</h3>
+                        <h3 class="productdetail_tile"> <?=htmlspecialchars($productdetail['ten_san_pham'] );  ?>  </h3>
                         <div class="rating-review">
                             <div class="rating">
                                 <div class="star">
@@ -883,7 +883,8 @@
                             </div>
                         </div>
                         <div class="price-area">
-                            <p class="price"> <del>$ 445.00</del>$ 300.00</p>
+                            <p class="price"> <del>$ 445.00</del>$ <?= $productdetail['gia'] ?></p>
+
                         </div>
                         <div class="quantity-color-area">
                             <div class="quantity-color">
