@@ -311,12 +311,12 @@
                 <div class="col-lg-12 d-flex justify-content-between align-items-center">
                     <div class="header-logo">
                         <a href="index.php?page=home"><img alt="image" class="img-fluid"
-                                src="assets/image/ethics-logo-dark.svg"></a>
+                                src="assets/image/logo1.png" width="120px"></a>
                     </div>
                     <div class="main-menu">
                         <div class="mobile-menu-logo">
                             <a href="index.php?page=home"><img alt="image" class="img-fluid"
-                                    src="assets/image/ethics-logo-dark.svg"></a>
+                                    src="assets/image/logo1.png" width="120px"></a>
                         </div>
                         <ul class="menu-list">
                             <li class="menu-item-has-children active">
@@ -387,7 +387,7 @@
                                                     <h6>Best selling products</h6>
                                                     <div class="swiper menu-product-slider">
                                                         <div class="swiper-wrapper">
-                                                            <div class="swiper-slide">
+                                                            <div class="swiper-slide">  
                                                                 <div class="product-card">
                                                                     <div class="product-card-img">
                                                                         <a href="product-details.html">
@@ -799,17 +799,17 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="banner-bg">
-                                <img src="assets/image/home5/home5-banner-img4.jpg" alt="">
+                                <img src="assets/image/home5/home-banner-img4.jpg" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="banner-bg">
-                                <img src="assets/image/home5/home5-banner-img5.jpg" alt="">
+                                <img src="assets/image/home5/home-banner-img5.jpg" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="banner-bg">
-                                <img src="assets/image/home5/home5-banner-img7.jpg" alt="">
+                                <img src="assets/image/home5/home-banner-img6.jpg" alt="">
                             </div>
                         </div>
                     </div>
