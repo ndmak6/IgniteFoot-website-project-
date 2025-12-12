@@ -20,9 +20,9 @@ class database {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
     function getProductById( $id) {
-    $stmt = $this->conn->prepare("SELECT * FROM san_pham WHERE id_san_pham = ?");
-    $stmt->execute([$id]);
-    return $stmt->fetch();
-}
+        $stmt = $this->conn->prepare("SELECT * FROM san_pham WHERE id_san_pham = ?");
+        $stmt->execute([$id]);
+        return $stmt->fetch();
+    }
 }
 ?>

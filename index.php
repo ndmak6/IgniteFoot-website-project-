@@ -13,15 +13,12 @@ switch ($page) {
     case 'shop':
         $controller->shop();
         break;
+    
     case 'shoppingcart':
         $controller->shoppingcart();
-        break;
-    case 'checkout':
-        $controller->checkout();
         break;
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;
-    
 }
 ?>

@@ -1,15 +1,4 @@
-<?php
-$id = $_GET['id'] ?? null;
 
-if ($id) {
-    $stmt = $conn->prepare("SELECT * FROM san_pham WHERE id_san_pham = ?");
-    $stmt->execute([$id]);
-    $product = $stmt->fetch(); 
-} else {
-    echo "Không tìm thấy sản phẩm!";
-    exit;
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -314,10 +303,10 @@ if ($id) {
                                     <td data-label="Product Info">
                                         <div class="product-info-wrapper">
                                             <div class="product-info-img">
-                                                <img src="assets/image/inner-page/sb-product2.png" alt="">
+                                                <img src="assets/image/<?php echo $product['anh']; ?>" alt="">
                                             </div>
                                             <div class="product-info-content">
-                                                <h6>Classic Navy Slim Fit Blazer</h6>
+                                                <h6><?= $product['ten_san_pham'] ?></h6>
                                                 <p><span>Sku: </span>D32-5H23</p>
                                                 <div class="quantity-area">
                                                     <div class="quantity">
@@ -332,33 +321,8 @@ if ($id) {
                                             </div>
                                         </div>
                                     </td>
-                                    <td data-label="Price"><span>$350.00</span></td>
-                                    <td data-label="Total">$350.00</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="Product Info">
-                                        <div class="product-info-wrapper">
-                                            <div class="product-info-img">
-                                                <img src="assets/image/inner-page/sb-product1.png" alt="">
-                                            </div>
-                                            <div class="product-info-content">
-                                                <h6>Ultimate Comfort &amp; Trendy Design</h6>
-                                                <p><span>Sku: </span>D32-5H23</p>
-                                                <div class="quantity-area">
-                                                    <div class="quantity">
-                                                        <a class="quantity__minus"><span><i class="bi bi-dash"></i></span></a>
-                                                        <input name="quantity" type="text" class="quantity__input" value="01">
-                                                        <a class="quantity__plus"><span><i class="bi bi-plus"></i></span></a>
-                                                    </div>
-                                                </div>
-                                                <ul>
-                                                    <li>remove</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td data-label="Price"><span>$200.00</span></td>
-                                    <td data-label="Total">$200.00</td>
+                                    <td data-label="Price"><span><?= $product['gia'] ?></span></td>
+                                    <td data-label="Total"><?= $product['gia'] ?></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -382,7 +346,7 @@ if ($id) {
                                     $348.00
                                 </li>
                                 <li>
-                                    <strong>Shipping</strong>
+                                    <strong>Vận chuyển</strong>
                                     <div class="order-info">
                                         <p>Shipping Free*</p>
                                         <span> Pickup fee $10.00</span>
@@ -390,7 +354,7 @@ if ($id) {
                                 </li>
                                 <li>
                                     <div class="coupon-area">
-                                        <strong>Coupon Code</strong>
+                                        <strong>Mã giảm giá</strong>
                                         <form>
                                             <div class="form-inner">
                                                 <input type="text" placeholder="Your code">
@@ -401,7 +365,7 @@ if ($id) {
                                 </li>
                                 <li>
                                     <strong>Total</strong>
-                                    $214.00
+                                    <?= $product['gia']++ ?>
                                 </li>
                             </ul>
                             <a href="index.php?page=checkout" class="primary-btn mt-40">Thanh toán ngay</a>

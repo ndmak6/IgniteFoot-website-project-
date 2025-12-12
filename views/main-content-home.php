@@ -113,27 +113,26 @@
                                     </div>
                                     <div class="quantity-color-area">
                                         <div class="quantity-color">
-                                            <h6 class="widget-title">Size</h6>
+                                            <h6 class="widget-title">Kích cỡ</h6>
                                             <div class="size-list">
                                                 <ul>
-                                                    <li class="select-wrap selected">XS</li>
-                                                    <li class="select-wrap">S</li>
-                                                    <li class="select-wrap">M</li>
-                                                    <li class="select-wrap">L</li>
-                                                    <li class="select-wrap">XL</li>
-                                                    <li class="select-wrap">XXL</li>
+                                                    <li class="select-wrap selected">39</li>
+                                                    <li class="select-wrap">40</li>
+                                                    <li class="select-wrap">41</li>
+                                                    <li class="select-wrap">42</li>
+                                                    <li class="select-wrap">43</li>
+                                                    <li class="select-wrap">44</li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="quantity-color">
-                                            <h6 class="widget-title">Color</h6>
+                                            <h6 class="widget-title">Màu sắc</h6>
                                             <ul class="color-list">
                                                 <li class="select-wrap selected"><span></span></li>
                                                 <li class="select-wrap"><span></span></li>
                                                 <li class="select-wrap"><span></span></li>
                                                 <li class="select-wrap"><span></span></li>
-                                                <li class="select-wrap"><span></span></li>
-                                                <li class="select-wrap"><span></span></li>
+                                               
                                             </ul>
                                         </div>
                                         <div class="quantity-color">
@@ -144,12 +143,12 @@
                                                     <a class="quantity__plus"><span><i class="bi bi-plus"></i></span></a>
                                                 </div>
                                             </div>
-                                            <h6 class="widget-title">Availability: <span>In stock</span></h6>
+                                            <h6 class="widget-title">Trạng thái: <span>Còn hàng</span></h6>
                                         </div>
                                     </div>
                                     <div class="shop-details-btn">
-                                        <a class="primary-btn" href="cart-page.html">ADD TO CART</a>
-                                        <a class="primary-btn2" href="checkout-page.html">BUY NOW</a>
+                                        <a class="primary-btn" href="cart-page.html">THÊM VÀO GIỎ HÀNG</a>
+                                        <a class="primary-btn2" href="checkout-page.html">MUA NGAY</a>
                                     </div>
                                     <ul class="product-shipping-delivers">
                                         <li class="product-shipping">
@@ -333,7 +332,7 @@
                                         <div class="row g-xl-4 g-0">
                                             <div class="col-xl-3">
                                                 <div class="megamenu-items">
-                                                    <h6>Shop Layout</h6>
+                                                    <h6>Danh mục sản phẩm</h6>
                                                     <ul class="menu-list">
                                                         <li><a href="shop-slider.html">shop slider</a></li>
                                                         <li><a href="1columns-left.html">1 Columns left sidebar</a></li>
@@ -359,19 +358,10 @@
                                                                     <li><a href="top-filter-bar.html">Filter Top</a></li>
                                                     </ul>
                                                 </div>
-                                                <div class="megamenu-items">
-                                                    <h6>Woo Pages</h6>
-                                                    <ul class="menu-list">
-                                                        <li><a href="index.php?page=shoppingcart">cart page</a></li>
-                                                        <li><a href="checkout-page.html">checkout page</a></li>
-                                                        <li><a href="whislist.html">whistlist</a></li>
-                                                        <li><a href="my-account.html">My Account</a></li>
-                                                    </ul>
-                                                </div>
                                             </div>
                                             <div class="col-xl-3">
                                                 <div class="megamenu-items">
-                                        <h6>Product details</h6>
+                                        <h6>Chi tiết sản phẩm</h6>
                                         <ul class="menu-list">
                                             <li><a href="product-details.html">Product Default</a></li>
                                             <li><a href="product-details.html">Product Thumbnail Left</a>
@@ -382,197 +372,197 @@
                                             <li><a href="product-details4.html">Offer Countdown</a></li>
                                         </ul>
                                     </div>
-                                            </div>
+                                        </div>
                                             <div class="col-xl-3 dd--none">
                                                 <div class="megamenu-items">
                                                     <h6>Best selling products</h6>
                                                     <div class="swiper menu-product-slider">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide">
-                                                    <div class="product-card">
-                                                        <div class="product-card-img">
-                                                            <a href="product-details.html">
-                                                                <img src="assets/image/home1/product-image4.jpg" alt="">
-                                                            </a>
-                                                            <div class="overlay">
-                                                                <div class="cart-area">
-                                                                    <a class="add-cart-btn" href="cart-page.html"><i
-                                                                            class="bi bi-bag-check"></i>
-                                                                        Add To Cart</a>
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <div class="product-card">
+                                                                    <div class="product-card-img">
+                                                                        <a href="product-details.html">
+                                                                            <img src="assets/image/home1/product-image4.jpg" alt="">
+                                                                        </a>
+                                                                        <div class="overlay">
+                                                                            <div class="cart-area">
+                                                                                <a class="add-cart-btn" href="cart-page.html"><i
+                                                                                        class="bi bi-bag-check"></i>
+                                                                                    Add To Cart</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="view-and-favorite-area">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <a href="whislist.html">
+                                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                            width="18" height="18"
+                                                                                            viewBox="0 0 18 18">
+                                                                                            <g clip-path="url(#clip0_168_378)">
+                                                                                                <path
+                                                                                                    d="M16.528 2.20919C16.0674 1.71411 15.5099 1.31906 14.8902 1.04859C14.2704 0.778112 13.6017 0.637996 12.9255 0.636946C12.2487 0.637725 11.5794 0.777639 10.959 1.048C10.3386 1.31835 9.78042 1.71338 9.31911 2.20854L9.00132 2.54436L8.68352 2.20854C6.83326 0.217151 3.71893 0.102789 1.72758 1.95306C1.63932 2.03507 1.5541 2.12029 1.47209 2.20854C-0.490696 4.32565 -0.490696 7.59753 1.47209 9.71463L8.5343 17.1622C8.77862 17.4201 9.18579 17.4312 9.44373 17.1868C9.45217 17.1788 9.46039 17.1706 9.46838 17.1622L16.528 9.71463C18.4907 7.59776 18.4907 4.32606 16.528 2.20919ZM15.5971 8.82879H15.5965L9.00132 15.7849L2.40553 8.82879C0.90608 7.21113 0.90608 4.7114 2.40553 3.09374C3.76722 1.61789 6.06755 1.52535 7.5434 2.88703C7.61505 2.95314 7.68401 3.0221 7.75012 3.09374L8.5343 3.92104C8.79272 4.17781 9.20995 4.17781 9.46838 3.92104L10.2526 3.09438C11.6142 1.61853 13.9146 1.52599 15.3904 2.88767C15.4621 2.95378 15.531 3.02274 15.5971 3.09438C17.1096 4.71461 17.1207 7.2189 15.5971 8.82879Z">
+                                                                                                </path>
+                                                                                            </g>
+                                                                                        </svg>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a data-bs-toggle="modal"
+                                                                                        data-bs-target="#product-view">
+                                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                            width="22" height="22"
+                                                                                            viewBox="0 0 22 22">
+                                                                                            <path
+                                                                                                d="M21.8601 10.5721C21.6636 10.3032 16.9807 3.98901 10.9999 3.98901C5.019 3.98901 0.335925 10.3032 0.139601 10.5718C0.0488852 10.6961 0 10.846 0 10.9999C0 11.1537 0.0488852 11.3036 0.139601 11.4279C0.335925 11.6967 5.019 18.011 10.9999 18.011C16.9807 18.011 21.6636 11.6967 21.8601 11.4281C21.951 11.3039 21.9999 11.154 21.9999 11.0001C21.9999 10.8462 21.951 10.6963 21.8601 10.5721ZM10.9999 16.5604C6.59432 16.5604 2.77866 12.3696 1.64914 10.9995C2.77719 9.62823 6.58487 5.43955 10.9999 5.43955C15.4052 5.43955 19.2206 9.62969 20.3506 11.0005C19.2225 12.3717 15.4149 16.5604 10.9999 16.5604Z">
+                                                                                            </path>
+                                                                                            <path
+                                                                                                d="M10.9999 6.64832C8.60039 6.64832 6.64819 8.60051 6.64819 11C6.64819 13.3994 8.60039 15.3516 10.9999 15.3516C13.3993 15.3516 15.3515 13.3994 15.3515 11C15.3515 8.60051 13.3993 6.64832 10.9999 6.64832ZM10.9999 13.9011C9.40013 13.9011 8.09878 12.5997 8.09878 11C8.09878 9.40029 9.40017 8.0989 10.9999 8.0989C12.5995 8.0989 13.9009 9.40029 13.9009 11C13.9009 12.5997 12.5996 13.9011 10.9999 13.9011Z">
+                                                                                            </path>
+                                                                                        </svg>
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-card-content">
+                                                                        <div class="rating">
+                                                                            <ul>
+                                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <h6><a class="hover-underline" href="product-details.html">Trendy & Comfortable Outerwear</a></h6>
+                                                                        <p class="price"><del>$345.00</del> $300.00 </p>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="view-and-favorite-area">
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="whislist.html">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                                width="18" height="18"
-                                                                                viewBox="0 0 18 18">
-                                                                                <g clip-path="url(#clip0_168_378)">
-                                                                                    <path
-                                                                                        d="M16.528 2.20919C16.0674 1.71411 15.5099 1.31906 14.8902 1.04859C14.2704 0.778112 13.6017 0.637996 12.9255 0.636946C12.2487 0.637725 11.5794 0.777639 10.959 1.048C10.3386 1.31835 9.78042 1.71338 9.31911 2.20854L9.00132 2.54436L8.68352 2.20854C6.83326 0.217151 3.71893 0.102789 1.72758 1.95306C1.63932 2.03507 1.5541 2.12029 1.47209 2.20854C-0.490696 4.32565 -0.490696 7.59753 1.47209 9.71463L8.5343 17.1622C8.77862 17.4201 9.18579 17.4312 9.44373 17.1868C9.45217 17.1788 9.46039 17.1706 9.46838 17.1622L16.528 9.71463C18.4907 7.59776 18.4907 4.32606 16.528 2.20919ZM15.5971 8.82879H15.5965L9.00132 15.7849L2.40553 8.82879C0.90608 7.21113 0.90608 4.7114 2.40553 3.09374C3.76722 1.61789 6.06755 1.52535 7.5434 2.88703C7.61505 2.95314 7.68401 3.0221 7.75012 3.09374L8.5343 3.92104C8.79272 4.17781 9.20995 4.17781 9.46838 3.92104L10.2526 3.09438C11.6142 1.61853 13.9146 1.52599 15.3904 2.88767C15.4621 2.95378 15.531 3.02274 15.5971 3.09438C17.1096 4.71461 17.1207 7.2189 15.5971 8.82879Z">
-                                                                                    </path>
-                                                                                </g>
-                                                                            </svg>
+                                                            <div class="swiper-slide">
+                                                                <div class="product-card">
+                                                                    <div class="product-card-img">
+                                                                        <a href="product-details.html">
+                                                                            <img src="assets/image/home1/product-image3.jpg" alt="">
                                                                         </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a data-bs-toggle="modal"
-                                                                            data-bs-target="#product-view">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                                width="22" height="22"
-                                                                                viewBox="0 0 22 22">
-                                                                                <path
-                                                                                    d="M21.8601 10.5721C21.6636 10.3032 16.9807 3.98901 10.9999 3.98901C5.019 3.98901 0.335925 10.3032 0.139601 10.5718C0.0488852 10.6961 0 10.846 0 10.9999C0 11.1537 0.0488852 11.3036 0.139601 11.4279C0.335925 11.6967 5.019 18.011 10.9999 18.011C16.9807 18.011 21.6636 11.6967 21.8601 11.4281C21.951 11.3039 21.9999 11.154 21.9999 11.0001C21.9999 10.8462 21.951 10.6963 21.8601 10.5721ZM10.9999 16.5604C6.59432 16.5604 2.77866 12.3696 1.64914 10.9995C2.77719 9.62823 6.58487 5.43955 10.9999 5.43955C15.4052 5.43955 19.2206 9.62969 20.3506 11.0005C19.2225 12.3717 15.4149 16.5604 10.9999 16.5604Z">
-                                                                                </path>
-                                                                                <path
-                                                                                    d="M10.9999 6.64832C8.60039 6.64832 6.64819 8.60051 6.64819 11C6.64819 13.3994 8.60039 15.3516 10.9999 15.3516C13.3993 15.3516 15.3515 13.3994 15.3515 11C15.3515 8.60051 13.3993 6.64832 10.9999 6.64832ZM10.9999 13.9011C9.40013 13.9011 8.09878 12.5997 8.09878 11C8.09878 9.40029 9.40017 8.0989 10.9999 8.0989C12.5995 8.0989 13.9009 9.40029 13.9009 11C13.9009 12.5997 12.5996 13.9011 10.9999 13.9011Z">
-                                                                                </path>
-                                                                            </svg>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-card-content">
-                                                            <div class="rating">
-                                                                <ul>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                            <h6><a class="hover-underline" href="product-details.html">Trendy & Comfortable Outerwear</a></h6>
-                                                            <p class="price"><del>$345.00</del> $300.00 </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product-card">
-                                                        <div class="product-card-img">
-                                                            <a href="product-details.html">
-                                                                <img src="assets/image/home1/product-image3.jpg" alt="">
-                                                            </a>
-                                                            <div class="overlay">
-                                                                <div class="cart-area">
-                                                                    <a class="add-cart-btn" href="cart-page.html"><i
-                                                                            class="bi bi-bag-check"></i>
-                                                                        Add To Cart</a>
+                                                                        <div class="overlay">
+                                                                            <div class="cart-area">
+                                                                                <a class="add-cart-btn" href="cart-page.html"><i
+                                                                                        class="bi bi-bag-check"></i>
+                                                                                    Add To Cart</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="view-and-favorite-area">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <a href="whislist.html">
+                                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                            width="18" height="18"
+                                                                                            viewBox="0 0 18 18">
+                                                                                            <g clip-path="url(#clip0_168_378)">
+                                                                                                <path
+                                                                                                    d="M16.528 2.20919C16.0674 1.71411 15.5099 1.31906 14.8902 1.04859C14.2704 0.778112 13.6017 0.637996 12.9255 0.636946C12.2487 0.637725 11.5794 0.777639 10.959 1.048C10.3386 1.31835 9.78042 1.71338 9.31911 2.20854L9.00132 2.54436L8.68352 2.20854C6.83326 0.217151 3.71893 0.102789 1.72758 1.95306C1.63932 2.03507 1.5541 2.12029 1.47209 2.20854C-0.490696 4.32565 -0.490696 7.59753 1.47209 9.71463L8.5343 17.1622C8.77862 17.4201 9.18579 17.4312 9.44373 17.1868C9.45217 17.1788 9.46039 17.1706 9.46838 17.1622L16.528 9.71463C18.4907 7.59776 18.4907 4.32606 16.528 2.20919ZM15.5971 8.82879H15.5965L9.00132 15.7849L2.40553 8.82879C0.90608 7.21113 0.90608 4.7114 2.40553 3.09374C3.76722 1.61789 6.06755 1.52535 7.5434 2.88703C7.61505 2.95314 7.68401 3.0221 7.75012 3.09374L8.5343 3.92104C8.79272 4.17781 9.20995 4.17781 9.46838 3.92104L10.2526 3.09438C11.6142 1.61853 13.9146 1.52599 15.3904 2.88767C15.4621 2.95378 15.531 3.02274 15.5971 3.09438C17.1096 4.71461 17.1207 7.2189 15.5971 8.82879Z">
+                                                                                                </path>
+                                                                                            </g>
+                                                                                        </svg>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a data-bs-toggle="modal"
+                                                                                        data-bs-target="#product-view">
+                                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                            width="22" height="22"
+                                                                                            viewBox="0 0 22 22">
+                                                                                            <path
+                                                                                                d="M21.8601 10.5721C21.6636 10.3032 16.9807 3.98901 10.9999 3.98901C5.019 3.98901 0.335925 10.3032 0.139601 10.5718C0.0488852 10.6961 0 10.846 0 10.9999C0 11.1537 0.0488852 11.3036 0.139601 11.4279C0.335925 11.6967 5.019 18.011 10.9999 18.011C16.9807 18.011 21.6636 11.6967 21.8601 11.4281C21.951 11.3039 21.9999 11.154 21.9999 11.0001C21.9999 10.8462 21.951 10.6963 21.8601 10.5721ZM10.9999 16.5604C6.59432 16.5604 2.77866 12.3696 1.64914 10.9995C2.77719 9.62823 6.58487 5.43955 10.9999 5.43955C15.4052 5.43955 19.2206 9.62969 20.3506 11.0005C19.2225 12.3717 15.4149 16.5604 10.9999 16.5604Z">
+                                                                                            </path>
+                                                                                            <path
+                                                                                                d="M10.9999 6.64832C8.60039 6.64832 6.64819 8.60051 6.64819 11C6.64819 13.3994 8.60039 15.3516 10.9999 15.3516C13.3993 15.3516 15.3515 13.3994 15.3515 11C15.3515 8.60051 13.3993 6.64832 10.9999 6.64832ZM10.9999 13.9011C9.40013 13.9011 8.09878 12.5997 8.09878 11C8.09878 9.40029 9.40017 8.0989 10.9999 8.0989C12.5995 8.0989 13.9009 9.40029 13.9009 11C13.9009 12.5997 12.5996 13.9011 10.9999 13.9011Z">
+                                                                                            </path>
+                                                                                        </svg>
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-card-content">
+                                                                        <div class="rating">
+                                                                            <ul>
+                                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <h6><a class="hover-underline" href="product-details.html">Trendy Oversized Shirt</a></h6>
+                                                                        <p class="price">$220.00 </p>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="view-and-favorite-area">
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="whislist.html">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                                width="18" height="18"
-                                                                                viewBox="0 0 18 18">
-                                                                                <g clip-path="url(#clip0_168_378)">
-                                                                                    <path
-                                                                                        d="M16.528 2.20919C16.0674 1.71411 15.5099 1.31906 14.8902 1.04859C14.2704 0.778112 13.6017 0.637996 12.9255 0.636946C12.2487 0.637725 11.5794 0.777639 10.959 1.048C10.3386 1.31835 9.78042 1.71338 9.31911 2.20854L9.00132 2.54436L8.68352 2.20854C6.83326 0.217151 3.71893 0.102789 1.72758 1.95306C1.63932 2.03507 1.5541 2.12029 1.47209 2.20854C-0.490696 4.32565 -0.490696 7.59753 1.47209 9.71463L8.5343 17.1622C8.77862 17.4201 9.18579 17.4312 9.44373 17.1868C9.45217 17.1788 9.46039 17.1706 9.46838 17.1622L16.528 9.71463C18.4907 7.59776 18.4907 4.32606 16.528 2.20919ZM15.5971 8.82879H15.5965L9.00132 15.7849L2.40553 8.82879C0.90608 7.21113 0.90608 4.7114 2.40553 3.09374C3.76722 1.61789 6.06755 1.52535 7.5434 2.88703C7.61505 2.95314 7.68401 3.0221 7.75012 3.09374L8.5343 3.92104C8.79272 4.17781 9.20995 4.17781 9.46838 3.92104L10.2526 3.09438C11.6142 1.61853 13.9146 1.52599 15.3904 2.88767C15.4621 2.95378 15.531 3.02274 15.5971 3.09438C17.1096 4.71461 17.1207 7.2189 15.5971 8.82879Z">
-                                                                                    </path>
-                                                                                </g>
-                                                                            </svg>
+                                                            <div class="swiper-slide">
+                                                                <div class="product-card">
+                                                                    <div class="product-card-img">
+                                                                        <a href="product-details.html">
+                                                                            <img src="assets/image/home1/product-image2.jpg" alt="">
                                                                         </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a data-bs-toggle="modal"
-                                                                            data-bs-target="#product-view">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                                width="22" height="22"
-                                                                                viewBox="0 0 22 22">
-                                                                                <path
-                                                                                    d="M21.8601 10.5721C21.6636 10.3032 16.9807 3.98901 10.9999 3.98901C5.019 3.98901 0.335925 10.3032 0.139601 10.5718C0.0488852 10.6961 0 10.846 0 10.9999C0 11.1537 0.0488852 11.3036 0.139601 11.4279C0.335925 11.6967 5.019 18.011 10.9999 18.011C16.9807 18.011 21.6636 11.6967 21.8601 11.4281C21.951 11.3039 21.9999 11.154 21.9999 11.0001C21.9999 10.8462 21.951 10.6963 21.8601 10.5721ZM10.9999 16.5604C6.59432 16.5604 2.77866 12.3696 1.64914 10.9995C2.77719 9.62823 6.58487 5.43955 10.9999 5.43955C15.4052 5.43955 19.2206 9.62969 20.3506 11.0005C19.2225 12.3717 15.4149 16.5604 10.9999 16.5604Z">
-                                                                                </path>
-                                                                                <path
-                                                                                    d="M10.9999 6.64832C8.60039 6.64832 6.64819 8.60051 6.64819 11C6.64819 13.3994 8.60039 15.3516 10.9999 15.3516C13.3993 15.3516 15.3515 13.3994 15.3515 11C15.3515 8.60051 13.3993 6.64832 10.9999 6.64832ZM10.9999 13.9011C9.40013 13.9011 8.09878 12.5997 8.09878 11C8.09878 9.40029 9.40017 8.0989 10.9999 8.0989C12.5995 8.0989 13.9009 9.40029 13.9009 11C13.9009 12.5997 12.5996 13.9011 10.9999 13.9011Z">
-                                                                                </path>
-                                                                            </svg>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-card-content">
-                                                            <div class="rating">
-                                                                <ul>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                            <h6><a class="hover-underline" href="product-details.html">Trendy Oversized Shirt</a></h6>
-                                                            <p class="price">$220.00 </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <div class="product-card">
-                                                        <div class="product-card-img">
-                                                            <a href="product-details.html">
-                                                                <img src="assets/image/home1/product-image2.jpg" alt="">
-                                                            </a>
-                                                            <div class="overlay">
-                                                                <div class="cart-area">
-                                                                    <a class="add-cart-btn" href="cart-page.html"><i
-                                                                            class="bi bi-bag-check"></i>
-                                                                        Add To Cart</a>
+                                                                        <div class="overlay">
+                                                                            <div class="cart-area">
+                                                                                <a class="add-cart-btn" href="cart-page.html"><i
+                                                                                        class="bi bi-bag-check"></i>
+                                                                                    Add To Cart</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="view-and-favorite-area">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <a href="whislist.html">
+                                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                            width="18" height="18"
+                                                                                            viewBox="0 0 18 18">
+                                                                                            <g clip-path="url(#clip0_168_378)">
+                                                                                                <path
+                                                                                                    d="M16.528 2.20919C16.0674 1.71411 15.5099 1.31906 14.8902 1.04859C14.2704 0.778112 13.6017 0.637996 12.9255 0.636946C12.2487 0.637725 11.5794 0.777639 10.959 1.048C10.3386 1.31835 9.78042 1.71338 9.31911 2.20854L9.00132 2.54436L8.68352 2.20854C6.83326 0.217151 3.71893 0.102789 1.72758 1.95306C1.63932 2.03507 1.5541 2.12029 1.47209 2.20854C-0.490696 4.32565 -0.490696 7.59753 1.47209 9.71463L8.5343 17.1622C8.77862 17.4201 9.18579 17.4312 9.44373 17.1868C9.45217 17.1788 9.46039 17.1706 9.46838 17.1622L16.528 9.71463C18.4907 7.59776 18.4907 4.32606 16.528 2.20919ZM15.5971 8.82879H15.5965L9.00132 15.7849L2.40553 8.82879C0.90608 7.21113 0.90608 4.7114 2.40553 3.09374C3.76722 1.61789 6.06755 1.52535 7.5434 2.88703C7.61505 2.95314 7.68401 3.0221 7.75012 3.09374L8.5343 3.92104C8.79272 4.17781 9.20995 4.17781 9.46838 3.92104L10.2526 3.09438C11.6142 1.61853 13.9146 1.52599 15.3904 2.88767C15.4621 2.95378 15.531 3.02274 15.5971 3.09438C17.1096 4.71461 17.1207 7.2189 15.5971 8.82879Z">
+                                                                                                </path>
+                                                                                            </g>
+                                                                                        </svg>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a data-bs-toggle="modal"
+                                                                                        data-bs-target="#product-view">
+                                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                            width="22" height="22"
+                                                                                            viewBox="0 0 22 22">
+                                                                                            <path
+                                                                                                d="M21.8601 10.5721C21.6636 10.3032 16.9807 3.98901 10.9999 3.98901C5.019 3.98901 0.335925 10.3032 0.139601 10.5718C0.0488852 10.6961 0 10.846 0 10.9999C0 11.1537 0.0488852 11.3036 0.139601 11.4279C0.335925 11.6967 5.019 18.011 10.9999 18.011C16.9807 18.011 21.6636 11.6967 21.8601 11.4281C21.951 11.3039 21.9999 11.154 21.9999 11.0001C21.9999 10.8462 21.951 10.6963 21.8601 10.5721ZM10.9999 16.5604C6.59432 16.5604 2.77866 12.3696 1.64914 10.9995C2.77719 9.62823 6.58487 5.43955 10.9999 5.43955C15.4052 5.43955 19.2206 9.62969 20.3506 11.0005C19.2225 12.3717 15.4149 16.5604 10.9999 16.5604Z">
+                                                                                            </path>
+                                                                                            <path
+                                                                                                d="M10.9999 6.64832C8.60039 6.64832 6.64819 8.60051 6.64819 11C6.64819 13.3994 8.60039 15.3516 10.9999 15.3516C13.3993 15.3516 15.3515 13.3994 15.3515 11C15.3515 8.60051 13.3993 6.64832 10.9999 6.64832ZM10.9999 13.9011C9.40013 13.9011 8.09878 12.5997 8.09878 11C8.09878 9.40029 9.40017 8.0989 10.9999 8.0989C12.5995 8.0989 13.9009 9.40029 13.9009 11C13.9009 12.5997 12.5996 13.9011 10.9999 13.9011Z">
+                                                                                            </path>
+                                                                                        </svg>
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-card-content">
+                                                                        <div class="rating">
+                                                                            <ul>
+                                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                                <li><i class="bi bi-star-fill"></i></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <h6><a class="hover-underline" href="product-details.html">Classic Slim Fit Blazer</a></h6>
+                                                                        <p class="price"><del>$355.00</del> $280.00 </p>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="view-and-favorite-area">
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="whislist.html">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                                width="18" height="18"
-                                                                                viewBox="0 0 18 18">
-                                                                                <g clip-path="url(#clip0_168_378)">
-                                                                                    <path
-                                                                                        d="M16.528 2.20919C16.0674 1.71411 15.5099 1.31906 14.8902 1.04859C14.2704 0.778112 13.6017 0.637996 12.9255 0.636946C12.2487 0.637725 11.5794 0.777639 10.959 1.048C10.3386 1.31835 9.78042 1.71338 9.31911 2.20854L9.00132 2.54436L8.68352 2.20854C6.83326 0.217151 3.71893 0.102789 1.72758 1.95306C1.63932 2.03507 1.5541 2.12029 1.47209 2.20854C-0.490696 4.32565 -0.490696 7.59753 1.47209 9.71463L8.5343 17.1622C8.77862 17.4201 9.18579 17.4312 9.44373 17.1868C9.45217 17.1788 9.46039 17.1706 9.46838 17.1622L16.528 9.71463C18.4907 7.59776 18.4907 4.32606 16.528 2.20919ZM15.5971 8.82879H15.5965L9.00132 15.7849L2.40553 8.82879C0.90608 7.21113 0.90608 4.7114 2.40553 3.09374C3.76722 1.61789 6.06755 1.52535 7.5434 2.88703C7.61505 2.95314 7.68401 3.0221 7.75012 3.09374L8.5343 3.92104C8.79272 4.17781 9.20995 4.17781 9.46838 3.92104L10.2526 3.09438C11.6142 1.61853 13.9146 1.52599 15.3904 2.88767C15.4621 2.95378 15.531 3.02274 15.5971 3.09438C17.1096 4.71461 17.1207 7.2189 15.5971 8.82879Z">
-                                                                                    </path>
-                                                                                </g>
-                                                                            </svg>
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a data-bs-toggle="modal"
-                                                                            data-bs-target="#product-view">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                                width="22" height="22"
-                                                                                viewBox="0 0 22 22">
-                                                                                <path
-                                                                                    d="M21.8601 10.5721C21.6636 10.3032 16.9807 3.98901 10.9999 3.98901C5.019 3.98901 0.335925 10.3032 0.139601 10.5718C0.0488852 10.6961 0 10.846 0 10.9999C0 11.1537 0.0488852 11.3036 0.139601 11.4279C0.335925 11.6967 5.019 18.011 10.9999 18.011C16.9807 18.011 21.6636 11.6967 21.8601 11.4281C21.951 11.3039 21.9999 11.154 21.9999 11.0001C21.9999 10.8462 21.951 10.6963 21.8601 10.5721ZM10.9999 16.5604C6.59432 16.5604 2.77866 12.3696 1.64914 10.9995C2.77719 9.62823 6.58487 5.43955 10.9999 5.43955C15.4052 5.43955 19.2206 9.62969 20.3506 11.0005C19.2225 12.3717 15.4149 16.5604 10.9999 16.5604Z">
-                                                                                </path>
-                                                                                <path
-                                                                                    d="M10.9999 6.64832C8.60039 6.64832 6.64819 8.60051 6.64819 11C6.64819 13.3994 8.60039 15.3516 10.9999 15.3516C13.3993 15.3516 15.3515 13.3994 15.3515 11C15.3515 8.60051 13.3993 6.64832 10.9999 6.64832ZM10.9999 13.9011C9.40013 13.9011 8.09878 12.5997 8.09878 11C8.09878 9.40029 9.40017 8.0989 10.9999 8.0989C12.5995 8.0989 13.9009 9.40029 13.9009 11C13.9009 12.5997 12.5996 13.9011 10.9999 13.9011Z">
-                                                                                </path>
-                                                                            </svg>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-card-content">
-                                                            <div class="rating">
-                                                                <ul>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                    <li><i class="bi bi-star-fill"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                            <h6><a class="hover-underline" href="product-details.html">Classic Slim Fit Blazer</a></h6>
-                                                            <p class="price"><del>$355.00</del> $280.00 </p>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -580,29 +570,10 @@
                                 </div>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="#" class="drop-down"> BLOG</a><i class="bi bi-plus dropdown-icon"></i>
-                                <ul class="sub-menu">
-                                    <li><a href="blog-grid.html">Blog Grid</a></li>
-                                    <li><a href="blog-standard-left.html">Blog Standard</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                </ul>
+                                <a href="#" class="drop-down"> Category</a><i class="bi bi-plus dropdown-icon"></i>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="#" class="drop-down"> PAGES</a><i class="bi bi-plus dropdown-icon"></i>
-                                <ul class="sub-menu">
-                                    <li><a href="about-us.html">About Us</a></li>
-                                    <li>
-                                        <a href="categories.html">Category</a>
-                                        <i class="d-xl-flex d-none bi bi-chevron-right dropdown-icon"></i>
-                                        <i class="d-xl-none d-flex bi bi-plus dropdown-icon"></i>
-                                        <ul class="sub-menu">
-                                            <li><a href="categories.html">Category Style 01</a></li>
-                                            <li><a href="categories2.html">Category Style 02</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="faq.html">FAQ's</a></li>
-                                    <li><a href="error.html">Error</a></li>
-                                </ul>
                             </li>
                             <li><a href="contact.html">CONTACT</a></li>
                         </ul>
@@ -676,7 +647,7 @@
                             </li>
                             <li>
                                 <div class="cart-area">
-                                    <a href="cart-page.html">
+                                    <a href="index.php?page=shoppingcart">
                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -785,17 +756,17 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="banner-bg">
-                                <img src="assets/image/home5/home5-banner-img1.jpg" alt="">
+                                <img src="assets/image/home5/home-banner-img1.jpg" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="banner-bg">
-                                <img src="assets/image/home5/home5-banner-img2.jpg" alt="">
+                                <img src="assets/image/home5/home-banner-img2.jpg" width="700px" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="banner-bg">
-                                <img src="assets/image/home5/home5-banner-img3.jpg" alt="">
+                                <img src="assets/image/home5/home-banner-img3.jpg" width="700px" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -810,7 +781,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="banner-bg">
-                                <img src="assets/image/home5/banner1.jpg" alt="">
+                                <img src="assets/image/home5/home5-banner-img6.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -820,7 +791,7 @@
         <div class="banner-content-wrap">
             <h1>Giày Thể Thao Nam – Phong Cách & Năng Động</h1>
             <p>Khám phá bộ sưu tập giày thể thao nam mới nhất, mang đến sự thoải mái, bền bỉ và phong cách cho mọi hoạt động của bạn </p>
-            <a href="3columns-left.html" class="primary-btn">SHOP NOW</a>
+            <a href="index.php?page=shop" class="primary-btn">SHOP NOW</a>
         </div>
         <div class="banner-slider-btn-groups">
             <div class="slider-btn home5-banner-slider-prev">
@@ -844,7 +815,7 @@
             <div class="row wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
                 <div class="col-lg-12 mb-50">
                     <div class="section-title2">
-                        <h3>Shop by categories</h3>
+                        <h3>Mua hàng theo danh mục</h3>
                     </div>
                 </div>
             </div>
@@ -888,7 +859,7 @@
                                         </a>
                                     </div>
                                     <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Bottoms</a></h6>
+                                        <h6><a href="3columns-left.html">Giày nam</a></h6>
                                     </div>
                                 </div>
                             </div>
@@ -899,7 +870,7 @@
                                                 alt=""></a>
                                     </div>
                                     <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Shoes</a></h6>
+                                        <h6><a href="3columns-left.html">Giày Đá bóng</a></h6>
                                     </div>
                                 </div>
                             </div>
@@ -910,7 +881,7 @@
                                                 alt=""></a>
                                     </div>
                                     <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Tops</a></h6>
+                                        <h6><a href="3columns-left.html">Giày Chạy Bộ</a></h6>
                                     </div>
                                 </div>
                             </div>
@@ -921,7 +892,7 @@
                                                 alt=""></a>
                                     </div>
                                     <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Bags</a></h6>
+                                        <h6><a href="3columns-left.html">Giày Unisex</a></h6>
                                     </div>
                                 </div>
                             </div>
@@ -932,7 +903,7 @@
                                                 alt=""></a>
                                     </div>
                                     <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Jewelries</a></h6>
+                                        <h6><a href="3columns-left.html">Giày Đạp Xe</a></h6>
                                     </div>
                                 </div>
                             </div>
@@ -943,74 +914,7 @@
                                                 alt=""></a>
                                     </div>
                                     <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Sunglasses</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html">
-                                            <img src="assets/image/home5/categories-image7.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Watch</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image8.png"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">T-Shirt</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image9.png"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Jeans</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image10.png"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Gown</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image11.png"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Sweater</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image12.png"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Casual Shirt</a></h6>
+                                        <h6><a href="3columns-left.html">Giày ĐÁnh PickleBall</a></h6>
                                     </div>
                                 </div>
                             </div>

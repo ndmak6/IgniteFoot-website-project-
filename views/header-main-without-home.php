@@ -46,27 +46,10 @@
                                                         <li><a href="top-filter-bar.html">Filter Top</a></li>
                                         </ul>
                                     </div>
-                                    <div class="megamenu-items">
-                                        <h6>Woo Pages</h6>
-                                        <ul class="menu-list">
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-                                            <li><a href="index.php?page=shoppingcart">cart page</a></li>
-=======
-                                            <li><a href="index.php?page=ch">cart page</a></li>
->>>>>>> Stashed changes
-=======
-                                            <li><a href="index.php?page=ch">cart page</a></li>
->>>>>>> Stashed changes
-                                            <li><a href="checkout-page.html">checkout page</a></li>
-                                            <li><a href="whislist.html">whistlist</a></li>
-                                            <li><a href="my-account.html">My Account</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                                 <div class="col-xl-3">
                                     <div class="megamenu-items">
-                                        <h6>Product details</h6>
+                                        <h6>Chi tiết sản phẩm</h6>
                                         <ul class="menu-list">
                                             <li><a href="product-details.html">Product Default</a></li>
                                             <li><a href="product-details.html">Product Thumbnail Left</a>
@@ -91,7 +74,7 @@
                                                             </a>
                                                             <div class="overlay">
                                                                 <div class="cart-area">
-                                                                    <a class="add-cart-btn" href="cart-page.html"><i
+                                                                    <a class="add-cart-btn" href="index.php?page=shoppingcart"><i
                                                                             class="bi bi-bag-check"></i>
                                                                         Add To Cart</a>
                                                                 </div>
@@ -275,26 +258,12 @@
                     </div>
                 </li>
                 <li class="menu-item-has-children">
-                    <a href="#" class="drop-down"> BLOG</a><i class="bi bi-plus dropdown-icon"></i>
-                    <ul class="sub-menu">
-                        <li><a href="blog-grid.html">Blog Grid</a></li>
-                        <li><a href="blog-standard-left.html">Blog Standard</a></li>
-                        <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
+                    <a href="#" class="drop-down"> Category</a><i class="bi bi-plus dropdown-icon"></i>
                 </li>
                 <li class="menu-item-has-children">
                     <a href="#" class="drop-down"> PAGES</a><i class="bi bi-plus dropdown-icon"></i>
                     <ul class="sub-menu">
                         <li><a href="about-us.html">About Us</a></li>
-                        <li>
-                            <a href="categories.html">Category</a>
-                            <i class="d-xl-flex d-none bi bi-chevron-right dropdown-icon"></i>
-                            <i class="d-xl-none d-flex bi bi-plus dropdown-icon"></i>
-                            <ul class="sub-menu">
-                                <li><a href="categories.html">Category Style 01</a></li>
-                                <li><a href="categories2.html">Category Style 02</a></li>
-                            </ul>
-                        </li>
                         <li><a href="faq.html">FAQ's</a></li>
                         <li><a href="error.html">Error</a></li>
                     </ul>
@@ -370,7 +339,7 @@
                 </li>
                 <li>
                     <div class="cart-area">
-                        <a href="cart-page.html">
+                        <a href="index.php?page=shoppingcart">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
