@@ -118,7 +118,7 @@ public function cateProducts(){
     include "admin/views/layout.php";
 }
 public function addcateProductsF(){
-    include "admin/views/add_cateProducts.php";
+    include "admin/views/addcateProducts.php";
 }
 public function addcateProductsHandle(){
     $ten_dm = $_POST['ten_danh_muc'];
@@ -158,5 +158,5 @@ public function editCateProductsHandle(){
 
     $this->modelAdmin->updateCate($ten_dm, $anh_dai_dien, $id_dm);
     header("Location: admin.php?pageAdmin=cateProducts");
-}
+    }
 }
