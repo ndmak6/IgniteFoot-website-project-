@@ -133,5 +133,5 @@ public function editCateProductsHandle(){
 
     $this->modelAdmin->updateCate($ten_dm, $anh_dai_dien, $id_dm);
     header("Location: admin.php?pageAdmin=cateProducts");
-}
+    }
 }
