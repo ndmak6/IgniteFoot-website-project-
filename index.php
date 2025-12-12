@@ -12,8 +12,9 @@ switch ($page) {
     case 'shop':
         $controller->shop();
         break;
-    case 'checkout' :
-        $controller->checkout();
+    case 'productDetail':
+        
+        $controller->product_detail($id);
         break;
     case 'order_success':
         $controller->order_success();
