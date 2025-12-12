@@ -33,6 +33,7 @@ switch ($pageAdmin) {
     case 'show_product_control':
         $controllerAdmin->show_p();
         break;
+<<<<<<< Updated upstream
     case 'cateProducts':
         $controllerAdmin->cateProducts();
         break;
@@ -51,6 +52,8 @@ switch ($pageAdmin) {
     case 'edit_cateProducts':
         $controllerAdmin->editCateProductsHandle();
         break;
+=======
+>>>>>>> Stashed changes
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;
