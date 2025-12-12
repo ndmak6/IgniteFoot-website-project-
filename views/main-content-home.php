@@ -311,12 +311,12 @@
                 <div class="col-lg-12 d-flex justify-content-between align-items-center">
                     <div class="header-logo">
                         <a href="index.php?page=home"><img alt="image" class="img-fluid"
-                                src="assets/image/ethics-logo-dark.svg"></a>
+                                src="assets/image/logo1.png" width="120px"></a>
                     </div>
                     <div class="main-menu">
                         <div class="mobile-menu-logo">
                             <a href="index.php?page=home"><img alt="image" class="img-fluid"
-                                    src="assets/image/ethics-logo-dark.svg"></a>
+                                    src="assets/image/logo1.png" width="120px"></a>
                         </div>
                         <ul class="menu-list">
                             <li class="menu-item-has-children active">

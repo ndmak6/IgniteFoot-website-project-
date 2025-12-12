@@ -9,7 +9,6 @@ switch ($page) {
     case 'home':
         $controller->home();
         break;
-
     case 'shop':
         $controller->shop();
         break;
