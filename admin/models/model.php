@@ -44,7 +44,7 @@ class databaseAdmin {
     }
     public function getAllCategories(){
         $stmt = $this->conn->prepare("select * from danh_muc");
-        $stmt->execute();
+            $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
     public function addCategory($ten_dm, $anh_dai_dien){

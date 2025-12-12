@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="assets/css/boxicons.min.css">
     <!-- My css link -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Ethics - Fashion Shop HTML Template</title>
+    <title>IgniteFoot - Bán giày thể thao nam</title>
     <link rel="icon" href="assets/image/thumbnail.svg" type="image/gif" sizes="20x20">
 </head>
 
@@ -106,7 +106,7 @@
                                                 <i class="bi bi-star-fill"></i>
                                                 <i class="bi bi-star-fill"></i>
                                             </div>
-                                            <p><a href="#reviews">(2 REVIEWS)</a></p>
+                                            <p><a href="#reviews">5 đánh giá</a></p>
                                         </div>
                                     </div>
                                     <div class="price-area">
@@ -114,15 +114,15 @@
                                     </div>
                                     <div class="quantity-color-area">
                                         <div class="quantity-color">
-                                            <h6 class="widget-title">Size</h6>
+                                            <h6 class="widget-title">Kích cỡ</h6>
                                             <div class="size-list">
                                                 <ul>
-                                                    <li class="select-wrap selected">XS</li>
-                                                    <li class="select-wrap">S</li>
-                                                    <li class="select-wrap">M</li>
-                                                    <li class="select-wrap">L</li>
-                                                    <li class="select-wrap">XL</li>
-                                                    <li class="select-wrap">XXL</li>
+                                                    <li class="select-wrap selected">40</li>
+                                                    <li class="select-wrap">41</li>
+                                                    <li class="select-wrap">42</li>
+                                                    <li class="select-wrap">43</li>
+                                                    <li class="select-wrap">44</li>
+                                                    <li class="select-wrap">45</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -237,12 +237,12 @@
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
                                 type="button" role="tab" aria-controls="home" aria-selected="true">
-                                Log In
+                                Đăng Nhập
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                                type="button" role="tab" aria-controls="profile" aria-selected="false">Registration</button>
+                                type="button" role="tab" aria-controls="profile" aria-selected="false">Đăng ký</button>
                         </li>
                     </ul>
                 </div>
@@ -251,52 +251,52 @@
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <div class="login-registration-form">
                                 <div class="form-title">
-                                    <h3>Log In</h3>
+                                    <h3>Đăng Nhập</h3>
                                 </div>
                                 <form>
                                     <div class="form-inner mb-35">
-                                        <input type="text" placeholder="User name or Email *">
+                                        <input type="text" placeholder="Tài khoản và Email *">
                                     </div>
                                     <div class="form-inner">
-                                        <input id="password" type="password" placeholder="Password *">
+                                        <input id="password" type="password" placeholder="Mật khẩu *">
                                         <i class="bi bi-eye-slash" id="togglePassword"></i>
                                     </div>
                                     <div class="form-remember-forget">
                                         <div class="remember">
                                             <input type="checkbox" class="custom-check-box" id="check1">
-                                            <label for="check1">Remember me</label>
+                                            <label for="check1">Nhớ mật khẩu</label>
                                         </div>
-                                        <a href="#" class="forget-pass hover-underline">Forget Password</a>
+                                        <a href="#" class="forget-pass hover-underline">Quên mật khẩu</a>
                                     </div>
                                     <button class="primary-btn" type="submit">
-                                        Log In
+                                        Đăng nhập
                                     </button>
-                                    <a href="#" class="member">Not a member yet?</a>
+                                    <a href="#" class="member">Bạn chưa có tài khoản ?</a>
                                 </form>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <div class="login-registration-form">
                                 <div class="form-title">
-                                    <h3>Registration</h3>
+                                    <h3>Đăng ký</h3>
                                 </div>
                                 <form>
                                     <div class="form-inner mb-25">
-                                        <input type="text" placeholder="User Name *">
+                                        <input type="text" placeholder="Tên tài khoản *">
                                     </div>
                                     <div class="form-inner mb-25">
-                                        <input type="email" placeholder="Email Here *">
+                                        <input type="email" placeholder="Email  *">
                                     </div>
                                     <div class="form-inner mb-25">
-                                        <input id="password2" type="password" placeholder="Password *">
+                                        <input id="password2" type="password" placeholder="Mật khẩu *">
                                         <i class="bi bi-eye-slash" id="togglePassword2"></i>
                                     </div>
                                     <div class="form-inner mb-35">
-                                        <input id="password3" type="password" placeholder="Confirm Password *">
+                                        <input id="password3" type="password" placeholder="Nhập lại mật khẩu *">
                                         <i class="bi bi-eye-slash" id="togglePassword3"></i>
                                     </div>
                                     <button class="primary-btn" type="submit">
-                                        Registration
+                                        Đăng ký 
                                     </button>
                                 </form>
                             </div>
@@ -306,8 +306,6 @@
             </div>
         </div>
     </div>
-    
-    
     <div class="mobile-bottom-wrapper">
         <ul>
             <li class="search-bar">
@@ -518,7 +516,7 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
                                         <div class="product-card">
                                             <div class="product-card-img">
-                                                <a href="#">
+                                                <a href="index.php?page=productDetail&id=<?= $item['id_san_pham'] ?>">
                                                     <img src="<?php echo $item['anh']; ?>" alt="">
                                                     <div class="batch">
                                                         <span class="new">30% off</span>
@@ -544,7 +542,7 @@
                                                     </ul>
                                                 </div>
                                                 <h6>
-                                                    <a class="hover-underline" href="">
+                                                    <a class="hover-underline" href="index.php?page=productDetail&id=<?= $item['id_san_pham'] ?>">
                                                         <?php echo $item['ten_san_pham']; ?>
                                                     </a>
                                                 </h6>
@@ -552,11 +550,522 @@
                                             </div>
                                         </div>
                                     </div>
+<<<<<<< Updated upstream
                                 <?php
                                 }
                                 ?>
 
 
+=======
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="400ms" data-wow-duration="1500ms">
+                                    <div class="product-card">
+                                        <div class="product-card-img">
+                                            <a href="product-details.html">
+                                                <img src="assets/image/inner-page/product-image4.png" alt="">
+                                                <div class="batch">
+                                                    <span class="style-3">New</span>
+                                                </div>
+                                            </a>
+                                            <div class="overlay">
+                                                <div class="cart-area">
+                                                    <a class="add-cart-btn" href="cart-page.html"><i class="bi bi-bag-check"></i>
+                                                        Add To Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="view-and-favorite-area">
+                                                <ul>
+                                                    <li>
+                                                        <a href="whislist.html">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                                viewBox="0 0 18 18">
+                                                                <path
+                                                                    d="M16.528 2.20919C16.0674 1.71411 15.5099 1.31906 14.8902 1.04859C14.2704 0.778112 13.6017 0.637996 12.9255 0.636946C12.2487 0.637725 11.5794 0.777639 10.959 1.048C10.3386 1.31835 9.78042 1.71338 9.31911 2.20854L9.00132 2.54436L8.68352 2.20854C6.83326 0.217151 3.71893 0.102789 1.72758 1.95306C1.63932 2.03507 1.5541 2.12029 1.47209 2.20854C-0.490696 4.32565 -0.490696 7.59753 1.47209 9.71463L8.5343 17.1622C8.77862 17.4201 9.18579 17.4312 9.44373 17.1868C9.45217 17.1788 9.46039 17.1706 9.46838 17.1622L16.528 9.71463C18.4907 7.59776 18.4907 4.32606 16.528 2.20919ZM15.5971 8.82879H15.5965L9.00132 15.7849L2.40553 8.82879C0.90608 7.21113 0.90608 4.7114 2.40553 3.09374C3.76722 1.61789 6.06755 1.52535 7.5434 2.88703C7.61505 2.95314 7.68401 3.0221 7.75012 3.09374L8.5343 3.92104C8.79272 4.17781 9.20995 4.17781 9.46838 3.92104L10.2526 3.09438C11.6142 1.61853 13.9146 1.52599 15.3904 2.88767C15.4621 2.95378 15.531 3.02274 15.5971 3.09438C17.1096 4.71461 17.1207 7.2189 15.5971 8.82879Z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a data-bs-toggle="modal" data-bs-target="#product-view">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                                viewBox="0 0 22 22">
+                                                                <path
+                                                                    d="M21.8601 10.5721C21.6636 10.3032 16.9807 3.98901 10.9999 3.98901C5.019 3.98901 0.335925 10.3032 0.139601 10.5718C0.0488852 10.6961 0 10.846 0 10.9999C0 11.1537 0.0488852 11.3036 0.139601 11.4279C0.335925 11.6967 5.019 18.011 10.9999 18.011C16.9807 18.011 21.6636 11.6967 21.8601 11.4281C21.951 11.3039 21.9999 11.154 21.9999 11.0001C21.9999 10.8462 21.951 10.6963 21.8601 10.5721ZM10.9999 16.5604C6.59432 16.5604 2.77866 12.3696 1.64914 10.9995C2.77719 9.62823 6.58487 5.43955 10.9999 5.43955C15.4052 5.43955 19.2206 9.62969 20.3506 11.0005C19.2225 12.3717 15.4149 16.5604 10.9999 16.5604Z">
+                                                                </path>
+                                                                <path
+                                                                    d="M10.9999 6.64832C8.60039 6.64832 6.64819 8.60051 6.64819 11C6.64819 13.3994 8.60039 15.3516 10.9999 15.3516C13.3993 15.3516 15.3515 13.3994 15.3515 11C15.3515 8.60051 13.3993 6.64832 10.9999 6.64832ZM10.9999 13.9011C9.40013 13.9011 8.09878 12.5997 8.09878 11C8.09878 9.40029 9.40017 8.0989 10.9999 8.0989C12.5995 8.0989 13.9009 9.40029 13.9009 11C13.9009 12.5997 12.5996 13.9011 10.9999 13.9011Z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-content">
+                                            <div class="rating">
+                                                <ul>
+                                                    <li><i class="bi bi-star-fill"></i></li>
+                                                    <li><i class="bi bi-star-fill"></i></li>
+                                                    <li><i class="bi bi-star-fill"></i></li>
+                                                    <li><i class="bi bi-star-fill"></i></li>
+                                                    <li><i class="bi bi-star-fill"></i></li>
+                                                </ul>
+                                            </div>
+                                            <h6><a class="hover-underline" href="product-details.html">ultimate cozy chic oversize jacket</a>
+                                            </h6>
+                                            <p class="price">$400.00 </p>
+                                            <ul class="color-tag">
+                                                <li class="medium-brown"><span>Brown</span></li>
+                                                <li class="persian-red"><span>Persian Red</span></li>
+                                                <li class="amber-yellow"><span> Yellow</span></li>
+                                                <li class="amber-yellow2"><span> Amber</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                    <div class="product-card">
+                                        <div class="product-card-img">
+                                            <a href="product-details.html">
+                                                <img src="assets/image/inner-page/product-image6.png" alt="">
+                                            </a>
+                                            <div class="overlay">
+                                                <div class="cart-area">
+                                                    <a class="add-cart-btn style-2" href="cart-page.html"><i class="bi bi-bag-check"></i>
+                                                        Add To Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="view-and-favorite-area">
+                                                <ul>
+                                                    <li>
+                                                        <a href="whislist.html">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                                viewBox="0 0 18 18">
+                                                                <path
+                                                                    d="M16.528 2.20919C16.0674 1.71411 15.5099 1.31906 14.8902 1.04859C14.2704 0.778112 13.6017 0.637996 12.9255 0.636946C12.2487 0.637725 11.5794 0.777639 10.959 1.048C10.3386 1.31835 9.78042 1.71338 9.31911 2.20854L9.00132 2.54436L8.68352 2.20854C6.83326 0.217151 3.71893 0.102789 1.72758 1.95306C1.63932 2.03507 1.5541 2.12029 1.47209 2.20854C-0.490696 4.32565 -0.490696 7.59753 1.47209 9.71463L8.5343 17.1622C8.77862 17.4201 9.18579 17.4312 9.44373 17.1868C9.45217 17.1788 9.46039 17.1706 9.46838 17.1622L16.528 9.71463C18.4907 7.59776 18.4907 4.32606 16.528 2.20919ZM15.5971 8.82879H15.5965L9.00132 15.7849L2.40553 8.82879C0.90608 7.21113 0.90608 4.7114 2.40553 3.09374C3.76722 1.61789 6.06755 1.52535 7.5434 2.88703C7.61505 2.95314 7.68401 3.0221 7.75012 3.09374L8.5343 3.92104C8.79272 4.17781 9.20995 4.17781 9.46838 3.92104L10.2526 3.09438C11.6142 1.61853 13.9146 1.52599 15.3904 2.88767C15.4621 2.95378 15.531 3.02274 15.5971 3.09438C17.1096 4.71461 17.1207 7.2189 15.5971 8.82879Z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a data-bs-toggle="modal" data-bs-target="#product-view">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                                viewBox="0 0 22 22">
+                                                                <path
+                                                                    d="M21.8601 10.5721C21.6636 10.3032 16.9807 3.98901 10.9999 3.98901C5.019 3.98901 0.335925 10.3032 0.139601 10.5718C0.0488852 10.6961 0 10.846 0 10.9999C0 11.1537 0.0488852 11.3036 0.139601 11.4279C0.335925 11.6967 5.019 18.011 10.9999 18.011C16.9807 18.011 21.6636 11.6967 21.8601 11.4281C21.951 11.3039 21.9999 11.154 21.9999 11.0001C21.9999 10.8462 21.951 10.6963 21.8601 10.5721ZM10.9999 16.5604C6.59432 16.5604 2.77866 12.3696 1.64914 10.9995C2.77719 9.62823 6.58487 5.43955 10.9999 5.43955C15.4052 5.43955 19.2206 9.62969 20.3506 11.0005C19.2225 12.3717 15.4149 16.5604 10.9999 16.5604Z">
+                                                                </path>
+                                                                <path
+                                                                    d="M10.9999 6.64832C8.60039 6.64832 6.64819 8.60051 6.64819 11C6.64819 13.3994 8.60039 15.3516 10.9999 15.3516C13.3993 15.3516 15.3515 13.3994 15.3515 11C15.3515 8.60051 13.3993 6.64832 10.9999 6.64832ZM10.9999 13.9011C9.40013 13.9011 8.09878 12.5997 8.09878 11C8.09878 9.40029 9.40017 8.0989 10.9999 8.0989C12.5995 8.0989 13.9009 9.40029 13.9009 11C13.9009 12.5997 12.5996 13.9011 10.9999 13.9011Z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-content">
+                                            <div class="rating">
+                                                <ul>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                </ul>
+                                            </div>
+                                            <h6><a class="hover-underline" href="product-details.html">Stylish Relaxed Fit Shirt</a>
+                                            </h6>
+                                            <p class="price"> $140.00 </p>
+                                            <ul class="color-tag">
+                                                <li class="black"><span> black</span></li>
+                                                <li class="yellow"><span> Yellow</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="800ms" data-wow-duration="1500ms">
+                                    <div class="product-card">
+                                        <div class="product-card-img">
+                                            <a href="product-details.html">
+                                                <img src="assets/image/inner-page/product-image9.png" alt="">
+                                            </a>
+                                            <div class="overlay">
+                                                <div class="cart-area">
+                                                    <a class="add-cart-btn" href="cart-page.html"><i class="bi bi-bag-check"></i>
+                                                        Add To Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="view-and-favorite-area">
+                                                <ul>
+                                                    <li>
+                                                        <a href="whislist.html">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                                viewBox="0 0 18 18">
+                                                                <path
+                                                                    d="M16.528 2.20919C16.0674 1.71411 15.5099 1.31906 14.8902 1.04859C14.2704 0.778112 13.6017 0.637996 12.9255 0.636946C12.2487 0.637725 11.5794 0.777639 10.959 1.048C10.3386 1.31835 9.78042 1.71338 9.31911 2.20854L9.00132 2.54436L8.68352 2.20854C6.83326 0.217151 3.71893 0.102789 1.72758 1.95306C1.63932 2.03507 1.5541 2.12029 1.47209 2.20854C-0.490696 4.32565 -0.490696 7.59753 1.47209 9.71463L8.5343 17.1622C8.77862 17.4201 9.18579 17.4312 9.44373 17.1868C9.45217 17.1788 9.46039 17.1706 9.46838 17.1622L16.528 9.71463C18.4907 7.59776 18.4907 4.32606 16.528 2.20919ZM15.5971 8.82879H15.5965L9.00132 15.7849L2.40553 8.82879C0.90608 7.21113 0.90608 4.7114 2.40553 3.09374C3.76722 1.61789 6.06755 1.52535 7.5434 2.88703C7.61505 2.95314 7.68401 3.0221 7.75012 3.09374L8.5343 3.92104C8.79272 4.17781 9.20995 4.17781 9.46838 3.92104L10.2526 3.09438C11.6142 1.61853 13.9146 1.52599 15.3904 2.88767C15.4621 2.95378 15.531 3.02274 15.5971 3.09438C17.1096 4.71461 17.1207 7.2189 15.5971 8.82879Z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a data-bs-toggle="modal" data-bs-target="#product-view">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                                viewBox="0 0 22 22">
+                                                                <path
+                                                                    d="M21.8601 10.5721C21.6636 10.3032 16.9807 3.98901 10.9999 3.98901C5.019 3.98901 0.335925 10.3032 0.139601 10.5718C0.0488852 10.6961 0 10.846 0 10.9999C0 11.1537 0.0488852 11.3036 0.139601 11.4279C0.335925 11.6967 5.019 18.011 10.9999 18.011C16.9807 18.011 21.6636 11.6967 21.8601 11.4281C21.951 11.3039 21.9999 11.154 21.9999 11.0001C21.9999 10.8462 21.951 10.6963 21.8601 10.5721ZM10.9999 16.5604C6.59432 16.5604 2.77866 12.3696 1.64914 10.9995C2.77719 9.62823 6.58487 5.43955 10.9999 5.43955C15.4052 5.43955 19.2206 9.62969 20.3506 11.0005C19.2225 12.3717 15.4149 16.5604 10.9999 16.5604Z">
+                                                                </path>
+                                                                <path
+                                                                    d="M10.9999 6.64832C8.60039 6.64832 6.64819 8.60051 6.64819 11C6.64819 13.3994 8.60039 15.3516 10.9999 15.3516C13.3993 15.3516 15.3515 13.3994 15.3515 11C15.3515 8.60051 13.3993 6.64832 10.9999 6.64832ZM10.9999 13.9011C9.40013 13.9011 8.09878 12.5997 8.09878 11C8.09878 9.40029 9.40017 8.0989 10.9999 8.0989C12.5995 8.0989 13.9009 9.40029 13.9009 11C13.9009 12.5997 12.5996 13.9011 10.9999 13.9011Z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-content">
+                                            <div class="rating">
+                                                <ul>
+                                                    <li><i class="bi bi-star-fill"></i></li>
+                                                    <li><i class="bi bi-star-fill"></i></li>
+                                                    <li><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                </ul>
+                                            </div>
+                                            <h6><a class="hover-underline" href="product-details.html">ultimate Stylish Oversized sweater</a>
+                                            </h6>
+                                            <p class="price">$500.00 </p>
+                                            <ul class="color-tag">
+                                                <li class="medium-brown"><span>Brown</span></li>
+                                                <li class="dark-lavender"><span> Lavender</span></li>
+                                                <li class="cyan-blue"><span> Cyan</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="800ms" data-wow-duration="1500ms">
+                                    <div class="product-card">
+                                        <div class="product-card-img">
+                                            <a href="product-details.html">
+                                                <img src="assets/image/home1/product-image6.jpg" alt="">
+                                            </a>
+                                            <div class="overlay">
+                                                <div class="cart-area">
+                                                    <a class="add-cart-btn" href="cart-page.html"><i class="bi bi-bag-check"></i>
+                                                        Add To Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="view-and-favorite-area">
+                                                <ul>
+                                                    <li>
+                                                        <a href="whislist.html">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                                viewBox="0 0 18 18">
+                                                                <path
+                                                                    d="M16.528 2.20919C16.0674 1.71411 15.5099 1.31906 14.8902 1.04859C14.2704 0.778112 13.6017 0.637996 12.9255 0.636946C12.2487 0.637725 11.5794 0.777639 10.959 1.048C10.3386 1.31835 9.78042 1.71338 9.31911 2.20854L9.00132 2.54436L8.68352 2.20854C6.83326 0.217151 3.71893 0.102789 1.72758 1.95306C1.63932 2.03507 1.5541 2.12029 1.47209 2.20854C-0.490696 4.32565 -0.490696 7.59753 1.47209 9.71463L8.5343 17.1622C8.77862 17.4201 9.18579 17.4312 9.44373 17.1868C9.45217 17.1788 9.46039 17.1706 9.46838 17.1622L16.528 9.71463C18.4907 7.59776 18.4907 4.32606 16.528 2.20919ZM15.5971 8.82879H15.5965L9.00132 15.7849L2.40553 8.82879C0.90608 7.21113 0.90608 4.7114 2.40553 3.09374C3.76722 1.61789 6.06755 1.52535 7.5434 2.88703C7.61505 2.95314 7.68401 3.0221 7.75012 3.09374L8.5343 3.92104C8.79272 4.17781 9.20995 4.17781 9.46838 3.92104L10.2526 3.09438C11.6142 1.61853 13.9146 1.52599 15.3904 2.88767C15.4621 2.95378 15.531 3.02274 15.5971 3.09438C17.1096 4.71461 17.1207 7.2189 15.5971 8.82879Z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a data-bs-toggle="modal" data-bs-target="#product-view">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                                viewBox="0 0 22 22">
+                                                                <path
+                                                                    d="M21.8601 10.5721C21.6636 10.3032 16.9807 3.98901 10.9999 3.98901C5.019 3.98901 0.335925 10.3032 0.139601 10.5718C0.0488852 10.6961 0 10.846 0 10.9999C0 11.1537 0.0488852 11.3036 0.139601 11.4279C0.335925 11.6967 5.019 18.011 10.9999 18.011C16.9807 18.011 21.6636 11.6967 21.8601 11.4281C21.951 11.3039 21.9999 11.154 21.9999 11.0001C21.9999 10.8462 21.951 10.6963 21.8601 10.5721ZM10.9999 16.5604C6.59432 16.5604 2.77866 12.3696 1.64914 10.9995C2.77719 9.62823 6.58487 5.43955 10.9999 5.43955C15.4052 5.43955 19.2206 9.62969 20.3506 11.0005C19.2225 12.3717 15.4149 16.5604 10.9999 16.5604Z">
+                                                                </path>
+                                                                <path
+                                                                    d="M10.9999 6.64832C8.60039 6.64832 6.64819 8.60051 6.64819 11C6.64819 13.3994 8.60039 15.3516 10.9999 15.3516C13.3993 15.3516 15.3515 13.3994 15.3515 11C15.3515 8.60051 13.3993 6.64832 10.9999 6.64832ZM10.9999 13.9011C9.40013 13.9011 8.09878 12.5997 8.09878 11C8.09878 9.40029 9.40017 8.0989 10.9999 8.0989C12.5995 8.0989 13.9009 9.40029 13.9009 11C13.9009 12.5997 12.5996 13.9011 10.9999 13.9011Z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-content">
+                                            <div class="rating">
+                                                <ul>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                </ul>
+                                            </div>
+                                            <h6><a class="hover-underline" href="product-details.html"> cozy chic Shirt</a>
+                                            </h6>
+                                            <p class="price">$250.00 </p>
+                                            <ul class="color-tag">
+                                                <li class="black"><span> black</span></li>
+                                                <li class="yellow"><span> Yellow</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                    <div class="product-card">
+                                        <div class="product-card-img">
+                                            <a href="product-details.html">
+                                                <img src="assets/image/home1/product-image.jpg" alt="">
+                                                <div class="batch">
+                                                    <span class="new">23% off</span>
+                                                    <span>Hot deal</span>
+                                                </div>
+                                            </a>
+                                            <div class="overlay">
+                                                <div class="cart-area">
+                                                    <a class="add-cart-btn" href="cart-page.html"><i class="bi bi-bag-check"></i>
+                                                        Add To Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="view-and-favorite-area">
+                                                <ul>
+                                                    <li>
+                                                        <a href="whislist.html">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                                viewBox="0 0 18 18">
+                                                                <path
+                                                                    d="M16.528 2.20919C16.0674 1.71411 15.5099 1.31906 14.8902 1.04859C14.2704 0.778112 13.6017 0.637996 12.9255 0.636946C12.2487 0.637725 11.5794 0.777639 10.959 1.048C10.3386 1.31835 9.78042 1.71338 9.31911 2.20854L9.00132 2.54436L8.68352 2.20854C6.83326 0.217151 3.71893 0.102789 1.72758 1.95306C1.63932 2.03507 1.5541 2.12029 1.47209 2.20854C-0.490696 4.32565 -0.490696 7.59753 1.47209 9.71463L8.5343 17.1622C8.77862 17.4201 9.18579 17.4312 9.44373 17.1868C9.45217 17.1788 9.46039 17.1706 9.46838 17.1622L16.528 9.71463C18.4907 7.59776 18.4907 4.32606 16.528 2.20919ZM15.5971 8.82879H15.5965L9.00132 15.7849L2.40553 8.82879C0.90608 7.21113 0.90608 4.7114 2.40553 3.09374C3.76722 1.61789 6.06755 1.52535 7.5434 2.88703C7.61505 2.95314 7.68401 3.0221 7.75012 3.09374L8.5343 3.92104C8.79272 4.17781 9.20995 4.17781 9.46838 3.92104L10.2526 3.09438C11.6142 1.61853 13.9146 1.52599 15.3904 2.88767C15.4621 2.95378 15.531 3.02274 15.5971 3.09438C17.1096 4.71461 17.1207 7.2189 15.5971 8.82879Z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a data-bs-toggle="modal" data-bs-target="#product-view">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                                viewBox="0 0 22 22">
+                                                                <path
+                                                                    d="M21.8601 10.5721C21.6636 10.3032 16.9807 3.98901 10.9999 3.98901C5.019 3.98901 0.335925 10.3032 0.139601 10.5718C0.0488852 10.6961 0 10.846 0 10.9999C0 11.1537 0.0488852 11.3036 0.139601 11.4279C0.335925 11.6967 5.019 18.011 10.9999 18.011C16.9807 18.011 21.6636 11.6967 21.8601 11.4281C21.951 11.3039 21.9999 11.154 21.9999 11.0001C21.9999 10.8462 21.951 10.6963 21.8601 10.5721ZM10.9999 16.5604C6.59432 16.5604 2.77866 12.3696 1.64914 10.9995C2.77719 9.62823 6.58487 5.43955 10.9999 5.43955C15.4052 5.43955 19.2206 9.62969 20.3506 11.0005C19.2225 12.3717 15.4149 16.5604 10.9999 16.5604Z">
+                                                                </path>
+                                                                <path
+                                                                    d="M10.9999 6.64832C8.60039 6.64832 6.64819 8.60051 6.64819 11C6.64819 13.3994 8.60039 15.3516 10.9999 15.3516C13.3993 15.3516 15.3515 13.3994 15.3515 11C15.3515 8.60051 13.3993 6.64832 10.9999 6.64832ZM10.9999 13.9011C9.40013 13.9011 8.09878 12.5997 8.09878 11C8.09878 9.40029 9.40017 8.0989 10.9999 8.0989C12.5995 8.0989 13.9009 9.40029 13.9009 11C13.9009 12.5997 12.5996 13.9011 10.9999 13.9011Z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-content">
+                                            <div class="rating">
+                                                <ul>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                </ul>
+                                            </div>
+                                            <h6><a class="hover-underline" href="product-details.html"> Trendy & Comfortable Outerwear</a>
+                                            </h6>
+                                            <p class="price"><del>$446.00</del> $380.00 </p>
+                                            <ul class="color-tag">
+                                                <li class="medium-brown"><span>Brown</span></li>
+                                                <li class="dark-lavender"><span> Lavender</span></li>
+                                                <li class="amber-yellow"><span> Yellow</span></li>
+        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="400ms" data-wow-duration="1500ms">
+                                    <div class="product-card">
+                                        <div class="product-card-img">
+                                            <a href="product-details.html">
+                                                <img src="assets/image/inner-page/product-image10.png" alt="">
+                                                <div class="batch">
+                                                    <span class="new">23% off</span>
+                                                </div>
+                                            </a>
+                                            <div class="overlay">
+                                                <div class="cart-area">
+                                                    <a class="add-cart-btn" href="cart-page.html"><i class="bi bi-bag-check"></i>
+                                                        Add To Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="view-and-favorite-area">
+                                                <ul>
+                                                    <li>
+                                                        <a href="whislist.html">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                                viewBox="0 0 18 18">
+                                                                <path
+                                                                    d="M16.528 2.20919C16.0674 1.71411 15.5099 1.31906 14.8902 1.04859C14.2704 0.778112 13.6017 0.637996 12.9255 0.636946C12.2487 0.637725 11.5794 0.777639 10.959 1.048C10.3386 1.31835 9.78042 1.71338 9.31911 2.20854L9.00132 2.54436L8.68352 2.20854C6.83326 0.217151 3.71893 0.102789 1.72758 1.95306C1.63932 2.03507 1.5541 2.12029 1.47209 2.20854C-0.490696 4.32565 -0.490696 7.59753 1.47209 9.71463L8.5343 17.1622C8.77862 17.4201 9.18579 17.4312 9.44373 17.1868C9.45217 17.1788 9.46039 17.1706 9.46838 17.1622L16.528 9.71463C18.4907 7.59776 18.4907 4.32606 16.528 2.20919ZM15.5971 8.82879H15.5965L9.00132 15.7849L2.40553 8.82879C0.90608 7.21113 0.90608 4.7114 2.40553 3.09374C3.76722 1.61789 6.06755 1.52535 7.5434 2.88703C7.61505 2.95314 7.68401 3.0221 7.75012 3.09374L8.5343 3.92104C8.79272 4.17781 9.20995 4.17781 9.46838 3.92104L10.2526 3.09438C11.6142 1.61853 13.9146 1.52599 15.3904 2.88767C15.4621 2.95378 15.531 3.02274 15.5971 3.09438C17.1096 4.71461 17.1207 7.2189 15.5971 8.82879Z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a data-bs-toggle="modal" data-bs-target="#product-view">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                                viewBox="0 0 22 22">
+                                                                <path
+                                                                    d="M21.8601 10.5721C21.6636 10.3032 16.9807 3.98901 10.9999 3.98901C5.019 3.98901 0.335925 10.3032 0.139601 10.5718C0.0488852 10.6961 0 10.846 0 10.9999C0 11.1537 0.0488852 11.3036 0.139601 11.4279C0.335925 11.6967 5.019 18.011 10.9999 18.011C16.9807 18.011 21.6636 11.6967 21.8601 11.4281C21.951 11.3039 21.9999 11.154 21.9999 11.0001C21.9999 10.8462 21.951 10.6963 21.8601 10.5721ZM10.9999 16.5604C6.59432 16.5604 2.77866 12.3696 1.64914 10.9995C2.77719 9.62823 6.58487 5.43955 10.9999 5.43955C15.4052 5.43955 19.2206 9.62969 20.3506 11.0005C19.2225 12.3717 15.4149 16.5604 10.9999 16.5604Z">
+                                                                </path>
+                                                                <path
+                                                                    d="M10.9999 6.64832C8.60039 6.64832 6.64819 8.60051 6.64819 11C6.64819 13.3994 8.60039 15.3516 10.9999 15.3516C13.3993 15.3516 15.3515 13.3994 15.3515 11C15.3515 8.60051 13.3993 6.64832 10.9999 6.64832ZM10.9999 13.9011C9.40013 13.9011 8.09878 12.5997 8.09878 11C8.09878 9.40029 9.40017 8.0989 10.9999 8.0989C12.5995 8.0989 13.9009 9.40029 13.9009 11C13.9009 12.5997 12.5996 13.9011 10.9999 13.9011Z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-content">
+                                            <div class="rating">
+                                                <ul>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                </ul>
+                                            </div>
+                                            <h6><a class="hover-underline" href="product-details.html">cozy chic sweater</a>
+                                            </h6>
+                                            <p class="price">$200.00 </p>
+                                            <ul class="color-tag">
+                                                <li class="black"><span> black</span></li>
+                                                <li class="yellow"><span> Yellow</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
+                                    <div class="product-card">
+                                        <div class="product-card-img">
+                                            <a href="product-details.html">
+                                                <img src="assets/image/inner-page/product-image13.png" alt="">
+                                                <div class="batch">
+                                                    <span class="new">23% off</span>
+                                                    <span>Hot deal</span>
+                                                </div>
+                                            </a>
+                                            <div class="overlay">
+                                                <div class="cart-area">
+                                                    <a class="add-cart-btn" href="cart-page.html"><i class="bi bi-bag-check"></i>
+                                                        Add To Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="view-and-favorite-area">
+                                                <ul>
+                                                    <li>
+                                                        <a href="whislist.html">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                                viewBox="0 0 18 18">
+                                                                <path
+                                                                    d="M16.528 2.20919C16.0674 1.71411 15.5099 1.31906 14.8902 1.04859C14.2704 0.778112 13.6017 0.637996 12.9255 0.636946C12.2487 0.637725 11.5794 0.777639 10.959 1.048C10.3386 1.31835 9.78042 1.71338 9.31911 2.20854L9.00132 2.54436L8.68352 2.20854C6.83326 0.217151 3.71893 0.102789 1.72758 1.95306C1.63932 2.03507 1.5541 2.12029 1.47209 2.20854C-0.490696 4.32565 -0.490696 7.59753 1.47209 9.71463L8.5343 17.1622C8.77862 17.4201 9.18579 17.4312 9.44373 17.1868C9.45217 17.1788 9.46039 17.1706 9.46838 17.1622L16.528 9.71463C18.4907 7.59776 18.4907 4.32606 16.528 2.20919ZM15.5971 8.82879H15.5965L9.00132 15.7849L2.40553 8.82879C0.90608 7.21113 0.90608 4.7114 2.40553 3.09374C3.76722 1.61789 6.06755 1.52535 7.5434 2.88703C7.61505 2.95314 7.68401 3.0221 7.75012 3.09374L8.5343 3.92104C8.79272 4.17781 9.20995 4.17781 9.46838 3.92104L10.2526 3.09438C11.6142 1.61853 13.9146 1.52599 15.3904 2.88767C15.4621 2.95378 15.531 3.02274 15.5971 3.09438C17.1096 4.71461 17.1207 7.2189 15.5971 8.82879Z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a data-bs-toggle="modal" data-bs-target="#product-view">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                                viewBox="0 0 22 22">
+                                                                <path
+                                                                    d="M21.8601 10.5721C21.6636 10.3032 16.9807 3.98901 10.9999 3.98901C5.019 3.98901 0.335925 10.3032 0.139601 10.5718C0.0488852 10.6961 0 10.846 0 10.9999C0 11.1537 0.0488852 11.3036 0.139601 11.4279C0.335925 11.6967 5.019 18.011 10.9999 18.011C16.9807 18.011 21.6636 11.6967 21.8601 11.4281C21.951 11.3039 21.9999 11.154 21.9999 11.0001C21.9999 10.8462 21.951 10.6963 21.8601 10.5721ZM10.9999 16.5604C6.59432 16.5604 2.77866 12.3696 1.64914 10.9995C2.77719 9.62823 6.58487 5.43955 10.9999 5.43955C15.4052 5.43955 19.2206 9.62969 20.3506 11.0005C19.2225 12.3717 15.4149 16.5604 10.9999 16.5604Z">
+                                                                </path>
+                                                                <path
+                                                                    d="M10.9999 6.64832C8.60039 6.64832 6.64819 8.60051 6.64819 11C6.64819 13.3994 8.60039 15.3516 10.9999 15.3516C13.3993 15.3516 15.3515 13.3994 15.3515 11C15.3515 8.60051 13.3993 6.64832 10.9999 6.64832ZM10.9999 13.9011C9.40013 13.9011 8.09878 12.5997 8.09878 11C8.09878 9.40029 9.40017 8.0989 10.9999 8.0989C12.5995 8.0989 13.9009 9.40029 13.9009 11C13.9009 12.5997 12.5996 13.9011 10.9999 13.9011Z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-content">
+                                            <div class="rating">
+                                                <ul>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                </ul>
+                                            </div>
+                                            <h6><a class="hover-underline" href="product-details.html">Timeless Chic Elevate Your Style</a>
+                                            </h6>
+                                            <p class="price"><del>$345.00</del> $290.00 </p>
+                                            <ul class="color-tag">
+                                                <li class="medium-brown"><span>Brown</span></li>
+                                                <li class="dark-lavender"><span> Lavender</span></li>
+                                                <li class="amber-yellow"><span> Yellow</span></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
+                                    <div class="product-card">
+                                        <div class="product-card-img">
+                                            <a href="product-details.html">
+                                                <img src="assets/image/inner-page/product-image11.png" alt="">
+                                                <div class="batch">
+                                                    <span class="new">23% off</span>
+                                                    <span>Hot deal</span>
+                                                </div>
+                                            </a>
+                                            <div class="overlay">
+                                                <div class="cart-area">
+                                                    <a class="add-cart-btn" href="cart-page.html"><i class="bi bi-bag-check"></i>
+                                                        Add To Cart</a>
+                                                </div>
+                                            </div>
+                                            <div class="view-and-favorite-area">
+                                                <ul>
+                                                    <li>
+                                                        <a href="whislist.html">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                                viewBox="0 0 18 18">
+                                                                <path
+                                                                    d="M16.528 2.20919C16.0674 1.71411 15.5099 1.31906 14.8902 1.04859C14.2704 0.778112 13.6017 0.637996 12.9255 0.636946C12.2487 0.637725 11.5794 0.777639 10.959 1.048C10.3386 1.31835 9.78042 1.71338 9.31911 2.20854L9.00132 2.54436L8.68352 2.20854C6.83326 0.217151 3.71893 0.102789 1.72758 1.95306C1.63932 2.03507 1.5541 2.12029 1.47209 2.20854C-0.490696 4.32565 -0.490696 7.59753 1.47209 9.71463L8.5343 17.1622C8.77862 17.4201 9.18579 17.4312 9.44373 17.1868C9.45217 17.1788 9.46039 17.1706 9.46838 17.1622L16.528 9.71463C18.4907 7.59776 18.4907 4.32606 16.528 2.20919ZM15.5971 8.82879H15.5965L9.00132 15.7849L2.40553 8.82879C0.90608 7.21113 0.90608 4.7114 2.40553 3.09374C3.76722 1.61789 6.06755 1.52535 7.5434 2.88703C7.61505 2.95314 7.68401 3.0221 7.75012 3.09374L8.5343 3.92104C8.79272 4.17781 9.20995 4.17781 9.46838 3.92104L10.2526 3.09438C11.6142 1.61853 13.9146 1.52599 15.3904 2.88767C15.4621 2.95378 15.531 3.02274 15.5971 3.09438C17.1096 4.71461 17.1207 7.2189 15.5971 8.82879Z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a data-bs-toggle="modal" data-bs-target="#product-view">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                                viewBox="0 0 22 22">
+                                                                <path
+                                                                    d="M21.8601 10.5721C21.6636 10.3032 16.9807 3.98901 10.9999 3.98901C5.019 3.98901 0.335925 10.3032 0.139601 10.5718C0.0488852 10.6961 0 10.846 0 10.9999C0 11.1537 0.0488852 11.3036 0.139601 11.4279C0.335925 11.6967 5.019 18.011 10.9999 18.011C16.9807 18.011 21.6636 11.6967 21.8601 11.4281C21.951 11.3039 21.9999 11.154 21.9999 11.0001C21.9999 10.8462 21.951 10.6963 21.8601 10.5721ZM10.9999 16.5604C6.59432 16.5604 2.77866 12.3696 1.64914 10.9995C2.77719 9.62823 6.58487 5.43955 10.9999 5.43955C15.4052 5.43955 19.2206 9.62969 20.3506 11.0005C19.2225 12.3717 15.4149 16.5604 10.9999 16.5604Z">
+                                                                </path>
+                                                                <path
+                                                                    d="M10.9999 6.64832C8.60039 6.64832 6.64819 8.60051 6.64819 11C6.64819 13.3994 8.60039 15.3516 10.9999 15.3516C13.3993 15.3516 15.3515 13.3994 15.3515 11C15.3515 8.60051 13.3993 6.64832 10.9999 6.64832ZM10.9999 13.9011C9.40013 13.9011 8.09878 12.5997 8.09878 11C8.09878 9.40029 9.40017 8.0989 10.9999 8.0989C12.5995 8.0989 13.9009 9.40029 13.9009 11C13.9009 12.5997 12.5996 13.9011 10.9999 13.9011Z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-content">
+                                            <div class="rating">
+                                                <ul>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                    <li class="style-2"><i class="bi bi-star-fill"></i></li>
+                                                </ul>
+                                            </div>
+                                            <h6><a class="hover-underline" href="product-details.html">Urban Chic Elevate Your Style</a>
+                                            </h6>
+                                            <p class="price">$350.00 </p>
+                                            <ul class="color-tag">
+                                                <li class="medium-brown"><span>Brown</span></li>
+                                                <li class="dark-lavender"><span> Lavender</span></li>
+                                                <li class="amber-yellow"><span> Yellow</span></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+>>>>>>> Stashed changes
                             </div>
                         </div>
                         <div class="row wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">

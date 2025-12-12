@@ -9,12 +9,16 @@ switch ($page) {
     case 'home':
         $controller->home();
         break;
-
     case 'shop':
         $controller->shop();
         break;
+    case 'productDetail':
+        $controller->product_detail($id);
+        break;
+    case 'order_success':
+        $controller->order_success();
+        break;
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
-    break;  
 }
 ?>

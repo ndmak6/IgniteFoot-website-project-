@@ -28,13 +28,13 @@ class controllerAdmin {
         }
 
         $this->modelAdmin->addProducts($nameP, $describe, $price, $imagePath);
-        header('location: admin.php');
+        header('location: admin.php?pageAdmin=show_product_control');
     }
 
     public function deleteFunction($idAdmin){
         if($idAdmin){
             $this->modelAdmin->deleteProducts($idAdmin);
-            header("location: admin.php");
+            header("location: admin.php?pageAdmin=show_product_control");
         }
     }
     public function edit_form(){
@@ -59,7 +59,11 @@ class controllerAdmin {
     $ma_sp = $_POST["ma_sp"];
 
     $this->modelAdmin->update_func($ten_sp,$mota_sp,$gia_sp,$anh_sp,$ma_sp);
+<<<<<<< Updated upstream
+    header("Location: admin.php?pageAdmin=show_product_control");
+=======
     header("Location: admin.php");
+>>>>>>> Stashed changes
     }
     public function show_p(){
     $products = $this->modelAdmin->getAllProduct();
@@ -68,6 +72,27 @@ class controllerAdmin {
     $content = ob_get_clean();
     include "admin/views/layout.php";
 }
+<<<<<<< Updated upstream
+=======
+
+public function dashboard(){
+    ob_start();
+    require "admin/views/dashboard.php";
+    $content = ob_get_clean();
+    include "admin/views/layout.php";
+}
+
+
+// public function customerControl(){
+//     $customers = $this->modelAdmin->getAllCustomers();
+//     ob_start();
+//     require "admin/views/customerControl.php";
+//     $content = ob_get_clean();
+//     include "admin/views/layout.php";
+// }
+}
+    
+>>>>>>> Stashed changes
 
 public function dashboard(){
     ob_start();
