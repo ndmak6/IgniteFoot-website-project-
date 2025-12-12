@@ -12,8 +12,6 @@ switch ($page) {
 
     case 'shop':
         $controller->shop();
-        break;
-    
     case 'shoppingcart':
         $controller->shoppingcart();
         break;
