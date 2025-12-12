@@ -13,7 +13,6 @@ switch ($page) {
         $controller->shop();
         break;
     case 'productDetail':
-        
         $controller->product_detail($id);
         break;
     case 'order_success':
