@@ -59,11 +59,9 @@ class controllerAdmin {
     $ma_sp = $_POST["ma_sp"];
 
     $this->modelAdmin->update_func($ten_sp,$mota_sp,$gia_sp,$anh_sp,$ma_sp);
-<<<<<<< Updated upstream
+
     header("Location: admin.php?pageAdmin=show_product_control");
-=======
     header("Location: admin.php");
->>>>>>> Stashed changes
     }
     public function show_p(){
     $products = $this->modelAdmin->getAllProduct();
@@ -72,8 +70,6 @@ class controllerAdmin {
     $content = ob_get_clean();
     include "admin/views/layout.php";
 }
-<<<<<<< Updated upstream
-=======
 
 public function dashboard(){
     ob_start();
@@ -83,32 +79,6 @@ public function dashboard(){
 }
 
 
-// public function customerControl(){
-//     $customers = $this->modelAdmin->getAllCustomers();
-//     ob_start();
-//     require "admin/views/customerControl.php";
-//     $content = ob_get_clean();
-//     include "admin/views/layout.php";
-// }
-}
-    
->>>>>>> Stashed changes
-
-public function dashboard(){
-    ob_start();
-    require "admin/views/dashboard.php";
-    $content = ob_get_clean();
-    include "admin/views/layout.php";
-}
-
-
-// public function customerControl(){
-//     $customers = $this->modelAdmin->getAllCustomers();
-//     ob_start();
-//     require "admin/views/customerControl.php";
-//     $content = ob_get_clean();
-//     include "admin/views/layout.php";
-// }
 public function cateProducts(){
     $categories = $this->modelAdmin->getAllCategories(); 
 
@@ -159,4 +129,11 @@ public function editCateProductsHandle(){
     $this->modelAdmin->updateCate($ten_dm, $anh_dai_dien, $id_dm);
     header("Location: admin.php?pageAdmin=cateProducts");
     }
+    // public function customerControl(){
+//     $customers = $this->modelAdmin->getAllCustomers();
+//     ob_start();
+//     require "admin/views/customerControl.php";
+//     $content = ob_get_clean();
+//     include "admin/views/layout.php";
+// }
 }
