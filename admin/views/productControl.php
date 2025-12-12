@@ -26,7 +26,11 @@
                   <td><?php echo $p['ten_san_pham'] ?></td>
                   <td><?php echo $p['mo_ta'] ?></td>
                   <td><?php echo $p['gia'] ?></td>
+<<<<<<< Updated upstream
                   <td><img src="<?php echo $p['anh'] ?>" alt="ảnh sản phẩm" width="80px" ></td>
+=======
+                  <td><img src="<?php echo $p['anh'] ?>" alt="ảnh sản phẩm" width="80px"></td>
+>>>>>>> Stashed changes
                   <td>
                     <a href="admin.php?pageAdmin=edit_form&idAdmin=<?php echo $p['id_san_pham'] ?>">
                       <button class="btn btn-sm btn-warning">Sửa</button>

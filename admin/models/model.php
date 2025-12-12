@@ -42,5 +42,29 @@ class databaseAdmin {
                                  WHERE id_san_pham=?");
     $pdo->execute([$ten_sp, $mota_sp, $gia_sp, $anh_sp, $ma_sp]);
     }
+    public function getAllCategories(){
+        $stmt = $this->conn->prepare("select * from danh_muc");
+            $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+    public function addCategory($ten_dm, $anh_dai_dien){
+        $stmt = $this->conn->prepare("insert into danh_muc (ten_danh_muc, anh_dai_dien) values (?,?)");
+        return $stmt->execute([$ten_dm, $anh_dai_dien]);
+    }
+    public function deleteCategory($id_dm){
+        $stmt = $this->conn->prepare("delete from danh_muc where id_danh_muc = :id");
+        return $stmt->execute([":id" => $id_dm]);
+    }
+    public function getcatebyid($id_dm){
+        $stmt = $this->conn->prepare("SELECT * FROM danh_muc where id_danh_muc=?");
+        $stmt->execute([$id_dm]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+    public function updateCate($ten_dm, $anh_dai_dien, $id_dm){
+        $pdo = $this->conn->prepare("UPDATE danh_muc 
+                                     SET ten_danh_muc= ?, anh_dai_dien = ? 
+                                     WHERE id_danh_muc=?");
+        $pdo->execute([$ten_dm, $anh_dai_dien, $id_dm]);
+    }
 }
 ?>
