@@ -9,13 +9,16 @@ switch ($page) {
     case 'home':
         $controller->home();
         break;
-
     case 'shop':
         $controller->shop();
-        break;
-    
     case 'shoppingcart':
         $controller->shoppingcart();
+        break;
+     case 'editCateProducts':
+        $controllerAdmin->editCateProductsF();
+        break;
+    case 'detele':
+        $controller->deleteproduct();
         break;
     default:
     echo "lỗi 404 - không tìm thấy trang này!";

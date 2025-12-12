@@ -45,12 +45,8 @@ switch ($pageAdmin) {
     case 'deleteCategory':
         $controllerAdmin->deleteCategory($id_dm);
         break;
-    case 'editCateProducts':
-        $controllerAdmin->editCateProductsF();
-        break;
-    case 'checkout':
-        $controllerAdmin->checkoutpage();
-        default:
+   
+    default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;
     

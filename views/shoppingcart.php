@@ -296,9 +296,11 @@
                                     <th>Ảnh sản phẩm</th>
                                     <th>Giá sản phẩm</th>
                                     <th>Tổng cộng</th>
+                                    <th>Hủy đơn hàng</th>
                                 </tr>
                             </thead>
                             <tbody>
+                                
                                 <tr>
                                     <td data-label="Product Info">
                                         <div class="product-info-wrapper">
@@ -322,7 +324,8 @@
                                         </div>
                                     </td>
                                     <td data-label="Price"><span><?= $product['gia'] ?></span></td>
-                                    <td data-label="Total"><?= $product['gia'] ?></td>
+                                    <td data-label="Total"><?= $product['gia']?></td>
+                                    <td><a href="index.php?page=detele&id=<?= $product['id_san_pham'] ?>"><button>Xóa</button></a></td>
                                 </tr>
                             </tbody>
                         </table>
