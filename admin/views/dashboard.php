@@ -5,7 +5,6 @@
         <div class="card shadow-sm mb-4">
           <div class="card-body">
             <h3 class="card-title">Chào mừng đến Admin Panel</h3>
-            <p class="text-muted">Giao diện quản trị hiện đại với Bootstrap 5.</p>
           </div>
         </div>
       </main>

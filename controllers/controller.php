@@ -36,6 +36,7 @@ class controller {
         }
         include "./views/shoppingcart.php";
     }
+
     public function product_detail($id = null){
         if($id === null){
             echo "không có id sản phẩm! ";

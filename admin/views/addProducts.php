@@ -10,7 +10,7 @@
 
   <div class="container">
     <div class="card shadow-lg p-4 rounded-4" style="max-width: 600px; margin: auto;">
-              <a href="admin.php">Quay lại🔙</a>
+              <a href="admin.php?pageAdmin=show_product_control">Quay lại🔙</a>
 
       <h3 class="text-center mb-4 fw-bold text-primary">Thêm sản phẩm</h3>
 
