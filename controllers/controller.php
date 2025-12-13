@@ -157,8 +157,8 @@ class controller {
         session_start();
     }
 
-    session_unset();
-    session_destroy();
+    session_unset($_SESSION['user']);
+    session_destroy($_SESSION['user']);
 
     header("Location: index.php");
     exit;
