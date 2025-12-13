@@ -45,7 +45,16 @@ switch ($pageAdmin) {
     case 'deleteCategory':
         $controllerAdmin->deleteCategory($id_dm);
         break;
+<<<<<<< Updated upstream
    
+=======
+    case 'editCateProducts':
+        $controllerAdmin->editCateProductsF();
+        break;
+    case 'edit_cateProducts':
+        $controllerAdmin->editCateProductsHandle();
+        break;
+>>>>>>> Stashed changes
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;
