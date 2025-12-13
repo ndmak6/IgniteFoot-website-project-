@@ -54,6 +54,9 @@ switch ($pageAdmin) {
     case 'edit_cateProducts':
         $controllerAdmin->editCateProductsHandle();
         break;
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
