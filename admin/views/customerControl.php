@@ -33,13 +33,7 @@
                         </thead>
 
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Nguyễn Văn A</td>
-                                <td>a@gamil.com</td>
-                                <td>0123456789</td>
-                                <td>ảnh</td>
-                            </tr>
+                            
                         </tbody>
 
                     </table>
