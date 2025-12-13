@@ -890,7 +890,7 @@
                             <div class="swiper-slide">   
                                 <div class="categorie-card style-2">
                                     <div class="categorice-image">
-                                        <a href="categories2.html"><img src="<?php echo $category['anh_dai_dien']; ?>" alt=""></a>
+                                        <a href="categories2.html"><img src="<?php echo $category['anh_dai_dien']; ?>" width="200px" alt=""></a>
                                     </div>
                                     <div class="categorice-content text-center">
                                         <h6><a href="categories2.html"><?php echo $category['ten_danh_muc']; ?></a></h6>

@@ -550,13 +550,13 @@
                                             </div>
                                         </div>
                                     </div>
-<<<<<<< Updated upstream
+
                                 <?php
                                 }
                                 ?>
 
 
-=======
+
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="400ms" data-wow-duration="1500ms">
                                     <div class="product-card">
@@ -1065,7 +1065,6 @@
                                         </div>
                                     </div>
                                 </div>
->>>>>>> Stashed changes
                             </div>
                         </div>
                         <div class="row wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
