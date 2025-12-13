@@ -153,7 +153,7 @@
                                         </div>
                                     </div>
                                     <div class="shop-details-btn">
-                                        <a class="primary-btn" href="cart-page.html">ADD TO CART</a>
+                                        <a class="primary-btn" href="index.php?phoppingcart<?= $product['id_san_pham'] ?>">ADD TO CART</a>
                                         <a class="primary-btn2" href="checkout-page.html">BUY NOW</a>
                                     </div>
                                     <ul class="product-shipping-delivers">
