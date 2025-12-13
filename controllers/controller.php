@@ -102,9 +102,18 @@ class controller {
         $re_mk = $_POST['nhap-lai-mk'];
 
         if($re_mk !== $mk){
-            echo "<script> alert('Nhập lại mật khẩu sai! Yêu cầu nhập lại mật khẩu!'); </script>";
-
-        } else{
+            echo "<script> alert('Nhập lại mật khẩu sai! Yêu cầu nhập lại mật khẩu!'); 
+            window.location.href = 'index.php?page=registerLoginForm';</script>";
+            return;
+        } 
+        
+        if($this->model->getUserByEmail($email)){
+            echo "<script> alert('Email đã tồn tại yêu cầu nhập lại email'); 
+            window.location.href = 'index.php?page=registerLoginForm';</script>";
+            return;
+        }
+        
+        else{
             $passwordHash = password_hash($mk, PASSWORD_DEFAULT);
             $this->model->register($id, $ten, $email, $passwordHash);
 
