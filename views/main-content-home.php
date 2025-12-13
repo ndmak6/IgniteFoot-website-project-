@@ -311,12 +311,12 @@
                 <div class="col-lg-12 d-flex justify-content-between align-items-center">
                     <div class="header-logo">
                         <a href="index.php?page=home"><img alt="image" class="img-fluid"
-                                src="assets/image/logo1.png" width="120px"></a>
+                                src="assets/image/ethics-logo-dark.svg"></a>
                     </div>
                     <div class="main-menu">
                         <div class="mobile-menu-logo">
                             <a href="index.php?page=home"><img alt="image" class="img-fluid"
-                                    src="assets/image/logo1.png" width="120px"></a>
+                                    src="assets/image/ethics-logo-dark.svg"></a>
                         </div>
                         <ul class="menu-list">
                             <li class="menu-item-has-children active">
@@ -358,19 +358,10 @@
                                                                     <li><a href="top-filter-bar.html">Filter Top</a></li>
                                                     </ul>
                                                 </div>
-                                                <div class="megamenu-items">
-                                                    <h6>Woo Pages</h6>
-                                                    <ul class="menu-list">
-                                                        <li><a href="cart-page.html">cart page</a></li>
-                                                        <li><a href="checkout-page.html">checkout page</a></li>
-                                                        <li><a href="whislist.html">whistlist</a></li>
-                                                        <li><a href="my-account.html">My Account</a></li>
-                                                    </ul>
-                                                </div>
                                             </div>
                                             <div class="col-xl-3">
                                                 <div class="megamenu-items">
-                                        <h6>Product details</h6>
+                                        <h6>Chi tiết sản phẩm</h6>
                                         <ul class="menu-list">
                                             <li><a href="product-details.html">Product Default</a></li>
                                             <li><a href="product-details.html">Product Thumbnail Left</a>
@@ -387,7 +378,7 @@
                                                     <h6>Best selling products</h6>
                                                     <div class="swiper menu-product-slider">
                                                         <div class="swiper-wrapper">
-                                                            <div class="swiper-slide">  
+                                                            <div class="swiper-slide">
                                                                 <div class="product-card">
                                                                     <div class="product-card-img">
                                                                         <a href="product-details.html">
@@ -579,29 +570,10 @@
                                 </div>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="#" class="drop-down"> BLOG</a><i class="bi bi-plus dropdown-icon"></i>
-                                <ul class="sub-menu">
-                                    <li><a href="blog-grid.html">Blog Grid</a></li>
-                                    <li><a href="blog-standard-left.html">Blog Standard</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                </ul>
+                                <a href="#" class="drop-down"> Category</a><i class="bi bi-plus dropdown-icon"></i>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="#" class="drop-down"> PAGES</a><i class="bi bi-plus dropdown-icon"></i>
-                                <ul class="sub-menu">
-                                    <li><a href="about-us.html">About Us</a></li>
-                                    <li>
-                                        <a href="categories.html">Category</a>
-                                        <i class="d-xl-flex d-none bi bi-chevron-right dropdown-icon"></i>
-                                        <i class="d-xl-none d-flex bi bi-plus dropdown-icon"></i>
-                                        <ul class="sub-menu">
-                                            <li><a href="categories.html">Category Style 01</a></li>
-                                            <li><a href="categories2.html">Category Style 02</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="faq.html">FAQ's</a></li>
-                                    <li><a href="error.html">Error</a></li>
-                                </ul>
                             </li>
                             <li><a href="contact.html">CONTACT</a></li>
                         </ul>
@@ -675,7 +647,7 @@
                             </li>
                             <li>
                                 <div class="cart-area">
-                                    <a href="cart-page.html">
+                                    <a href="index.php?page=shoppingcart">
                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -799,17 +771,17 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="banner-bg">
-                                <img src="assets/image/home5/home-banner-img4.jpg" alt="">
+                                <img src="assets/image/home5/home5-banner-img4.jpg" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="banner-bg">
-                                <img src="assets/image/home5/home-banner-img5.jpg" alt="">
+                                <img src="assets/image/home5/home5-banner-img5.jpg" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="banner-bg">
-                                <img src="assets/image/home5/home-banner-img6.jpg" alt="">
+                                <img src="assets/image/home5/home5-banner-img6.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -817,14 +789,9 @@
             </div>
         </div>
         <div class="banner-content-wrap">
-
             <h1>Giày Thể Thao Nam – Phong Cách & Năng Động</h1>
             <p>Khám phá bộ sưu tập giày thể thao nam mới nhất, mang đến sự thoải mái, bền bỉ và phong cách cho mọi hoạt động của bạn </p>
             <a href="index.php?page=shop" class="primary-btn">SHOP NOW</a>
-
-            <h1>Spring Is Here</h1>
-            <p>From chic dresses to sophisticated accessories, find your signature style effortlessly. Explore quality craftsmanship </p>
-            <a href="3columns-left.html" class="primary-btn">SHOP NOW</a>
         </div>
         <div class="banner-slider-btn-groups">
             <div class="slider-btn home5-banner-slider-prev">
@@ -884,20 +851,77 @@
                     </div>
                     <div class="swiper home5-categori-swipe">
                         <div class="swiper-wrapper">
-                            <?php 
-                                $cate = $this->model->getAllCategories();
-                                foreach($cate as $category): ?>
-                            <div class="swiper-slide">   
+                            <div class="swiper-slide">
                                 <div class="categorie-card style-2">
                                     <div class="categorice-image">
-                                        <a href="categories2.html"><img src="<?php echo $category['anh_dai_dien']; ?>" width="200px" alt=""></a>
+                                        <a href="index.php?page=productcatalog">
+                                            <img src="assets/image/home5/categories-image.png" alt="">
+                                        </a>
                                     </div>
                                     <div class="categorice-content text-center">
-                                        <h6><a href="categories2.html"><?php echo $category['ten_danh_muc']; ?></a></h6>
-                                    </div>                                 
+                                        <h6><a href="3columns-left.html">Giày nam</a></h6>
+                                    </div>
                                 </div>
                             </div>
-                            <?php endforeach; ?>
+                            <div class="swiper-slide">
+                                <div class="categorie-card style-2">
+                                    <div class="categorice-image">
+                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image2.png"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="categorice-content text-center">
+                                        <h6><a href="3columns-left.html">Giày Đá bóng</a></h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="categorie-card style-2">
+                                    <div class="categorice-image">
+
+                                        <a href="categories2.html"><img src="<?php echo $category['anh_dai_dien']; ?>" width="200px" alt=""></a>
+
+                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image3.png"
+                                                alt=""></a>
+
+                                    </div>
+                                    <div class="categorice-content text-center">
+                                        <h6><a href="3columns-left.html">Giày Chạy Bộ</a></h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="categorie-card style-2">
+                                    <div class="categorice-image">
+                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image4.png"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="categorice-content text-center">
+                                        <h6><a href="3columns-left.html">Giày Unisex</a></h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="categorie-card style-2">
+                                    <div class="categorice-image">
+                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image5.png"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="categorice-content text-center">
+                                        <h6><a href="3columns-left.html">Giày Đạp Xe</a></h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="categorie-card style-2">
+                                    <div class="categorice-image">
+                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image6.png"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="categorice-content text-center">
+                                        <h6><a href="3columns-left.html">Giày ĐÁnh PickleBall</a></h6>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
