@@ -39,7 +39,7 @@
                                     <div class="tab-content" id="v-pills-tabContent">
                                         <div class="tab-pane fade show active" id="v-pills-img1" role="tabpanel">
                                             <div class="shop-details-tab-img">
-                                                <img src="assets/image/inner-page/shop-details-tab-img1.jpg" alt="">
+                                                <img src="assets/image/<?php echo $productdetail['anh']; ?>" width="200" alt="">
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-img2" role="tabpanel">
@@ -869,7 +869,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="shop-details-content">
-                        <h3 class="productdetail_tile"> <?=htmlspecialchars($productdetail['ten_san_pham'] );  ?>  </h3>
+                        <h3>Trendy & Comfortable Outerwear</h3>
                         <div class="rating-review">
                             <div class="rating">
                                 <div class="star">
@@ -883,8 +883,7 @@
                             </div>
                         </div>
                         <div class="price-area">
-                            <p class="price"> <del>$ 445.00</del>$ <?= $productdetail['gia'] ?></p>
-
+                            <p class="price"> <del>$ 445.00</del>$ 300.00</p>
                         </div>
                         <div class="quantity-color-area">
                             <div class="quantity-color">
@@ -923,7 +922,7 @@
                             </div>
                         </div>
                         <div class="shop-details-btn">
-                            <a class="primary-btn" href="cart-page.html">ADD TO CART</a>
+                            <a class="primary-btn" href="index.php?page=shoppingcart&id=<?php echo $value['id_san_pham']?>">ADD TO CART</a>
                             <a class="primary-btn2" href="checkout-page.html">BUY NOW</a>
                         </div>
                         <ul class="product-shipping-delivers">

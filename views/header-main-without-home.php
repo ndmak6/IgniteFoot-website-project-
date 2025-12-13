@@ -1,11 +1,17 @@
+<?php
+if(session_status() === PHP_SESSION_NONE){
+    session_start();
+}
+?>
+
 <!-- hearder section strats here -->
 <header class="header-area header1">
         <div class="header-logo">
-            <a href="index.html"><img alt="image" class="img-fluid" src="assets/image/ethics-logo.svg"></a>
+            <a href="index.php?page=home"><h2>IgniteFoot</h2></a>
         </div>
         <div class="main-menu">
             <div class="mobile-menu-logo">
-                <a href="index.html"><img alt="image" class="img-fluid" src="assets/image/ethics-logo-dark.svg"></a>
+                <a href="index.php?page=home"><h2>IgniteFoot</h2></a>
             </div>
             <ul class="menu-list">
                 <li class="menu-item-has-children">
@@ -46,19 +52,10 @@
                                                         <li><a href="top-filter-bar.html">Filter Top</a></li>
                                         </ul>
                                     </div>
-                                    <div class="megamenu-items">
-                                        <h6>Woo Pages</h6>
-                                        <ul class="menu-list">
-                                            <li><a href="cart-page.html">cart page</a></li>
-                                            <li><a href="checkout-page.html">checkout page</a></li>
-                                            <li><a href="whislist.html">whistlist</a></li>
-                                            <li><a href="my-account.html">My Account</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                                 <div class="col-xl-3">
                                     <div class="megamenu-items">
-                                        <h6>Product details</h6>
+                                        <h6>Chi tiết sản phẩm</h6>
                                         <ul class="menu-list">
                                             <li><a href="product-details.html">Product Default</a></li>
                                             <li><a href="product-details.html">Product Thumbnail Left</a>
@@ -83,7 +80,7 @@
                                                             </a>
                                                             <div class="overlay">
                                                                 <div class="cart-area">
-                                                                    <a class="add-cart-btn" href="cart-page.html"><i
+                                                                    <a class="add-cart-btn" href="index.php?page=shoppingcart"><i
                                                                             class="bi bi-bag-check"></i>
                                                                         Add To Cart</a>
                                                                 </div>
@@ -267,26 +264,12 @@
                     </div>
                 </li>
                 <li class="menu-item-has-children">
-                    <a href="#" class="drop-down"> BLOG</a><i class="bi bi-plus dropdown-icon"></i>
-                    <ul class="sub-menu">
-                        <li><a href="blog-grid.html">Blog Grid</a></li>
-                        <li><a href="blog-standard-left.html">Blog Standard</a></li>
-                        <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
+                    <a href="#" class="drop-down"> Category</a><i class="bi bi-plus dropdown-icon"></i>
                 </li>
                 <li class="menu-item-has-children">
                     <a href="#" class="drop-down"> PAGES</a><i class="bi bi-plus dropdown-icon"></i>
                     <ul class="sub-menu">
                         <li><a href="about-us.html">About Us</a></li>
-                        <li>
-                            <a href="categories.html">Category</a>
-                            <i class="d-xl-flex d-none bi bi-chevron-right dropdown-icon"></i>
-                            <i class="d-xl-none d-flex bi bi-plus dropdown-icon"></i>
-                            <ul class="sub-menu">
-                                <li><a href="categories.html">Category Style 01</a></li>
-                                <li><a href="categories2.html">Category Style 02</a></li>
-                            </ul>
-                        </li>
                         <li><a href="faq.html">FAQ's</a></li>
                         <li><a href="error.html">Error</a></li>
                     </ul>
@@ -340,7 +323,13 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#" class="user" data-bs-toggle="modal" data-bs-target="#user-login">
+                    <a href="<?php
+                                if(isset($_SESSION['user'])){
+                                    echo "index.php?page=profileCustomer";
+                                }else{
+                                    echo "index.php?page=registerLoginForm";
+                                }
+                                ?>" class="user">
                         <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M11.7135 8.34627C12.8653 7.50628 13.6153 6.14686 13.6153 4.61538C13.6153 2.07046 11.5448 0 8.99989 0C6.45497 0 4.38451 2.07046 4.38451 4.61538C4.38451 6.14686 5.1345 7.50628 6.28629 8.34627C3.42316 9.44191 1.38452 12.2179 1.38452 15.4615C1.38452 16.8613 2.52327 18 3.92298 18H14.0768C15.4765 18 16.6153 16.8613 16.6153 15.4615C16.6153 12.2179 14.5766 9.44191 11.7135 8.34627ZM5.76914 4.61538C5.76914 2.83395 7.21845 1.38463 8.99989 1.38463C10.7813 1.38463 12.2306 2.83395 12.2306 4.61538C12.2306 6.39682 10.7813 7.84617 8.99989 7.84617C7.21845 7.84617 5.76914 6.39682 5.76914 4.61538ZM14.0768 16.6154H3.92298C3.28676 16.6154 2.76915 16.0978 2.76915 15.4615C2.76915 12.0258 5.56421 9.23073 8.99993 9.23073C12.4356 9.23073 15.2307 12.0258 15.2307 15.4615C15.2307 16.0978 14.7131 16.6154 14.0768 16.6154Z" />
@@ -362,7 +351,7 @@
                 </li>
                 <li>
                     <div class="cart-area">
-                        <a href="cart-page.html">
+                        <a href="index.php?page=shoppingcart">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
