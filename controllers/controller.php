@@ -47,7 +47,7 @@ class controller {
     }
     public function productcatalog(){
         include "./views/productcatalog.php";
-
+    }
     public function show_category(){
         $cate = $this -> model -> getAllCategories();
     }  
