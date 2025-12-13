@@ -44,6 +44,15 @@ class database {
     $stmt->execute([$email]);
     return $stmt->fetch();
     }
-
+    public function getsanphamByDanhmuc($id_danh_muc){
+        $stmt = $this->conn->prepare("SELECT * FROM san_pham WHERE id_danh_muc = ?");
+        $stmt->execute([$id_danh_muc]);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+    public function getdanhmuc(){
+        $stmt = $this->conn->prepare("SELECT * FROM danh_muc");
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
 ?>

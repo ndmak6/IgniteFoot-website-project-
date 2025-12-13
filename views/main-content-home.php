@@ -830,8 +830,10 @@ if(session_status() === PHP_SESSION_NONE){
                     </div>
                 </div>
             </div>
+            
             <div class="row wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                <div class="col-lg-12 position-relative">
+            
+            <div class="col-lg-12 position-relative">
                     <div class="slider-btn-groups3">
                         <div class="slider-btn prev-1">
                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -870,15 +872,15 @@ if(session_status() === PHP_SESSION_NONE){
                                         </a>
                                     </div>
                                     <div class="categorice-content text-center">
-                                        <h6><a href="index.php?page=productcatalog&id_danh_muc<?= $id_danh_muc=1?>">Giày nam</a></h6>
+                                        <h6><a href="index.php?page=productcatalog$id_danh_muc=1">Giay nam</a></h6>
                                     </div>
                                 </div>
+                            <!--  -->
                             </div>
                             <div class="swiper-slide">
                                 <div class="categorie-card style-2">
                                     <div class="categorice-image">
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image2.png"
-                                                alt=""></a>
+                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image2.png" alt=""></a>
                                     </div>
                                     <div class="categorice-content text-center">
                                         <h6><a href="3columns-left.html">Giày Đá bóng</a></h6>
@@ -929,7 +931,9 @@ if(session_status() === PHP_SESSION_NONE){
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -964,7 +968,7 @@ if(session_status() === PHP_SESSION_NONE){
                                         </div>
                                         <div class="overlay">
                                             <div class="cart-area">
-                                                <a class="add-cart-btn" href="cart-page.html"><i class="bi bi-bag-check"></i>
+                                                <a class="add-cart-btn" href="index.php?page=shoppingcart&id=<?php echo $value['id_san_pham']?>"><i class="bi bi-bag-check"></i>
                                                     Add To Cart</a>
                                             </div>
                                         </div>

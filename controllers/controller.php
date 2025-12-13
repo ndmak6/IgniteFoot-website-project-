@@ -20,6 +20,7 @@ class controller {
     }
 
     public function home(){
+        $productcategories  = $this->model->getdanhmuc();
         include "./views/main-content-home.php";
         include "./views/footer.php";
     }
@@ -27,12 +28,14 @@ class controller {
     public function shop(){
         $page = "shop";
         $products = $this->model->getAll();
+        $productcategories  = $this->model->getdanhmuc();
+        $prod = $this -> model -> getAll();
         include "./views/header-main-without-home.php";
         include "./views/main-content-shop.php";
         include "./views/footer.php";
     }
     public function show_product(){
-        $prod = $this -> model -> getAll();
+        
     }
     public function shoppingcart(){
         $id = $_GET['id'] ?? null;
@@ -58,8 +61,19 @@ class controller {
         include "./views/productdetail.php";
     }
     public function productcatalog(){
+        $id_danh_muc = isset($_GET['id_danh_muc'])
+            ? (int)$_GET['id_danh_muc']
+            : 0;
+
+        $products = [];
+
+        if ($id_danh_muc > 0) {
+            $products = $this->model->getSanPhamByDanhMuc($id_danh_muc);
+        }
+
         include "./views/productcatalog.php";
     }
+
     public function show_category(){
         $cate = $this -> model -> getAllCategories();
     }  
@@ -78,7 +92,6 @@ class controller {
             var_dump($productdetail);
             exit;
         }
-    
     // Truyền biến vào view
     include "views/header-main-without-home.php";
     include "views/productdetail.php";
