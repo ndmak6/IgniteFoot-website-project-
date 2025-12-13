@@ -1,3 +1,24 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Swiper css link -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Fancybox css link -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <!-- Animation css link -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Boxicon css link -->
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+    <!-- My css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Ethics - Fashion Shop HTML Template</title>
+    <link rel="icon" href="assets/image/thumbnail.svg" type="image/gif" sizes="20x20">
+</head>
+
 <body>
 
     <!-- product view modal  -->
@@ -171,7 +192,7 @@
     <!-- Back To Top -->
     <div class="progress-wrap active-progress">
 		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 282.894;"></path>
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 257.869;"></path>
 		</svg>
         <svg aria-hidden="true" class="arrow" width="16px" height="16px" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
             <path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
@@ -338,7 +359,7 @@
                                     <div class="megamenu-items">
                                         <h6>Best selling products</h6>
                                         <div class="swiper menu-product-slider swiper-initialized swiper-horizontal">
-                                            <div class="swiper-wrapper" id="swiper-wrapper-c826beb91d5bf1fe" aria-live="off" style="transition-duration: 1500ms;">
+                                            <div class="swiper-wrapper" id="swiper-wrapper-69fe71c79a794936" aria-live="off" style="transition-duration: 1500ms;">
                                                 <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 3">
                                                     <div class="product-card">
                                                         <div class="product-card-img">
@@ -1256,7 +1277,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="400ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 400ms;">
+                                <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="400ms" data-wow-duration="1500ms" style="visibility: hidden; animation-duration: 1500ms; animation-delay: 400ms; animation-name: none;">
                                     <div class="product-card">
                                         <div class="product-card-img">
                                             <a href="product-details.html">
@@ -1314,7 +1335,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms;">
+                                <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: hidden; animation-duration: 1500ms; animation-delay: 200ms; animation-name: none;">
                                     <div class="product-card">
                                         <div class="product-card-img">
                                             <a href="product-details.html">
@@ -1379,7 +1400,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms;">
+                                <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: hidden; animation-duration: 1500ms; animation-delay: 200ms; animation-name: none;">
                                     <div class="product-card">
                                         <div class="product-card-img">
                                             <a href="product-details.html">
@@ -1446,7 +1467,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms;">
+                        <div class="row wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: hidden; animation-duration: 1500ms; animation-delay: 200ms; animation-name: none;">
                             <div class="col-lg-12">
                                 <div class="page-navigation-area d-flex flex-wrap align-items-center justify-content-between">
                                     <div class="prev-next-btn">
@@ -1809,4 +1830,4 @@
     </script>
 
 
-</body>
+</body></html>

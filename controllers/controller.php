@@ -47,10 +47,10 @@ class controller {
     }
     public function productcatalog(){
         include "./views/productcatalog.php";
-
-    public function show_category(){
-        $cate = $this -> model -> getAllCategories();
-    }  
+    }
+    // public function show_category(){
+    //     $cate = $this -> model -> getAllCategories();
+    // }  
 
     public function product_detail($id = null){
         if($id === null){

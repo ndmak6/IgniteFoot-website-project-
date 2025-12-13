@@ -859,7 +859,7 @@
                                         </a>
                                     </div>
                                     <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Giày nam</a></h6>
+                                        <h6><a href="index.php?page=productcatalog">Giày nam</a></h6>
                                     </div>
                                 </div>
                             </div>

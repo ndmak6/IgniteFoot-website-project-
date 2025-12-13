@@ -28,5 +28,13 @@ class database {
         $stmt = $this->conn->prepare("SELECT * FROM san_pham WHERE id_san_pham = ?");
         $stmt->execute([$id]);
     }
+    // SanPhamModel.php
+     public function getSanPhamByDanhMuc($idDanhMuc) {
+        $stmt = $this->conn->prepare(
+            "SELECT * FROM san_pham WHERE id_danh_muc = ?"
+        );
+        $stmt->execute([$idDanhMuc]);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
 ?>
