@@ -851,77 +851,22 @@
                     </div>
                     <div class="swiper home5-categori-swipe">
                         <div class="swiper-wrapper">
+                            <?php
+                            $cate = $this->model->getAllCategories();
+                            foreach ($cate as $category): ?>
                             <div class="swiper-slide">
                                 <div class="categorie-card style-2">
                                     <div class="categorice-image">
                                         <a href="index.php?page=productcatalog">
-                                            <img src="assets/image/home5/categories-image.png" alt="">
+                                            <img src="<?php echo $category['anh_dai_dien']; ?>" alt="">
                                         </a>
                                     </div>
                                     <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Giày nam</a></h6>
+                                        <h6><a href="index.php?page=productcatalog"><?php echo $category['ten_danh_muc']; ?></a></h6>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image2.png"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Giày Đá bóng</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-
-                                        <a href="categories2.html"><img src="<?php echo $category['anh_dai_dien']; ?>" width="200px" alt=""></a>
-
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image3.png"
-                                                alt=""></a>
-
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Giày Chạy Bộ</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image4.png"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Giày Unisex</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image5.png"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Giày Đạp Xe</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="categorie-card style-2">
-                                    <div class="categorice-image">
-                                        <a href="3columns-left.html"><img src="assets/image/home5/categories-image6.png"
-                                                alt=""></a>
-                                    </div>
-                                    <div class="categorice-content text-center">
-                                        <h6><a href="3columns-left.html">Giày ĐÁnh PickleBall</a></h6>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 </div>
