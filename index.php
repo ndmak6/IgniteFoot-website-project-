@@ -25,6 +25,7 @@ switch ($page) {
         break;
     case 'productcatalog':
         $controller->productcatalog();
+        break;
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;
@@ -57,8 +58,25 @@ switch ($page) {
         break;
     case 'productcatalog':
         $controller->productcatalog();
+        break;
+    case 'registerLoginForm':
+        $controller->registerLoginForm();
+        break;
+    case 'registerCustomer':
+        $controller->registerCustomer();
+        break;
+    case 'profileCustomer':
+        $controller->profileCustomer();
+        break;
+    case 'logoutFunction':
+        $controller->logoutFunction();
+        break;
+    case 'loginCustomer':
+        $controller->loginCustomer();
+        break;
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;
 }
 ?>
+<!-- chả hiểu kiểu j ae làm cái j v -->
