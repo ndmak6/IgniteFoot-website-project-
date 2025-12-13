@@ -23,6 +23,8 @@ switch ($page) {
     case 'productdetail':
         $controller->productdetail();
         break;
+    case 'productcatalog':
+        $controller->productcatalog();
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;

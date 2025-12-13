@@ -39,7 +39,7 @@
                                     <div class="tab-content" id="v-pills-tabContent">
                                         <div class="tab-pane fade show active" id="v-pills-img1" role="tabpanel">
                                             <div class="shop-details-tab-img">
-                                                <img src="assets/image/inner-page/shop-details-tab-img1.jpg" alt="">
+                                                <img src="assets/image/<?php echo $productdetail['anh']; ?>" width="200" alt="">
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-img2" role="tabpanel">
@@ -922,7 +922,7 @@
                             </div>
                         </div>
                         <div class="shop-details-btn">
-                            <a class="primary-btn" href="cart-page.html">ADD TO CART</a>
+                            <a class="primary-btn" href="index.php?page=shoppingcart&id=<?php echo $value['id_san_pham']?>">ADD TO CART</a>
                             <a class="primary-btn2" href="checkout-page.html">BUY NOW</a>
                         </div>
                         <ul class="product-shipping-delivers">

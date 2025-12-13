@@ -854,7 +854,7 @@
                             <div class="swiper-slide">
                                 <div class="categorie-card style-2">
                                     <div class="categorice-image">
-                                        <a href="3columns-left.html">
+                                        <a href="index.php?page=productcatalog">
                                             <img src="assets/image/home5/categories-image.png" alt="">
                                         </a>
                                     </div>

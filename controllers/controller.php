@@ -34,21 +34,20 @@ class controller {
     }
     // Trong Controller (file controller.php)
     public function deleteproduct(){
-        // Lấy ID: Cần kiểm tra xem key 'id' có tồn tại không trước khi truy cập
         $id = $_GET['id'] ?? null; 
         
         if ($id !== null) {
-            // 1. Thực hiện xóa sản phẩm
             $this->model->deteleProduct($id); 
         }
         
-        // 2. Chuyển hướng về trang Giỏ hàng để gọi lại hàm hiển thị
-        // Giả sử key để hiển thị Giỏ hàng trong index.php là 'shoppingcart'
         header('Location: index.php?page=shoppingcart'); 
-        exit; // Luôn dùng exit/die sau header('Location')
+        exit; 
     }
     public function productdetail(){
         include "./views/productdetail.php";
+    }
+    public function productcatalog(){
+        include "./views/productcatalog.php";
     }
 }
 
