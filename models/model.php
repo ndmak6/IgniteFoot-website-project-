@@ -28,5 +28,10 @@ class database {
         $stmt = $this->conn->prepare("SELECT * FROM san_pham WHERE id_san_pham = ?");
         $stmt->execute([$id]);
     }
+    public function getAllCategories() {
+        $stmt = $this->conn->prepare("SELECT * FROM danh_muc");
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
 ?>
