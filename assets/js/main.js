@@ -66,11 +66,11 @@
 	});
 
 	// popup on load
-	$(document).ready(function () {
-		setTimeout(function () {
-		  $("#myModal").modal("show");
-		}, 500);
-	});
+	// $(document).ready(function () {
+	// 	setTimeout(function () {
+	// 	  $("#myModal").modal("show");
+	// 	}, 500);
+	// });
 
 	// Back To Top
 	$(document).ready(function(){"use strict";

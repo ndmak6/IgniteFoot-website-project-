@@ -59,7 +59,9 @@ class controllerAdmin {
     $ma_sp = $_POST["ma_sp"];
 
     $this->modelAdmin->update_func($ten_sp,$mota_sp,$gia_sp,$anh_sp,$ma_sp);
+
     header("Location: admin.php?pageAdmin=show_product_control");
+    header("Location: admin.php");
     }
     public function show_p(){
     $products = $this->modelAdmin->getAllProduct();
@@ -77,13 +79,6 @@ public function dashboard(){
 }
 
 
-// public function customerControl(){
-//     $customers = $this->modelAdmin->getAllCustomers();
-//     ob_start();
-//     require "admin/views/customerControl.php";
-//     $content = ob_get_clean();
-//     include "admin/views/layout.php";
-// }
 public function cateProducts(){
     $categories = $this->modelAdmin->getAllCategories(); 
 
@@ -93,7 +88,7 @@ public function cateProducts(){
     include "admin/views/layout.php";
 }
 public function addcateProductsF(){
-    include "admin/views/add_cateProducts.php";
+    include "admin/views/addcateProducts.php";
 }
 public function addcateProductsHandle(){
     $ten_dm = $_POST['ten_danh_muc'];
@@ -133,5 +128,12 @@ public function editCateProductsHandle(){
 
     $this->modelAdmin->updateCate($ten_dm, $anh_dai_dien, $id_dm);
     header("Location: admin.php?pageAdmin=cateProducts");
-}
+    }
+    // public function customerControl(){
+//     $customers = $this->modelAdmin->getAllCustomers();
+//     ob_start();
+//     require "admin/views/customerControl.php";
+//     $content = ob_get_clean();
+//     include "admin/views/layout.php";
+// }
 }

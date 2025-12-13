@@ -253,13 +253,6 @@
     </footer>
     <!-- footer section end here -->
 
-
-
-
-
-
-
-
     <!-- Jquery js link -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
