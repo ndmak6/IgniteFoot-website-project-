@@ -19,5 +19,14 @@ class database {
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+    public function register($id, $name, $email, $pashWordHash){
+        $stmt = $this->conn->prepare("insert into nguoi_dung (id_nguoi_dung, ten_nguoi_dung, email, mat_khau) values(?, ?, ?, ?)");
+        return $stmt->execute([$id, $name, $email, $pashWordHash]);
+    }
+    public function getUserByEmail($email){
+        $stmt = $this->conn->prepare("SELECT * FROM nguoi_dung WHERE email = ? LIMIT 1");
+        $stmt->execute([$email]);
+        return $stmt->fetch();
+        }
 }
 ?>

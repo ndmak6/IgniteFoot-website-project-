@@ -260,27 +260,27 @@
 
 
 
-    <!-- Jquery js link -->
+
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
-    <!-- Counterup js link -->
+
     <script src="assets/js/waypoints.js"></script>
     <script src="assets/js/jquery.counterup.js"></script>
     <script src="assets/js/jquery.counterup.min.js"></script>
-    <!-- Marquee js link -->
+
     <script src="assets/js/jquery.marquee.min.js"></script>
-    <!-- Popper js link -->
+
     <script src="assets/js/popper.min.js"></script>
-    <!-- Swiper js link -->
+
     <script src="assets/js/swiper-bundle.min.js"></script>
-    <!-- Fancybox js link -->
+
     <script src="assets/js/jquery.fancybox.min.js"></script>
     <script src="assets/js/jquery.nice-select.min.js"></script>
-    <!-- Wow js link -->
+
     <script src="assets/js/wow.min.js"></script>
-    <!-- Bootstrap js link -->
+  
     <script src="assets/js/bootstrap.min.js"></script>
-    <!-- MAin js link -->
+
     <script src="assets/js/main.js"></script>
 
     <script>

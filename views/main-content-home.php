@@ -1,3 +1,9 @@
+<?php
+if(session_status() === PHP_SESSION_NONE){
+    session_start();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -733,7 +739,13 @@
                 </div>
             </li>
             <li>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#user-login">
+                <a href="<?php
+                     if (isset($_SESSION['user'])) {
+                echo 'index.php?page=profileCustomer';
+                } else {
+                    echo 'index.php?page=formRegisLogin';
+                }
+                ?>">
                     <div class="icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path

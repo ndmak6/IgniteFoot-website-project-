@@ -16,6 +16,15 @@ switch ($page) {
     case 'checkout' :
         $controller->checkout();
         break;
+    case 'formRegisLogin':
+        $controller->formRegisLogin();
+        break;
+    case 'addUserFunction':
+        $controller->regisFunction();
+        break;
+    case 'profileCustomer':
+        $controller->profileCustomer();
+        break;
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;

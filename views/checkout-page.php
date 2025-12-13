@@ -227,83 +227,11 @@
         </svg>
 	</div>
 
-    <div class="modal login-modal fade" id="user-login" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                                type="button" role="tab" aria-controls="home" aria-selected="true">
-                                Đăng Nhập
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                                type="button" role="tab" aria-controls="profile" aria-selected="false">Đăng ký</button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="modal-body">
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <div class="login-registration-form">
-                                <div class="form-title">
-                                    <h3>Đăng nhập</h3>
-                                </div>
-                                <form>
-                                    <div class="form-inner mb-35">
-                                        <input type="text" placeholder="Tài khoản hoặc Email *">
-                                    </div>
-                                    <div class="form-inner">
-                                        <input id="password" type="password" placeholder="Mật khẩu">
-                                        <i class="bi bi-eye-slash" id="togglePassword"></i>
-                                    </div>
-                                    <div class="form-remember-forget">
-                                        <div class="remember">
-                                            <input type="checkbox" class="custom-check-box" id="check1">
-                                            <label for="check1">Nhớ mật khẩu</label>
-                                        </div>
-                                        <a href="#" class="forget-pass hover-underline">Quên mật khẩu</a>
-                                    </div>
-                                    <button class="primary-btn" type="submit">
-                                        Đăng nhập
-                                    </button>
-                                    <a href="#" class="member">bạn chưa có tài khoản !</a>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            <div class="login-registration-form">
-                                <div class="form-title">
-                                    <h3>Đăng ký</h3>
-                                </div>
-                                <form>
-                                    <div class="form-inner mb-25">
-                                        <input type="text" placeholder="Tên tài khoản *">
-                                    </div>
-                                    <div class="form-inner mb-25">
-                                        <input type="email" placeholder="Email *">
-                                    </div>
-                                    <div class="form-inner mb-25">
-                                        <input id="password2" type="password" placeholder="Mật khẩu *">
-                                        <i class="bi bi-eye-slash" id="togglePassword2"></i>
-                                    </div>
-                                    <div class="form-inner mb-35">
-                                        <input id="password3" type="password" placeholder="Nhập lại mật khẩu *">
-                                        <i class="bi bi-eye-slash" id="togglePassword3"></i>
-                                    </div>
-                                    <button class="primary-btn" type="submit">
-                                        Đăng ký
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+    
+    <!-- form đăng ký đăng nhập vừa cắt sang trang mới -->
+
+
     <!-- hearder section strats here -->
     <header class="header-area header4">
         <div class="container">
