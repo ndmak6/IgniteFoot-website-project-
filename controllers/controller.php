@@ -46,11 +46,14 @@ class controller {
     include "views/footer.php";
     }
 
-    
+
     public function order_success() {
     $id = $_GET["id"];
     include "./views/checkout-success.php";
 }
+    public function faq() {
+        include "./views/faq.php";
+    }
 
 }
 
