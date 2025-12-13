@@ -877,8 +877,12 @@
                             <div class="swiper-slide">
                                 <div class="categorie-card style-2">
                                     <div class="categorice-image">
+
+                                        <a href="categories2.html"><img src="<?php echo $category['anh_dai_dien']; ?>" width="200px" alt=""></a>
+
                                         <a href="3columns-left.html"><img src="assets/image/home5/categories-image3.png"
                                                 alt=""></a>
+
                                     </div>
                                     <div class="categorice-content text-center">
                                         <h6><a href="3columns-left.html">Giày Chạy Bộ</a></h6>
