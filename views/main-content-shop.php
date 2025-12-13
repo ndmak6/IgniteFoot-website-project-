@@ -588,7 +588,7 @@
                                                     <li><i class="bi bi-star-fill"></i></li>
                                                 </ul>
                                             </div>
-                                            <h6><a class="hover-underline" href="product-details.html"><?= $value['ten_san_pham']?></a>
+                                            <h6><a class="hover-underline" href="index.php?page=productdetail"><?= $value['ten_san_pham']?></a>
                                             </h6>
                                             <p class="price"><?= $value['gia']?></p>
                                             <ul class="color-tag">

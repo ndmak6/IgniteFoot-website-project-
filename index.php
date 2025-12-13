@@ -20,6 +20,9 @@ switch ($page) {
     case 'detele':
         $controller->deleteproduct();
         break;
+    case 'productdetail':
+        $controller->productdetail();
+        break;
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;

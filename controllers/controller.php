@@ -47,6 +47,9 @@ class controller {
         header('Location: index.php?page=shoppingcart'); 
         exit; // Luôn dùng exit/die sau header('Location')
     }
+    public function productdetail(){
+        include "./views/productdetail.php";
+    }
 }
 
 ?>
