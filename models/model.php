@@ -28,22 +28,13 @@ class database {
         $stmt = $this->conn->prepare("SELECT * FROM san_pham WHERE id_san_pham = ?");
         $stmt->execute([$id]);
     }
-    public function getAllCategories() {
-        $stmt = $this->conn->prepare("SELECT * FROM danh_muc");
-        $stmt->execute();
+    // SanPhamModel.php
+     public function getSanPhamByDanhMuc($idDanhMuc) {
+        $stmt = $this->conn->prepare(
+            "SELECT * FROM san_pham WHERE id_danh_muc = ?"
+        );
+        $stmt->execute([$idDanhMuc]);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
-    public function register($id, $ten, $email, $passwordHash){
-        $stmt = $this->conn->prepare("insert into nguoi_dung(id_nguoi_dung, ten_nguoi_dung, email, mat_khau) values(?, ?, ?, ?)");
-        return $stmt->execute([$id, $ten, $email, $passwordHash]);
-    }
-    public function getUserByEmail($email){
-    $stmt = $this->conn->prepare(
-        "SELECT * FROM nguoi_dung WHERE email = ? LIMIT 1"
-    );
-    $stmt->execute([$email]);
-    return $stmt->fetch();
-    }
-
 }
 ?>
