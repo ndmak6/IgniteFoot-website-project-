@@ -23,14 +23,17 @@ class controller {
         $prod = $this -> model -> getAll();
     }
     public function shoppingcart(){
-        $id = $_GET['id'] ?? null;
-        $product = null;
+    $id = $_GET['id'] ?? null;
 
-        if ($id) {
-            $product = $this->model->getProductById($id);
-        }
-        include "./views/shoppingcart.php";
+    if ($id === null) {
+        echo "Thiếu ID sản phẩm";
+        return;
     }
+
+    $product = $this->model->getProductById($id);
+    include "./views/shoppingcart.php";
+    }
+
     // Trong Controller (file controller.php)
     public function deleteproduct(){
         $id = $_GET['id'] ?? null; 

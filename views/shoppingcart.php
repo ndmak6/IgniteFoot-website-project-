@@ -300,12 +300,13 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                
+                                <?php var_dump($product); ?>
+                                <?php foreach ($product as $value) : ?>
                                 <tr>
                                     <td data-label="Product Info">
                                         <div class="product-info-wrapper">
                                             <div class="product-info-img">
-                                                <img src="assets/image/<?php echo $product['anh']; ?>" alt="">
+                                                <img src="assets/image/<?= $value['anh']; ?>" alt="">
                                             </div>
                                             <div class="product-info-content">
                                                 <h6><?= $product['ten_san_pham'] ?></h6>
@@ -323,10 +324,11 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td data-label="Price"><span><?= $product['gia'] ?></span></td>
-                                    <td data-label="Total"><?= $product['gia']?></td>
-                                    <td><a href="index.php?page=detele&id=<?= $product['id_san_pham'] ?>"><button>Xóa</button></a></td>
+                                    <td data-label="Price"><span><?= $value['gia'] ?></span></td>
+                                    <td data-label="Total"><?= $value['gia']?></td>
+                                    <td><a href="index.php?page=detele&id=<?= $value['id_san_pham'] ?>"><button>Xóa</button></a></td>
                                 </tr>
+                                <?php endforeach; ?>
                             </tbody>
                         </table>
                         <a href="product.html" class="details-button">
@@ -368,7 +370,7 @@
                                 </li>
                                 <li>
                                     <strong>Total</strong>
-                                    <?= $product['gia']++ ?>
+                                    <?= $value['gia']++ ?>
                                 </li>
                             </ul>
                             <a href="index.php?page=checkout" class="primary-btn mt-40">Thanh toán ngay</a>
