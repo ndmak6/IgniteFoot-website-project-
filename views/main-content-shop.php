@@ -508,8 +508,6 @@
                     <div class="right-content">
                         <div class="list-grid-product-wrap">
                             <div class="row gy-4">
-
-
                                 <?php
                                 foreach ($products as $item):
                                 ?>
@@ -517,7 +515,7 @@
                                         <div class="product-card">
                                             <div class="product-card-img">
                                                 <a href="index.php?page=productDetail&id=<?= $item['id_san_pham'] ?>">
-                                                    <img src="/assets/image/<?echo $item['anh']; ?>" alt="">
+                                                    <img src="./assets/image/products/<?php echo $item['anh']; ?>" alt="">
                                                     <div class="batch">
                                                         <span class="new">30% off</span>
                                                         <span>Hot deal</span>
@@ -525,7 +523,7 @@
                                                 </a>
                                                 <div class="overlay">
                                                     <div class="cart-area">
-                                                        <a class="add-cart-btn" href="cart-page.php?id=<?php echo $item['id_san_pham']; ?>">
+                                                        <a class="add-cart-btn" href="index.php?page=shoppingcart&id=<?php echo $item['id_san_pham']; ?>">
                                                             <i class="bi bi-bag-check"></i> Add To Cart
                                                         </a>
                                                     </div>
@@ -649,16 +647,25 @@
                                 pagination.innerHTML = '';
                                 const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
 
+                                if (totalPages <= 1) return;
+
                                 for (let i = 1; i <= totalPages; i++) {
-                                    const btn = document.createElement('button');
-                                    btn.innerText = i;
-                                    btn.className = i === currentPage ? 'active' : '';
-                                    btn.onclick = () => {
+                                    const li = document.createElement('li');
+                                    li.className = i === currentPage ? 'active' : '';
+
+                                    const a = document.createElement('a');
+                                    a.href = '#';
+                                    a.innerText = i < 10 ? `0${i}` : i;
+
+                                    a.onclick = (e) => {
+                                        e.preventDefault();
                                         currentPage = i;
                                         renderProducts();
                                         renderPagination();
                                     };
-                                    pagination.appendChild(btn);
+
+                                    li.appendChild(a);
+                                    pagination.appendChild(li);
                                 }
                             }
 
@@ -666,14 +673,15 @@
                             searchInput.addEventListener('keyup', filterProducts);
                             checkboxes.forEach(cb => cb.addEventListener('change', filterProducts));
 
-                            /* INIT */
+                            /* ===== INIT ===== */
                             filterProducts();
+
                         </script>
                         <div class="row wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                             <div class="col-lg-12">
                                 <div
                                     class="page-navigation-area d-flex flex-wrap align-items-center justify-content-between">
-                                    <div class="prev-next-btn">
+                                    <div class="prev-next-btn"  id="prevPage">
                                         <a href="#">
                                             <svg width="7" height="14" viewBox="0 0 7 14"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -687,7 +695,7 @@
                                         <li><a href="#">02</a></li>
                                         <li><a href="#">03</a></li>
                                     </ul>
-                                    <div class="prev-next-btn">
+                                    <div class="prev-next-btn" id="nextPage">
                                         <a href="#">
                                             next
                                             <svg width="7" height="14" viewBox="0 0 7 14"

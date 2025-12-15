@@ -300,13 +300,11 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php var_dump($product); ?>
-                                <?php foreach ($product as $value) : ?>
                                 <tr>
                                     <td data-label="Product Info">
                                         <div class="product-info-wrapper">
                                             <div class="product-info-img">
-                                                <img src="assets/image/<?= $value['anh']; ?>" alt="">
+                                                <img src="assets/image/products/<?= $product['anh']; ?>" alt="">
                                             </div>
                                             <div class="product-info-content">
                                                 <h6><?= $product['ten_san_pham'] ?></h6>
@@ -324,11 +322,17 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td data-label="Price"><span><?= $value['gia'] ?></span></td>
-                                    <td data-label="Total"><?= $value['gia']?></td>
+                                    <td data-label="Price"><span><?php echo number_format($product['gia'], 0, ',', '.'); ?> VNĐ</span></td>
+                                    <div class="quantity" data-id="<?= $product['id_san_pham'] ?>">
+                                        <td data-label="Total">
+                                            <span class="item-total"
+                                                data-price="<?= $product['gia'] ?>">
+                                                <?= number_format($product['gia'], 0, ',', '.'); ?> VNĐ
+                                            </span>
+                                        </td>
+                                    </div>
                                     <td><a href="index.php?page=detele&id=<?= $value['id_san_pham'] ?>"><button>Xóa</button></a></td>
                                 </tr>
-                                <?php endforeach; ?>
                             </tbody>
                         </table>
                         <a href="product.html" class="details-button">
@@ -369,9 +373,10 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <strong>Total</strong>
-                                    <?= $value['gia']++ ?>
-                                </li>
+    <strong>Total</strong>
+    <span id="grand-total">0 VNĐ</span>
+</li>
+
                             </ul>
                             <a href="index.php?page=checkout" class="primary-btn mt-40">Thanh toán ngay</a>
                         </div>
@@ -380,6 +385,66 @@
             </div>
         </div>
     </div>
+  <script>
+document.addEventListener("click", function (e) {
+
+    let minus = e.target.closest(".quantity__minus");
+    let plus  = e.target.closest(".quantity__plus");
+
+    if (!minus && !plus) return;
+
+    e.preventDefault();
+
+    let quantityBox = e.target.closest(".quantity");
+    let input = quantityBox.querySelector(".quantity__input");
+    let value = parseInt(input.value) || 1;
+
+    if (minus && value > 1) value--;
+    if (plus) value++;
+
+    input.value = value;
+
+    // 👉 TOTAL từng sản phẩm
+    let row = e.target.closest("tr");
+    let totalCell = row.querySelector(".item-total");
+    let price = parseInt(totalCell.dataset.price);
+
+    let itemTotal = price * value;
+    totalCell.innerText = itemTotal.toLocaleString("vi-VN") + " VNĐ";
+
+    // 👉 cập nhật localStorage
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let id = quantityBox.dataset.id;
+    let item = cart.find(p => p.id == id);
+
+    if (item) {
+        item.soLuong = value;
+        localStorage.setItem("cart", JSON.stringify(cart));
+    }
+
+    // 👉 TOTAL toàn bộ giỏ
+    calculateTotal();
+});
+
+// 👉 gọi khi load trang
+calculateTotal();
+
+// TOTAL tất cả SP
+function calculateTotal() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let total = 0;
+
+    cart.forEach(item => {
+        total += item.gia * item.soLuong;
+    });
+
+    document.getElementById("cart-total").innerText =
+        total.toLocaleString("vi-VN") + " VNĐ";
+}
+</script>
+
+
+
     <!-- End Cart Page -->
     <!-- footer section strats here -->
     <!-- footer section end here -->
