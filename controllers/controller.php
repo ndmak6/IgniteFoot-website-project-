@@ -8,6 +8,7 @@ class controller {
     }
 
     public function home(){
+        $category= $this->model->getAllCategories();
         include "./views/main-content-home.php";
         include "./views/footer.php";
     }
