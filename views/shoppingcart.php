@@ -282,6 +282,19 @@
     <!-- breadcrumb section strats here -->
     <!-- breadcrumb section ends here -->
     <!-- Start Cart Page -->
+     <?php
+        $grandTotal = 0;
+
+        if (!empty($products)) {
+            foreach ($products as $item) {
+                $grandTotal += $item['gia'] * $item['quantity'];
+            }
+        }
+
+        $shipping = 0;        // Free ship
+        $pickupFee = 10000;  // Nếu có
+        $total = $grandTotal + $shipping; // hoặc + $pickupFee
+    ?>
     <div class="cart-page mb-100">
         <div class="container-lg container-fluid">
             <div class="row g-lg-4 gy-5">
@@ -320,7 +333,7 @@
                                         <input type="number" name="quantities[<?= $item['id_san_pham'] ?>]" value="<?= $item['quantity'] ?>" min="1">
                                     </td>
                                     <td><?= number_format($lineTotal,0,',','.') ?> VNĐ</td>
-                                    <td><a href="index.php?page=delete&id=<?= $item['id_san_pham'] ?> ">Xóa</a></td>
+                                    <td><a href="index.php?page=delete&id=<?= $item['id_san_pham'] ?> " onclick="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này không?');">Xóa</a></td>
                                 </tr>
                                 <?php endforeach; ?>
                                 <tr>
@@ -340,37 +353,44 @@
                         <div class="cart-widget-title">
                             <h4>Order Summary</h4>
                         </div>
+
                         <div class="order-summary-wrap">
                             <ul class="order-summary-list">
+
                                 <li>
-                                    <strong>Sub Total</strong>
-                                    $348.00
+                                    <strong>Tổng tiền</strong>
+                                    <span><?= number_format($grandTotal, 0, ',', '.') ?> VNĐ</span>
                                 </li>
+
                                 <li>
                                     <strong>Vận chuyển</strong>
                                     <div class="order-info">
                                         <p>Shipping Free*</p>
-                                        <span> Pickup fee $10.00</span>
+                                        <span>Pickup fee <?= number_format($pickupFee,0,',','.') ?> VNĐ</span>
                                     </div>
                                 </li>
+
                                 <li>
                                     <div class="coupon-area">
                                         <strong>Mã giảm giá</strong>
-                                        <form>
+                                        <form method="post">
                                             <div class="form-inner">
-                                                <input type="text" placeholder="Your code">
+                                                <input type="text" name="coupon" placeholder="Your code">
                                                 <button type="submit" class="apply-btn">Apply</button>
                                             </div>
                                         </form>
                                     </div>
                                 </li>
                                 <li>
-    <strong>Total</strong>
-    <span id="grand-total">0 VNĐ</span>
-</li>
-
+                                    <strong>Total</strong>
+                                    <span id="grand-total">
+                                        <?= number_format($total, 0, ',', '.') ?> VNĐ
+                                    </span>
+                                </li>
                             </ul>
-                            <a href="index.php?page=checkout" class="primary-btn mt-40">Thanh toán ngay</a>
+                            <a href="index.php?page=checkout" class="primary-btn mt-40">
+                                Thanh toán ngay
+                            </a>
                         </div>
                     </div>
                 </div>
