@@ -76,8 +76,12 @@ class controller {
 
     public function show_category(){
         $cate = $this -> model -> getAllCategories();
+<<<<<<< HEAD
     }  
 
+=======
+    }   
+>>>>>>> 1bd952a226456bbdc8b181cecffbf6c39e0c1a10
     public function product_detail($id = null){
         if($id === null){
             echo "không có id sản phẩm! ";
@@ -98,9 +102,11 @@ class controller {
     include "views/footer.php";
     }
 
+
     public function order_success() {
     $id = $_GET["id"];
     include "./views/checkout-success.php";
+<<<<<<< HEAD
     }
 
     public function registerLoginForm(){
@@ -186,6 +192,12 @@ class controller {
     exit;
     }
 
+=======
+}
+    public function faq() {
+        include "./views/faq.php";
+    }
+>>>>>>> 1bd952a226456bbdc8b181cecffbf6c39e0c1a10
 
 }
 

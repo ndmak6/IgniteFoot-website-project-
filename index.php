@@ -41,6 +41,9 @@ switch ($page) {
     case 'registerCustomer':
         $controller->registerCustomer();
         break;
+    case 'faq':
+        $controller->faq();
+        break;
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;
