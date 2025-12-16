@@ -23,18 +23,58 @@ class controller {
     public function show_product(){
         $prod = $this -> model -> getAll();
     }
-    public function shoppingcart(){
-    $id = $_GET['id'] ?? null;
+    public function addtocart() {
+        $id = $_GET['id'] ?? null;
+        if (!$id) return;
 
-    if ($id === null) {
-        echo "Thiếu ID sản phẩm";
-        return;
+        $product = $this->model->getProductById($id);
+        if (!$product) return;
+
+        if (!isset($_SESSION['cart'])) {
+            $_SESSION['cart'] = [];
+        }
+
+        if (!isset($_SESSION['cart'][$id])) {
+            $_SESSION['cart'][$id] = [
+                'id_san_pham' => $product['id_san_pham'],
+                'ten_san_pham' => $product['ten_san_pham'],
+                'gia' => $product['gia'],
+                'anh' => $product['anh'],
+                'quantity' => 1
+            ];
+        } else {
+            $_SESSION['cart'][$id]['quantity']++;
+        }
+
+        header("Location: index.php?page=shoppingcart");
+        exit;
     }
 
-    $product = $this->model->getProductById($id);
-    include "./views/shoppingcart.php";
+    public function shoppingcart() {
+        $products = $_SESSION['cart'] ?? [];
+        include "./views/shoppingcart.php";
     }
 
+    public function delete() {
+        $id = $_GET['id'] ?? null;
+        if ($id && isset($_SESSION['cart'][$id])) {
+            unset($_SESSION['cart'][$id]);
+        }
+        header("Location: index.php?page=shoppingcart");
+        exit;
+    }
+
+    public function update() {
+        if (isset($_POST['quantities'])) {
+            foreach ($_POST['quantities'] as $id => $qty) {
+                if (isset($_SESSION['cart'][$id])) {
+                    $_SESSION['cart'][$id]['quantity'] = max(1, (int)$qty);
+                }
+            }
+        }
+        header("Location: index.php?page=shoppingcart");
+        exit;
+    }
     // Trong Controller (file controller.php)
     public function deleteproduct(){
         $id = $_GET['id'] ?? null; 

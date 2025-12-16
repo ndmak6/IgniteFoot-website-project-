@@ -290,51 +290,50 @@
                         <div class="cart-widget-title">
                             <h4>My Shopping</h4>
                         </div>
-                        <table class="cart-table">
+                        <?php if(empty($products)): ?>
+                            <p>Giỏ hàng trống</p>
+                        <?php else: ?>
+                        <form method="post" action="index.php?page=update">
+                        <table border="1" cellpadding="10">
                             <thead>
                                 <tr>
-                                    <th>Ảnh sản phẩm</th>
-                                    <th>Giá sản phẩm</th>
-                                    <th>Tổng cộng</th>
-                                    <th>Hủy đơn hàng</th>
+                                    <th>Ảnh</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Giá</th>
+                                    <th>Số lượng</th>
+                                    <th>Tổng</th>
+                                    <th>Xóa</th>
                                 </tr>
                             </thead>
                             <tbody>
+                                <?php 
+                                $grandTotal = 0;
+                                foreach($products as $item): 
+                                    $lineTotal = $item['gia'] * $item['quantity'];
+                                    $grandTotal += $lineTotal;
+                                ?>
                                 <tr>
-                                    <td data-label="Product Info">
-                                        <div class="product-info-wrapper">
-                                            <div class="product-info-img">
-                                                <img src="assets/image/products/<?= $product['anh']; ?>" alt="">
-                                            </div>
-                                            <div class="product-info-content">
-                                                <h6><?= $product['ten_san_pham'] ?></h6>
-                                                <p><span>Sku: </span>D32-5H23</p>
-                                                <div class="quantity-area">
-                                                    <div class="quantity">
-                                                        <a class="quantity__minus"><span><i class="bi bi-dash"></i></span></a>
-                                                        <input name="quantity" type="text" class="quantity__input" value="01">
-                                                        <a class="quantity__plus"><span><i class="bi bi-plus"></i></span></a>
-                                                    </div>
-                                                </div>
-                                                <ul>
-                                                    <li>remove</li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                    <td><img src="assets/image/products/<?= $item['anh'] ?>" width="50"></td>
+                                    <td><?= $item['ten_san_pham'] ?></td>
+                                    <td><?= number_format($item['gia'],0,',','.') ?> VNĐ</td>
+                                    <td>
+                                        <input type="number" name="quantities[<?= $item['id_san_pham'] ?>]" value="<?= $item['quantity'] ?>" min="1">
                                     </td>
-                                    <td data-label="Price"><span><?php echo number_format($product['gia'], 0, ',', '.'); ?> VNĐ</span></td>
-                                    <div class="quantity" data-id="<?= $product['id_san_pham'] ?>">
-                                        <td data-label="Total">
-                                            <span class="item-total"
-                                                data-price="<?= $product['gia'] ?>">
-                                                <?= number_format($product['gia'], 0, ',', '.'); ?> VNĐ
-                                            </span>
-                                        </td>
-                                    </div>
-                                    <td><a href="index.php?page=detele&id=<?= $value['id_san_pham'] ?>"><button>Xóa</button></a></td>
+                                    <td><?= number_format($lineTotal,0,',','.') ?> VNĐ</td>
+                                    <td><a href="index.php?page=delete&id=<?= $item['id_san_pham'] ?>">Xóa</a></td>
+                                </tr>
+                                <?php endforeach; ?>
+                                <tr>
+                                    <td colspan="4">Tổng cộng</td>
+                                    <td colspan="2"><?= number_format($grandTotal,0,',','.') ?> VNĐ</td>
                                 </tr>
                             </tbody>
                         </table>
+                        <button type="submit">Cập nhật số lượng</button>
+                        </form>
+                        <?php endif; ?>
+                        <a href="index.php">Tiếp tục mua hàng</a>
+
                         <a href="product.html" class="details-button">
                             Continue Shoping
                             <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">

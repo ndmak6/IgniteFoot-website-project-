@@ -523,7 +523,7 @@
                                                 </a>
                                                 <div class="overlay">
                                                     <div class="cart-area">
-                                                        <a class="add-cart-btn" href="index.php?page=shoppingcart&id=<?php echo $item['id_san_pham']; ?>">
+                                                        <a href="index.php?page=addtocart&id=<?= $item['id_san_pham'] ?>" class="add-cart-btn">
                                                             <i class="bi bi-bag-check"></i> Add To Cart
                                                         </a>
                                                     </div>
@@ -540,9 +540,8 @@
                                                     </ul>
                                                 </div>
                                                 <h6>
-                                                    <a class="hover-underline" href="index.php?page=productDetail&id=<?= $item['id_san_pham'] ?>">
-                                                        <?php echo $item['ten_san_pham']; ?>
-                                                    </a>
+                                                    
+                                                    <a class="hover-underline" href="index.php?page=productDetail&id=<?= $item['id_san_pham'] ?>"> <?php echo $item['ten_san_pham']; ?> </a>
                                                 </h6>
                                                 <p class="price"><?php echo number_format($item['gia'], 0, ',', '.'); ?> VNĐ</p>
                                             </div>
@@ -597,10 +596,13 @@
                                 });
                             });
                             });
+                           document.addEventListener("DOMContentLoaded", function () {
                             const products = Array.from(document.querySelectorAll('.product-item'));
                             const checkboxes = document.querySelectorAll('.filter-category');
                             const searchInput = document.getElementById('searchInput');
                             const pagination = document.getElementById('pagination');
+                            const prevBtn = document.getElementById('prevPage');
+                            const nextBtn = document.getElementById('nextPage');
 
                             const ITEMS_PER_PAGE = 15;
                             let currentPage = 1;
@@ -614,7 +616,7 @@
                                     .map(cb => cb.value);
 
                                 filteredProducts = products.filter(product => {
-                                    const name = product.dataset.name;
+                                    const name = product.dataset.name.toLowerCase();
                                     const category = product.dataset.category;
 
                                     const matchName = name.includes(keyword);
@@ -647,27 +649,47 @@
                                 pagination.innerHTML = '';
                                 const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
 
+                                prevBtn.disabled = currentPage === 1;
+                                nextBtn.disabled = currentPage === totalPages || totalPages === 0;
+
                                 if (totalPages <= 1) return;
 
                                 for (let i = 1; i <= totalPages; i++) {
                                     const li = document.createElement('li');
                                     li.className = i === currentPage ? 'active' : '';
 
-                                    const a = document.createElement('a');
-                                    a.href = '#';
-                                    a.innerText = i < 10 ? `0${i}` : i;
+                                    const btn = document.createElement('button');
+                                    btn.type = 'button';
+                                    btn.innerText = i < 10 ? `0${i}` : i;
 
-                                    a.onclick = (e) => {
-                                        e.preventDefault();
+                                    btn.addEventListener('click', () => {
                                         currentPage = i;
                                         renderProducts();
                                         renderPagination();
-                                    };
+                                    });
 
-                                    li.appendChild(a);
+                                    li.appendChild(btn);
                                     pagination.appendChild(li);
                                 }
                             }
+
+                            /* ===== PREV / NEXT ===== */
+                            prevBtn.addEventListener('click', () => {
+                                if (currentPage > 1) {
+                                    currentPage--;
+                                    renderProducts();
+                                    renderPagination();
+                                }
+                            });
+
+                            nextBtn.addEventListener('click', () => {
+                                const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
+                                if (currentPage < totalPages) {
+                                    currentPage++;
+                                    renderProducts();
+                                    renderPagination();
+                                }
+                            });
 
                             /* ===== EVENTS ===== */
                             searchInput.addEventListener('keyup', filterProducts);
@@ -675,35 +697,41 @@
 
                             /* ===== INIT ===== */
                             filterProducts();
+                        });
+                            document.querySelectorAll('.add-cart-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const id = this.dataset.id;
 
+        fetch(`index.php?page=addtocart&id=${id}`, {
+            method: 'GET'
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('Đã thêm sản phẩm vào giỏ hàng!');
+                // Optionally update cart counter
+            }
+        });
+    });
+});
                         </script>
                         <div class="row wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                             <div class="col-lg-12">
-                                <div
-                                    class="page-navigation-area d-flex flex-wrap align-items-center justify-content-between">
-                                    <div class="prev-next-btn"  id="prevPage">
-                                        <a href="#">
-                                            <svg width="7" height="14" viewBox="0 0 7 14"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M0 7.00008L7 0L2.54545 7.00008L7 14L0 7.00008Z" />
-                                            </svg>
-                                            prev
-                                        </a>
-                                    </div>
-                                    <ul class="pagination" id="pagination">
-                                        <li class="active"><a href="#">01</a></li>
-                                        <li><a href="#">02</a></li>
-                                        <li><a href="#">03</a></li>
-                                    </ul>
-                                    <div class="prev-next-btn" id="nextPage">
-                                        <a href="#">
-                                            next
-                                            <svg width="7" height="14" viewBox="0 0 7 14"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M7 7.00008L0 0L4.45455 7.00008L0 14L7 7.00008Z" />
-                                            </svg>
-                                        </a>
-                                    </div>
+                                <div class="page-navigation-area d-flex flex-wrap align-items-center justify-content-between">
+                                    <button class="prev-next-btn" id="prevPage" type="button">
+                                        <svg width="7" height="14" viewBox="0 0 7 14"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 7.00008L7 0L2.54545 7.00008L7 14L0 7.00008Z" />
+                                        </svg>
+                                        Prev
+                                    </button>
+                                    <ul class="pagination" id="pagination"></ul>
+                                    <button class="prev-next-btn" id="nextPage" type="button">
+                                        Next
+                                        <svg width="7" height="14" viewBox="0 0 7 14"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 7.00008L0 0L4.45455 7.00008L0 14L7 7.00008Z" />
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
                         </div>

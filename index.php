@@ -1,6 +1,6 @@
 <?php
 require_once "./controllers/controller.php";
-
+session_start();
 $controller = new controller();
 
 $page = $_GET['page'] ?? 'home';
@@ -13,6 +13,9 @@ switch ($page) {
         $controller->shop();
     case 'shoppingcart':
         $controller->shoppingcart();
+        break;
+    case 'addtocart':
+        $controller->addtocart();
         break;
      case 'editCateProducts':
         $controllerAdmin->editCateProductsF();
