@@ -516,10 +516,6 @@
                                             <div class="product-card-img">
                                                 <a href="index.php?page=productDetail&id=<?= $item['id_san_pham'] ?>">
                                                     <img src="./assets/image/products/<?php echo $item['anh']; ?>" alt="">
-                                                    <div class="batch">
-                                                        <span class="new">30% off</span>
-                                                        <span>Hot deal</span>
-                                                    </div>
                                                 </a>
                                                 <div class="overlay">
                                                     <div class="cart-area">
