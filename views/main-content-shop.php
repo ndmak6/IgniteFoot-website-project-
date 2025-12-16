@@ -944,13 +944,13 @@
                                             </div>
                                         </div>
                                     </div>
-<<<<<<< Updated upstream
+
                                 <?php
                                 }
                                 ?>
 
 
-=======
+
                                 </div>
                                 <div class="col-lg-4 col-md-6 col-sm-6 item wow animate fadeInDown" data-wow-delay="400ms" data-wow-duration="1500ms">
                                     <div class="product-card">

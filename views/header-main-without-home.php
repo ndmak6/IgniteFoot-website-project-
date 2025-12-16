@@ -275,8 +275,8 @@
                     </ul>
                 </li>
                 <li class="menu-item-has-children">
-                    <a href="#" class="drop-down"> PAGES</a><i class="bi bi-plus dropdown-icon"></i>
-                    <ul class="sub-menu">
+                    <a href="index.php?page=faq"> FAQ's</a><i class="bi bi-plus dropdown-icon"></i>
+                    <!-- <ul class="sub-menu">
                         <li><a href="about-us.html">About Us</a></li>
                         <li>
                             <a href="categories.html">Category</a>
@@ -289,7 +289,7 @@
                         </li>
                         <li><a href="faq.html">FAQ's</a></li>
                         <li><a href="error.html">Error</a></li>
-                    </ul>
+                    </ul> -->
                 </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
