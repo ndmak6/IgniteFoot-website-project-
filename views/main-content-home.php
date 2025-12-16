@@ -789,7 +789,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="banner-bg">
-                                <img src="assets/image/home5/home-banner-img2.jpg" width="700px" alt="">
+                                <img src="assets/image/home5/home-banner-img2.jpg" width="750px" alt="">
                             </div>
                         </div>
                         <div class="swiper-slide">
