@@ -29,6 +29,12 @@ switch ($page) {
     case 'productcatalog':
         $controller->productcatalog();
         break;
+    case 'delete':
+        $controller->delete();
+        break;
+    case 'update':
+        $controller->update();
+        break;
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;
