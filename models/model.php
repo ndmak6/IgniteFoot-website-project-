@@ -41,5 +41,17 @@ class database {
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+    public function getByCode($code){
+        $sql = "SELECT * FROM ma_giam_gia 
+                WHERE code = ?
+                AND trang_thai = 1
+                AND ngay_bat_dau <= CURDATE()
+                AND ngay_ket_thuc >= CURDATE()
+                LIMIT 1";
+
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute([$code]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
 }
 ?>

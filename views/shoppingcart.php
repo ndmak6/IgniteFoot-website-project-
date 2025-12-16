@@ -375,8 +375,8 @@
                                         <strong>Mã giảm giá</strong>
                                         <form method="post">
                                             <div class="form-inner">
-                                                <input type="text" name="coupon" placeholder="Your code">
-                                                <button type="submit" class="apply-btn">Apply</button>
+                                                <input type="text" name="coupon" placeholder="Mã giảm giá...">
+                                                <button type="submit" class="apply-btn">Áp dụng</button>
                                             </div>
                                         </form>
                                     </div>
