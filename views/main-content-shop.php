@@ -383,14 +383,14 @@
     </div>
     <!-- hearder section ends here -->
     <!-- breadcrumb section strats here -->
-    <div class="breadcrumb-section mb-100" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(assets/image/inner-page/breadcrumbs-image2.jpg);">
+    <div class="breadcrumb-section mb-100" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(assets/image/banner_shop.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 d-flex justify-content-center">
                     <div class="banner-content style-2 text-center">
                         <h1>Shop</h1>
                         <ul class="breadcrumb-list">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.php">Home</a></li>
                             <li><span>/</span> Shop</li>
                         </ul>
                     </div>
