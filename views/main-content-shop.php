@@ -548,168 +548,111 @@
                             </div>
                         </div>
                         <script>
-                            document.addEventListener('DOMContentLoaded', () => {
-                                const checkboxes = document.querySelectorAll('.filter-category');
-                                const products = document.querySelectorAll('.product-item');
+                            document.addEventListener("DOMContentLoaded", function () {
 
+                                const products = Array.from(document.querySelectorAll('.product-item'));
+                                const checkboxes = document.querySelectorAll('.filter-category');
+                                const searchInput = document.getElementById('searchInput');
+                                const pagination = document.getElementById('pagination');
+                                const prevBtn = document.getElementById('prevPage');
+                                const nextBtn = document.getElementById('nextPage');
+
+                                const ITEMS_PER_PAGE = 15;
+                                let currentPage = 1;
+                                let filteredProducts = [...products];
+
+                                /* ===== FILTER ===== */
+                                function filterProducts() {
+                                    const keyword = searchInput.value.toLowerCase();
+                                    const selectedCategory = Array.from(checkboxes).find(cb => cb.checked)?.value;
+
+                                    filteredProducts = products.filter(product => {
+                                        const name = product.dataset.name.toLowerCase();
+                                        const category = product.dataset.category;
+
+                                        const matchName = name.includes(keyword);
+                                        const matchCategory = !selectedCategory || category === selectedCategory;
+
+                                        return matchName && matchCategory;
+                                    });
+
+                                    currentPage = 1;
+                                    renderProducts();
+                                    renderPagination();
+                                }
+
+                                /* ===== RENDER PRODUCT ===== */
+                                function renderProducts() {
+                                    products.forEach(p => p.style.display = 'none');
+
+                                    const start = (currentPage - 1) * ITEMS_PER_PAGE;
+                                    const end = start + ITEMS_PER_PAGE;
+
+                                    filteredProducts.slice(start, end).forEach(p => {
+                                        p.style.display = 'block';
+                                    });
+                                }
+
+                                /* ===== PAGINATION ===== */
+                                function renderPagination() {
+                                    pagination.innerHTML = '';
+                                    const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
+
+                                    prevBtn.disabled = currentPage === 1;
+                                    nextBtn.disabled = currentPage === totalPages || totalPages === 0;
+
+                                    if (totalPages <= 1) return;
+
+                                    for (let i = 1; i <= totalPages; i++) {
+                                        const li = document.createElement('li');
+                                        li.className = i === currentPage ? 'active' : '';
+
+                                        const btn = document.createElement('button');
+                                        btn.type = 'button';
+                                        btn.innerText = i < 10 ? `0${i}` : i;
+
+                                        btn.onclick = () => {
+                                            currentPage = i;
+                                            renderProducts();
+                                            renderPagination();
+                                        };
+
+                                        li.appendChild(btn);
+                                        pagination.appendChild(li);
+                                    }
+                                }
+
+                                /* ===== EVENTS ===== */
+                                searchInput.addEventListener('input', filterProducts);
                                 checkboxes.forEach(cb => {
                                     cb.addEventListener('change', function () {
-
-                                        // 👉 BỎ CHECK TẤT CẢ CÁI KHÁC
-                                        checkboxes.forEach(other => {
-                                            if (other !== this) other.checked = false;
-                                        });
-
-                                        const selectedCategory = this.checked ? this.value : null;
-
-                                        products.forEach(product => {
-                                            const productCategory = product.dataset.category;
-
-                                            if (!selectedCategory || productCategory === selectedCategory) {
-                                                product.style.display = 'block';
-                                            } else {
-                                                product.style.display = 'none';
-                                            }
-                                        });
+                                        checkboxes.forEach(o => o !== this && (o.checked = false));
+                                        filterProducts();
                                     });
                                 });
-                            });
-                            document.addEventListener('DOMContentLoaded', function () {
-                            const searchInput = document.getElementById('searchInput');
-                            const products = document.querySelectorAll('.product-item');
 
-                            searchInput.addEventListener('input', function () {
-                                const keyword = this.value.toLowerCase().trim();
-
-                                products.forEach(product => {
-                                    const name = product.dataset.name;
-
-                                    if (name.includes(keyword)) {
-                                        product.style.display = '';
-                                    } else {
-                                        product.style.display = 'none';
-                                    }
-                                });
-                            });
-                            });
-                           document.addEventListener("DOMContentLoaded", function () {
-                            const products = Array.from(document.querySelectorAll('.product-item'));
-                            const checkboxes = document.querySelectorAll('.filter-category');
-                            const searchInput = document.getElementById('searchInput');
-                            const pagination = document.getElementById('pagination');
-                            const prevBtn = document.getElementById('prevPage');
-                            const nextBtn = document.getElementById('nextPage');
-
-                            const ITEMS_PER_PAGE = 15;
-                            let currentPage = 1;
-                            let filteredProducts = [...products];
-
-                            /* ===== FILTER ===== */
-                            function filterProducts() {
-                                const keyword = searchInput.value.toLowerCase();
-                                const selectedCategories = Array.from(checkboxes)
-                                    .filter(cb => cb.checked)
-                                    .map(cb => cb.value);
-
-                                filteredProducts = products.filter(product => {
-                                    const name = product.dataset.name.toLowerCase();
-                                    const category = product.dataset.category;
-
-                                    const matchName = name.includes(keyword);
-                                    const matchCategory =
-                                        selectedCategories.length === 0 ||
-                                        selectedCategories.includes(category);
-
-                                    return matchName && matchCategory;
-                                });
-
-                                currentPage = 1;
-                                renderProducts();
-                                renderPagination();
-                            }
-
-                            /* ===== RENDER PRODUCT ===== */
-                            function renderProducts() {
-                                products.forEach(p => p.style.display = 'none');
-
-                                const start = (currentPage - 1) * ITEMS_PER_PAGE;
-                                const end = start + ITEMS_PER_PAGE;
-
-                                filteredProducts.slice(start, end).forEach(p => {
-                                    p.style.display = 'block';
-                                });
-                            }
-
-                            /* ===== PAGINATION ===== */
-                            function renderPagination() {
-                                pagination.innerHTML = '';
-                                const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
-
-                                prevBtn.disabled = currentPage === 1;
-                                nextBtn.disabled = currentPage === totalPages || totalPages === 0;
-
-                                if (totalPages <= 1) return;
-
-                                for (let i = 1; i <= totalPages; i++) {
-                                    const li = document.createElement('li');
-                                    li.className = i === currentPage ? 'active' : '';
-
-                                    const btn = document.createElement('button');
-                                    btn.type = 'button';
-                                    btn.innerText = i < 10 ? `0${i}` : i;
-
-                                    btn.addEventListener('click', () => {
-                                        currentPage = i;
+                                prevBtn.onclick = () => {
+                                    if (currentPage > 1) {
+                                        currentPage--;
                                         renderProducts();
                                         renderPagination();
-                                    });
+                                    }
+                                };
 
-                                    li.appendChild(btn);
-                                    pagination.appendChild(li);
-                                }
-                            }
+                                nextBtn.onclick = () => {
+                                    const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
+                                    if (currentPage < totalPages) {
+                                        currentPage++;
+                                        renderProducts();
+                                        renderPagination();
+                                    }
+                                };
 
-                            /* ===== PREV / NEXT ===== */
-                            prevBtn.addEventListener('click', () => {
-                                if (currentPage > 1) {
-                                    currentPage--;
-                                    renderProducts();
-                                    renderPagination();
-                                }
+                                /* ===== INIT ===== */
+                                filterProducts();
                             });
-
-                            nextBtn.addEventListener('click', () => {
-                                const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
-                                if (currentPage < totalPages) {
-                                    currentPage++;
-                                    renderProducts();
-                                    renderPagination();
-                                }
-                            });
-
-                            /* ===== EVENTS ===== */
-                            searchInput.addEventListener('keyup', filterProducts);
-                            checkboxes.forEach(cb => cb.addEventListener('change', filterProducts));
-
-                            /* ===== INIT ===== */
-                            filterProducts();
-                        });
-                            document.querySelectorAll('.add-cart-btn').forEach(btn => {
-    btn.addEventListener('click', function() {
-        const id = this.dataset.id;
-
-        fetch(`index.php?page=addtocart&id=${id}`, {
-            method: 'GET'
-        })
-        .then(response => {
-            if (response.ok) {
-                alert('Đã thêm sản phẩm vào giỏ hàng!');
-                // Optionally update cart counter
-            }
-        });
-    });
-});
                         </script>
+
                         <div class="row wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                             <div class="col-lg-12">
                                 <div class="page-navigation-area d-flex flex-wrap align-items-center justify-content-between">
@@ -738,31 +681,4 @@
     </div>
     <!-- product-card section ends here -->
     <!-- footer top section strats here -->
-    <div class="footer-top-area">
-        <div class="container">
-            <div class="footer-top-wrapper">
-                <div class="row">
-                    <div class="col-xl-5 col-lg-6 d-lg-flex align-items-end d-none">
-                        <div class="footer-top-img">
-                            <img src="assets/image/inner-page/footer-top-image.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-xl-7 col-lg-6 d-flex align-items-center">
-                        <div class="foort-top-content">
-                            <h3>Limited Time Offer</h3>
-                            <h2>Up to 60% Off on Trendy Styles!</h2>
-                            <div class="countdown-timer">
-                                <ul data-countdown="2025-09-15 12:00:00">
-                                    <li data-days="00">00</li>
-                                    <li data-hours="00">00</li>
-                                    <li data-minutes="00">00</li>
-                                    <li data-seconds="00">00</li>
-                                </ul>
-                            </div>
-                            <a href="3columns-left.html" class="primary-btn">SHOP NOW</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    

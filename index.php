@@ -35,6 +35,12 @@ switch ($page) {
     case 'update':
         $controller->update();
         break;
+    case 'apply-coupon':
+        $controller->applyCoupon();
+        break;
+    case 'remove-coupon':
+        $controller->removeCoupon();
+        break;
     default:
     echo "lỗi 404 - không tìm thấy trang này!";
     break;
