@@ -10,6 +10,8 @@ class controller {
     public function home(){
         $products = $this->model->getAll();
         $category= $this->model->getAllCategories();
+        $products = $this->model->getAll();
+        $topSelling = $this->model->getTopselling(1);
         include "./views/main-content-home.php";
         include "./views/footer.php";
     }
@@ -158,6 +160,11 @@ class controller {
         header('Location: index.php?page=shoppingcart');
         exit;
     }
-}
 
+    public function faq(){
+        include "./views/header-main-without-home.php";
+        include "./views/faq.php";
+        include "./views/footer.php";
+    }
+}
 ?>

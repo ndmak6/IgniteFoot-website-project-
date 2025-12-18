@@ -24,7 +24,6 @@
 
 <body>
 
-    <!-- product view modal  -->
     <div class="modal product-view-modal" id="product-view">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
@@ -467,41 +466,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="single-widgets mb-70">
-                            <div class="widget-title">
-                                <h5>Kích cỡ</h5>
-                            </div>
-                            <div class="size-list">
-                                <ul>
-                                    <li class="select-wrap selected">39</li>
-                                    <li class="select-wrap">40</li>
-                                    <li class="select-wrap">41</li>
-                                    <li class="select-wrap">42</li>
-                                    <li class="select-wrap">43</li>
-                                    <li class="select-wrap">44</li>
-                                    <li class="select-wrap">45</li>
-                                    <li class="select-wrap">46</li>
-                                    <li class="select-wrap">47</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="single-widgets mb-70">
-                            <div class="widget-title">
-                                <h5>Màu sắc</h5>
-                            </div>
-                            <div class="color-area">
-                                <ul class="color-list">
-                                    <li class="select-wrap selected" style="background-color: #897f7fff;"></li>
-                                    <li class="select-wrap" style="background-color: #000000ff;"></li>
-                                    <li class="select-wrap" style="background-color: #ff6e6eff;"></li>
-                                    <li class="select-wrap" style="background-color: #70ff70ff;"></li>
-                                    <li class="select-wrap" style="background-color: #56567eff;"></li>
-                                    <li class="select-wrap" style="background-color: #e9e946ff;"></li>
-                                    <li class="select-wrap" style="background-color: #ae3aaeff;"></li>
-                                    <li class="select-wrap" style="background-color: #3edcdcff;"></li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-9 order-lg-2 order-1">
@@ -557,7 +521,7 @@
                                 const prevBtn = document.getElementById('prevPage');
                                 const nextBtn = document.getElementById('nextPage');
 
-                                const ITEMS_PER_PAGE = 15;
+                                const ITEMS_PER_PAGE = 9;
                                 let currentPage = 1;
                                 let filteredProducts = [...products];
 

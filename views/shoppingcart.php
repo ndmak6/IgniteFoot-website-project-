@@ -388,10 +388,10 @@
             <div class="row">
                 <div class="col-lg-12 d-flex justify-content-center">
                     <div class="banner-content style-2 text-center">
-                        <h1>Shop</h1>
+                        <h1>Shoppingcart</h1>
                         <ul class="breadcrumb-list">
                             <li><a href="index.php">Home</a></li>
-                            <li><span>/</span> Shop</li>
+                            <li><span>/</span> Shoppingcart</li>
                         </ul>
                     </div>
                 </div>

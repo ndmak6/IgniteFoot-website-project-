@@ -388,10 +388,10 @@
             <div class="row">
                 <div class="col-lg-12 d-flex justify-content-center">
                     <div class="banner-content style-2 text-center">
-                        <h1>Shop</h1>
+                        <h1><?php echo $showCategory['ten_danh_muc'] ?></h1>
                         <ul class="breadcrumb-list">
                             <li><a href="index.php">Home</a></li>
-                            <li><span>/</span> Shop</li>
+                            <li><span>/</span>Catalog</li>
                         </ul>
                     </div>
                 </div>
@@ -403,177 +403,11 @@
     <div class="product-card-section mb-100">
         <div class="container">
             <div class="row gy-5">
-                <div class="col-lg-3 order-lg-1 order-2 wow animate fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms;">
-                    <div class="sidebar-area">
-                        <div class="single-widgets widget_search mb-70">
-                            <form>
-                                <div class="wp-block-search__inside-wrapper">
-                                    <input type="search" value="" placeholder="Search Product">
-                                    <button type="submit">
-                                        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.7425 10.3418C12.7107 9.0205 13.1444 7.38236 12.9567 5.75508C12.769 4.1278 11.9739 2.63139 10.7303 1.56522C9.48666 0.49905 7.88635 -0.0582469 6.2495 0.0048239C4.61265 0.0678947 3.05997 0.746681 1.90209 1.90538C0.744221 3.06409 0.0665459 4.61725 0.00464636 6.25415C-0.0572531 7.89104 0.501188 9.49095 1.56825 10.7338C2.63531 11.9766 4.13229 12.7707 5.7597 12.9572C7.38711 13.1438 9.02494 12.7089 10.3455 11.7397H10.3445C10.3745 11.7797 10.4065 11.8177 10.4425 11.8547L14.2924 15.7046C14.4799 15.8922 14.7342 15.9977 14.9995 15.9977C15.2647 15.9978 15.5192 15.8926 15.7068 15.7051C15.8944 15.5176 15.9999 15.2632 16 14.9979C16.0001 14.7327 15.8948 14.4782 15.7073 14.2906L11.8575 10.4408C11.8217 10.4046 11.7833 10.3711 11.7425 10.3408V10.3418ZM12.0004 6.4979C12.0004 7.22015 11.8582 7.93532 11.5818 8.60258C11.3054 9.26985 10.9003 9.87614 10.3896 10.3868C9.87889 10.8975 9.2726 11.3027 8.60533 11.5791C7.93807 11.8554 7.2229 11.9977 6.50065 11.9977C5.77841 11.9977 5.06324 11.8554 4.39597 11.5791C3.72871 11.3027 3.12242 10.8975 2.61171 10.3868C2.10101 9.87614 1.6959 9.26985 1.41951 8.60258C1.14312 7.93532 1.00086 7.22015 1.00086 6.4979C1.00086 5.03927 1.5803 3.64037 2.61171 2.60896C3.64312 1.57755 5.04202 0.99811 6.50065 0.99811C7.95929 0.99811 9.35818 1.57755 10.3896 2.60896C11.421 3.64037 12.0004 5.03927 12.0004 6.4979Z"></path>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="single-widgets mb-70">
-                            <div class="widget-title">
-                                <h5>Shop Catalog</h5>
-                            </div>
-                            <div class="checkbox-container">
-                                <ul>
-                                    <?php 
-                                    $currentCategoryId = $_GET['id_danh_muc'] ?? null;
-                                    ?>
-                                    <?php foreach ($category as $value): ?>
-                                    <li>
-                                        <label class="containerss">
-                                            <input 
-                                                type="checkbox"
-                                                class="filter-category"
-                                                value="<?= $value['id_danh_muc']; ?>"
-                                                <?= ($currentCategoryId == $value['id_danh_muc']) ? 'checked' : '' ?>
-                                            >
-                                            <span class="checkmark"></span>
-                                            <span><?= $value['ten_danh_muc']; ?></span>
-                                        </label>
-                                    </li>
-                                    <?php endforeach; ?>
-                            </div>
-                        </div>
-                        <div class="single-widgets mb-70">
-                            <div class="widget-title">
-                                <h5>Price Filter</h5>
-                            </div>
-                            <div class="range-wrap">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <form>
-                                            <input type="hidden" name="min-value" value="">
-                                            <input type="hidden" name="max-value" value="">
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div id="slider-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background"><div class="noUi-base"><div class="noUi-origin noUi-connect" style="left: 0.6004%;"><div class="noUi-handle noUi-handle-lower"></div></div><div class="noUi-origin noUi-background" style="left: 46.6311%;"><div class="noUi-handle noUi-handle-upper"></div></div></div></div>
-                                    </div>
-                                </div>
-                                <div class="slider-labels">
-                                    <div class="caption">
-                                        <span id="slider-range-value1">$10</span>
-                                    </div>
-                                    <div class="caption">
-                                        <span id="slider-range-value2">$700</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single-widgets mb-70">
-                            <div class="widget-title">
-                                <h5>Size</h5>
-                            </div>
-                            <div class="size-list">
-                                <ul>
-                                    <li class="select-wrap selected">XXS</li>
-                                    <li class="select-wrap">XS</li>
-                                    <li class="select-wrap">S</li>
-                                    <li class="select-wrap">M</li>
-                                    <li class="select-wrap">L</li>
-                                    <li class="select-wrap">XL</li>
-                                    <li class="select-wrap">XXL</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="single-widgets mb-70">
-                            <div class="widget-title">
-                                <h5>Color</h5>
-                            </div>
-                            <div class="color-area">
-                                <ul class="color-list">
-                                    <li class="select-wrap selected"></li>
-                                    <li class="golden-lime select-wrap"></li>
-                                    <li class="dusky-rose select-wrap"></li>
-                                    <li class="dusty-rose select-wrap"></li>
-                                    <li class="olive-green select-wrap"></li>
-                                    <li class="bright-red select-wrap"></li>
-                                    <li class="azure-blue select-wrap"></li>
-                                    <li class="black select-wrap"></li>
-                                    <li class="peach select-wrap"></li>
-                                    <li class="cranberry select-wrap"></li>
-                                    <li class="flame-red select-wrap"></li>
-                                    <li class="lavender select-wrap"></li>
-                                    <li class="hot-pink select-wrap"></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="single-widgets ">
-                            <div class="widget-title">
-                                <h5>Feature product</h5>
-                            </div>
-                            <div class="feature-product-area mb-20">
-                                <div class="feature-product-image">
-                                   <a href="product-details.html"> <img src="assets/image/inner-page/sidebar-product-image.png" alt=""></a>
-                                </div>
-                                <div class="feature-product-content">
-                                    <h6><a href="product-details.html">Ultimate Comfort &amp; Trendy Design</a></h6>
-                                    <p>$150.00 <del>$200.00</del></p>
-                                </div>
-                            </div>
-                            <div class="feature-product-area">
-                                <div class="feature-product-image">
-                                    <a href="product-details.html"><img src="assets/image/inner-page/sidebar-product-image2.png" alt=""></a>
-                                </div>
-                                <div class="feature-product-content">
-                                    <h6><a href="product-details.html">Classic Navy Slim Fit Blazer</a></h6>
-                                    <p>$120.00 <del>$180.00</del></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-9 order-lg-2 order-1">
+                <div class="col-lg-12 order-lg-2 order-1">
                     <div class="right-content">
                         <div class="row">
                             <div class="col-lg-12 mb-50">
                                 <div class="auction-card-top-area">
-                                    <div class="left-content">
-                                        <h6>Showing <span>09</span> of <span>12</span> results</h6>
-                                    </div>
-                                    <div class="right-content">
-                                        <div class="category-area">
-                                            <select style="display: none;">
-                                                <option value="1">Default sorting</option>
-                                                <option value="2">latest </option>
-                                                <option value="2">Best selling </option>
-                                                <option value="2">Price Low to high </option>
-                                                <option value="2">Price high to low </option>
-                                            </select><div class="nice-select" tabindex="0"><span class="current">Default sorting</span><ul class="list"><li data-value="1" class="option selected">Default sorting</li><li data-value="2" class="option">latest </li><li data-value="2" class="option">Best selling </li><li data-value="2" class="option">Price Low to high </li><li data-value="2" class="option">Price high to low </li></ul></div>
-                                        </div>
-                                        <ul class="size-icon grid-view d-lg-flex d-none">
-                                            <li class="column-2">
-                                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0.75 13.1875L0.749999 0.8125M5.8125 13.1875L5.8125 0.8125" stroke="#A0A0A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                            </li>
-                                            <li class="column-3 active">
-                                                <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1.0625 13.1875L1.0625 0.8125M5 13.1875L5 0.8125M8.9375 13.1875L8.9375 0.8125" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                            </li>
-                                            <li class="column-4">
-                                                <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0.9375 13.1875L0.937499 0.8125M4.3125 13.1875L4.3125 0.8125M7.6875 13.1875L7.6875 0.8125M11.0625 13.1875L11.0625 0.8125" stroke="#A0A0A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                            </li>
-                                            <li class="column-1">
-                                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0.8125 1.0625H13.1875M0.8125 5H13.1875M0.8125 8.9375H13.1875" stroke="#A0A0A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                            </li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -607,7 +441,7 @@
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a data-bs-toggle="modal" data-bs-target="#product-view">
+                                                        <a data-bs-toggle="modal" data-bs-target="#product-view" href="<?= $item  ?>">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
                                                                 <path d="M21.8601 10.5721C21.6636 10.3032 16.9807 3.98901 10.9999 3.98901C5.019 3.98901 0.335925 10.3032 0.139601 10.5718C0.0488852 10.6961 0 10.846 0 10.9999C0 11.1537 0.0488852 11.3036 0.139601 11.4279C0.335925 11.6967 5.019 18.011 10.9999 18.011C16.9807 18.011 21.6636 11.6967 21.8601 11.4281C21.951 11.3039 21.9999 11.154 21.9999 11.0001C21.9999 10.8462 21.951 10.6963 21.8601 10.5721ZM10.9999 16.5604C6.59432 16.5604 2.77866 12.3696 1.64914 10.9995C2.77719 9.62823 6.58487 5.43955 10.9999 5.43955C15.4052 5.43955 19.2206 9.62969 20.3506 11.0005C19.2225 12.3717 15.4149 16.5604 10.9999 16.5604Z">
                                                                 </path>
@@ -638,143 +472,40 @@
                                 <?php endforeach; ?>
                             </div>
                         </div>
-                        <div class="row wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: hidden; animation-duration: 1500ms; animation-delay: 200ms; animation-name: none;">
-                            <div class="col-lg-12">
-                                <div class="page-navigation-area d-flex flex-wrap align-items-center justify-content-between">
-                                    <div class="prev-next-btn">
-                                        <a href="#">
-                                            <svg width="7" height="14" viewBox="0 0 7 14" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M0 7.00008L7 0L2.54545 7.00008L7 14L0 7.00008Z"></path>
-                                            </svg>
-                                            prev
-                                        </a>
-                                    </div>
-                                    <ul class="pagination">
-                                        <li class="active"><a href="#">01</a></li>
-                                        <li><a href="#">02</a></li>
-                                        <li><a href="#">03</a></li>
-                                    </ul>
-                                    <div class="prev-next-btn">
-                                        <a href="#">
-                                            next
-                                            <svg width="7" height="14" viewBox="0 0 7 14" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M7 7.00008L0 0L4.45455 7.00008L0 14L7 7.00008Z"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
+    const checkboxes = document.querySelectorAll(".filter-category");
+    const products = document.querySelectorAll(".item");
 
-            const products = Array.from(document.querySelectorAll('.product-item'));
-            const checkboxes = document.querySelectorAll('.filter-category');
-            const searchInput = document.getElementById('searchInput');
-            const pagination = document.getElementById('pagination');
-            const prevBtn = document.getElementById('prevPage');
-            const nextBtn = document.getElementById('nextPage');
+    checkboxes.forEach(cb => {
+        cb.addEventListener("change", function () {
 
-            const ITEMS_PER_PAGE = 15;
-            let currentPage = 1;
-            let filteredProducts = [...products];
-
-            /* ===== FILTER ===== */
-            function filterProducts() {
-                const keyword = searchInput.value.toLowerCase();
-                const selectedCategory = Array.from(checkboxes).find(cb => cb.checked)?.value;
-
-                filteredProducts = products.filter(product => {
-                    const name = product.dataset.name.toLowerCase();
-                    const category = product.dataset.category;
-
-                    const matchName = name.includes(keyword);
-                    const matchCategory = !selectedCategory || category === selectedCategory;
-
-                    return matchName && matchCategory;
-                });
-
-                currentPage = 1;
-                renderProducts();
-                renderPagination();
-            }
-
-            /* ===== RENDER PRODUCT ===== */
-            function renderProducts() {
-                products.forEach(p => p.style.display = 'none');
-
-                const start = (currentPage - 1) * ITEMS_PER_PAGE;
-                const end = start + ITEMS_PER_PAGE;
-
-                filteredProducts.slice(start, end).forEach(p => {
-                    p.style.display = 'block';
-                });
-            }
-
-            /* ===== PAGINATION ===== */
-            function renderPagination() {
-                pagination.innerHTML = '';
-                const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
-
-                prevBtn.disabled = currentPage === 1;
-                nextBtn.disabled = currentPage === totalPages || totalPages === 0;
-
-                if (totalPages <= 1) return;
-
-                for (let i = 1; i <= totalPages; i++) {
-                    const li = document.createElement('li');
-                    li.className = i === currentPage ? 'active' : '';
-
-                    const btn = document.createElement('button');
-                    btn.type = 'button';
-                    btn.innerText = i < 10 ? `0${i}` : i;
-
-                    btn.onclick = () => {
-                        currentPage = i;
-                        renderProducts();
-                        renderPagination();
-                    };
-
-                    li.appendChild(btn);
-                    pagination.appendChild(li);
-                }
-            }
-
-            /* ===== EVENTS ===== */
-            searchInput.addEventListener('input', filterProducts);
-            checkboxes.forEach(cb => {
-                cb.addEventListener('change', function () {
-                    checkboxes.forEach(o => o !== this && (o.checked = false));
-                    filterProducts();
-                });
+            // chỉ cho check 1 checkbox
+            checkboxes.forEach(other => {
+                if (other !== this) other.checked = false;
             });
 
-            prevBtn.onclick = () => {
-                if (currentPage > 1) {
-                    currentPage--;
-                    renderProducts();
-                    renderPagination();
-                }
-            };
+            const selectedCategory = this.checked ? this.value : null;
 
-            nextBtn.onclick = () => {
-                const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
-                if (currentPage < totalPages) {
-                    currentPage++;
-                    renderProducts();
-                    renderPagination();
-                }
-            };
+            products.forEach(product => {
+                const productCategory = product.dataset.category;
 
-            /* ===== INIT ===== */
-            filterProducts();
+                if (!selectedCategory || productCategory === selectedCategory) {
+                    product.style.display = "block";
+                } else {
+                    product.style.display = "none";
+                }
+            });
         });
-    </script>
+    });
+});
+</script>
+
     <!-- product-card section ends here -->
     <!-- footer top section strats here -->
     <div class="footer-top-area">
